@@ -6,46 +6,190 @@ import html from "remark-html"
 
 const notesDirectory = path.join(process.cwd(), "src/content/notes")
 
-export function getAllSlugs() {
-  return fs.readdirSync(notesDirectory).map(file => ({
-    slug: file.replace(".md", "")
-  }))
+export type Heading = {
+  id: string
+  text: string
+  level: number
 }
 
-export function getAllNotesMeta() {
-  const files = fs.readdirSync(notesDirectory)
+export type NoteMeta = {
+  course: string
+  branch: string
+  slug: string
+  title: string
+  description: string
+  unit: string
+}
+
+export type NoteDetail = NoteMeta & {
+  content: string
+  headings: Heading[]
+}
+
+// Get all courses (top-level directories)
+export function getAllCourses(): string[] {
+  if (!fs.existsSync(notesDirectory)) return []
+  return fs.readdirSync(notesDirectory).filter((name) => {
+    return fs.statSync(path.join(notesDirectory, name)).isDirectory()
+  })
+}
+
+// Get all branches for a course
+export function getBranches(course: string): string[] {
+  const coursePath = path.join(notesDirectory, course)
+  if (!fs.existsSync(coursePath)) return []
+
+  return fs.readdirSync(coursePath).filter((name) => {
+    return fs.statSync(path.join(coursePath, name)).isDirectory()
+  })
+}
+
+// Get all note metadata for a specific course + branch
+export function getNotesForBranch(course: string, branch: string): NoteMeta[] {
+  const branchPath = path.join(notesDirectory, course, branch)
+  if (!fs.existsSync(branchPath)) return []
+
+  const files = fs.readdirSync(branchPath).filter((f) => f.endsWith(".md"))
 
   return files.map((file) => {
     const slug = file.replace(".md", "")
-    const fullPath = path.join(notesDirectory, file)
+    const fullPath = path.join(branchPath, file)
     const fileContents = fs.readFileSync(fullPath, "utf8")
-
     const { data } = matter(fileContents)
 
     return {
+      course,
+      branch,
       slug,
-      title: data.title,
-      unit: data.unit,
+      title: data.title || slug,
+      description: data.description || "",
+      unit: data.unit || "General",
     }
   })
 }
 
-export async function getNoteBySlug(slug: string) {
-  const fullPath = path.join(notesDirectory, `${slug}.md`)
-  const fileContents = fs.readFileSync(fullPath, "utf8")
+// Get all slugs for static generation
+export function getAllSlugs(): { course: string; branch: string; slug: string }[] {
+  const courses = getAllCourses()
+  const allSlugs: { course: string; branch: string; slug: string }[] = []
 
+  courses.forEach((course) => {
+    const branches = getBranches(course)
+    branches.forEach((branch) => {
+      const branchPath = path.join(notesDirectory, course, branch)
+      if (!fs.existsSync(branchPath)) return
+      const files = fs.readdirSync(branchPath)
+
+      files.forEach((file) => {
+        if (!file.endsWith(".md")) return
+        allSlugs.push({
+          course,
+          branch,
+          slug: file.replace(".md", ""),
+        })
+      })
+    })
+  })
+
+  return allSlugs
+}
+
+// Get all notes metadata across every course/branch
+export function getAllNotesMeta(): NoteMeta[] {
+  const courses = getAllCourses()
+  const allNotes: NoteMeta[] = []
+
+  courses.forEach((course) => {
+    const branches = getBranches(course)
+    branches.forEach((branch) => {
+      const notes = getNotesForBranch(course, branch)
+      allNotes.push(...notes)
+    })
+  })
+
+  return allNotes
+}
+
+// Helper to convert heading text into a URL slug id
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim()
+}
+
+// Extract headings from markdown content
+function extractHeadings(markdownContent: string): Heading[] {
+  const headingLines = markdownContent.split("\n").filter((line) => line.startsWith("## ") || line.startsWith("### "))
+
+  return headingLines.map((line) => {
+    const level = line.startsWith("### ") ? 3 : 2
+    const text = line.replace(/^#{2,3}\s+/, "").trim()
+    const id = slugify(text)
+    return { id, text, level }
+  })
+}
+
+// Inject id attributes into generated HTML heading tags
+function addHeadingIdsToHtml(htmlString: string): string {
+  return htmlString.replace(/<(h[23])>(.*?)<\/\1>/gi, (_, tag, content) => {
+    // Strip inner HTML tags if any to get raw text for slug
+    const rawText = content.replace(/<[^>]+>/g, "").trim()
+    const id = slugify(rawText)
+    return `<${tag} id="${id}">${content}</${tag}>`
+  })
+}
+
+// Get a single note by its full path with TOC headings
+export async function getNoteBySlug(
+  course: string,
+  branch: string,
+  slug: string
+): Promise<NoteDetail | null> {
+  const fullPath = path.join(notesDirectory, course, branch, `${slug}.md`)
+
+  if (!fs.existsSync(fullPath)) return null
+
+  const fileContents = fs.readFileSync(fullPath, "utf8")
   const { data, content } = matter(fileContents)
+
+  const headings = extractHeadings(content)
 
   const processedContent = await remark()
     .use(html)
     .process(content)
 
-  const contentHtml = processedContent.toString()
+  const htmlWithIds = addHeadingIdsToHtml(processedContent.toString())
 
   return {
+    course,
+    branch,
     slug,
-    title: data.title,
-    description: data.description,
-    content: contentHtml
+    title: data.title || slug,
+    description: data.description || "",
+    unit: data.unit || "General",
+    content: htmlWithIds,
+    headings,
   }
+}
+
+// Search all notes by query
+export function searchNotes(query: string): NoteMeta[] {
+  const q = query.trim().toLowerCase()
+  if (!q) return []
+
+  const allNotes = getAllNotesMeta()
+
+  return allNotes.filter((note) => {
+    return (
+      note.title.toLowerCase().includes(q) ||
+      note.description.toLowerCase().includes(q) ||
+      note.unit.toLowerCase().includes(q) ||
+      note.course.toLowerCase().includes(q) ||
+      note.branch.toLowerCase().includes(q) ||
+      note.slug.toLowerCase().includes(q)
+    )
+  })
 }

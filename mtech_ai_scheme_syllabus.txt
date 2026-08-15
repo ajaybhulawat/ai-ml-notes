@@ -1,0 +1,7810 @@
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+
+Proposed Scheme & Syllabus
+for
+
+Master of Technology (Artificial Intelligence)
+W.E.F 2025-26
+
+School of Engineering and Technology
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+M Tech (Artificial Intelligence)
+Program Structure
+Program Educational Objectives (PEOs)
+PEO-1: Students shall have the ability to apply knowledge across the disciplines and in emerging areas of Artificial
+Intelligence (AI) for higher studies, research, employability, product development and handle the realistic problems.
+PEO-2: To understand industry careers involving innovation and programming solving using AI and Machine
+Learning technologies.
+PEO-3: Students shall possess academic excellence with innovative insight, soft skills, managerial skills, leadership
+qualities, knowledge of contemporary issues and understand the need for lifelong learning for a successful
+professional career.
+PEO-4: Students will have the ability to apply the gained knowledge to improve the society ensuring ethical and
+moral values.
+PEO-5: Promote Design, Research, and implementation of products and services in the field of Artificial Intelligence
+through strong communication and entrepreneurial skills.
+
+Program Outcomes (POs)
+PO-1: Engineering knowledge: Apply the knowledge of mathematics, science, engineering fundamentals,
+and an engineering specialization to the solution of complex engineering problems.
+PO-2: Problem analysis: Identify, formulate, review research literature, and analyze complex engineering
+problems reaching substantiated conclusions using first principles of mathematics, natural sciences, and
+engineering sciences.
+PO-3: Design/development of solutions: Design solutions for complex engineering problems and design
+system components or processes that meet the specified needs with appropriate consideration for the
+public health and safety, and the cultural, societal, and environmental considerations.
+PO-4: Conduct investigations of complex problems: Use research-based knowledge and research methods
+
+including design of experiments, analysis and interpretation of data, and synthesis of the information to
+provide valid conclusions.
+PO-5: Modern tool usage: Create, select, and apply appropriate techniques, resources, and modern
+engineering and IT tools including prediction and modeling to complex engineering activities with an
+understanding of the limitations.
+PO-6: The engineer and society: Apply reasoning informed by the contextual knowledge to assess societal,
+health, safety, legal and cultural issues and the consequent responsibilities relevant to the professional
+engineering practice.
+PO-7: Environment and sustainability: Understand the impact of the professional engineering solutions in
+societal and environmental contexts, and demonstrate the knowledge of, and need for sustainable
+development.
+PO-8: Ethics: Apply ethical principles and commit to professional ethics and responsibilities and norms of
+the engineering practice.
+PO-9: Individual and team work: Function effectively as an individual, and as a member or leader in diverse
+teams, and in multidisciplinary settings.
+PO-10: Communication: Communicate effectively on complex engineering activities with the engineering
+community and with society at large, such as, being able to comprehend and write effective reports and
+design documentation, make effective presentations, and give and receive clear instructions.
+PO-11: Project management and finance: Demonstrate knowledge and understanding of the engineering
+and management principles and apply these to one‘s own work, as a member and leader in a team, to
+manage projects and in multidisciplinary environments.
+PO-12: Life-long learning: Recognize the need for, and have the preparation and ability to engage in
+independent and life-long learning in the broadest context of technological change.
+
+Program Specific Outcomes (PSOs)
+Post Graduates of the program will be able to:
+
+PSO1: Apply advanced knowledge of Artificial Intelligence, algorithms, and technologies to design and
+develop innovative AI-based solutions for real-world problems.
+PSO2: Analyze, design, and implement intelligent systems by applying higher-order thinking to solve
+complex problems across diverse domains using AI and Data Science tools.
+PSO3: Demonstrate research aptitude and an entrepreneurial mindset by identifying, formulating, and
+addressing contemporary issues in AI, leading to technological advancement and innovation.
+PSO4:Integrate ethical values, sustainability principles, and human-centric approaches in the
+development and deployment of AI solutions for the betterment of society.
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL UNIVERSITY, BHOPAL
+SCHOOL OF ENGINEERING & TECHNOLOGY
+SEMESTER- I
+
+S.
+No.
+
+Course Code
+
+1
+
+ET25MTAI101T
+
+DC
+
+2
+
+ET25MTAI102T
+
+DC
+
+3
+
+ET25MTAI103T
+
+DC
+
+4
+
+To be Offered **
+
+DE
+
+5
+
+To be Offered **
+
+DE
+
+6
+
+ET25MTAI102P
+
+DC
+
+7
+
+ET25MTAI103P
+
+DC
+
+8
+
+To be Offered **
+
+DSEEC
+
+9
+
+To be Offered **
+
+DE
+
+Category
+
+Total:
+
+Course Title
+
+Mathematics
+for Computing
+Computability,
+Algorithms, and
+Complexity
+Artificial
+Intelligence &
+Foundation of
+ML
+Departmental
+Elective - I
+Departmental
+Elective - II
+Computability,
+Algorithms, and
+Complexity Lab
+Artificial
+Intelligence &
+Foundation of
+ML Lab
+Departmental
+Skill
+Enhancement
+Elective Course
+-I
+Departmental
+Elective - I Lab
+
+Theory (100 Marks)
+Continuous Internal
+Evaluation (CIE)
+End
+Attendanc
+Sem.
+Mid
+e/
+Exam
+Sem.
+Quiz/
+(ESE)
+Test
+Assignmen
+(MST)
+t
+
+Maximum Marks Allotted
+Studio/Practical (50 marks)
+Continuous Internal
+End Sem.
+Evaluation (CIE)
+Exam
+Attendance
+(ESE)
+Lab
+/
+For
+Work
+Assignment
+Practical
+/
+/ Viva/Lab
+and Viva
+WPR
+Manual
+
+Total
+
+Hours / Week
+
+Total
+Mark
+s
+
+L
+
+T
+
+P
+
+Credits
+
+Credits
+Hours
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+3
+
+0
+
+0
+
+3
+
+3
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+3
+
+0
+
+0
+
+3
+
+3
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+3
+
+0
+
+0
+
+3
+
+3
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+-
+
+-
+
+-
+
+30
+
+10
+
+10
+
+50
+
+0
+
+0
+
+2
+
+1
+
+2
+
+-
+
+-
+
+-
+
+30
+
+10
+
+10
+
+50
+
+0
+
+0
+
+2
+
+1
+
+2
+
+-
+
+-
+
+-
+
+30
+
+10
+
+10
+
+50
+
+0
+
+0
+
+4
+
+2
+
+4
+
+-
+
+-
+
+-
+
+30
+
+10
+
+10
+
+50
+
+0
+
+0
+
+2
+
+1
+
+2
+
+300
+
+100
+
+100
+
+120
+
+40
+
+40
+
+700
+
+17
+
+0
+
+10
+
+22
+
+27
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL UNIVERSITY, BHOPAL
+SCHOOL OF ENGINEERING & TECHNOLOGY
+SEMESTER- II
+
+S.
+No.
+
+Course Code
+
+Catego
+ry
+
+1
+
+ET25MTAI201T
+
+DC
+
+2
+
+ET25MTAI202T
+
+DC
+
+3
+
+To be Offered **
+
+DE
+
+4
+
+To be Offered **
+
+DE
+
+5
+
+To be Offered **
+
+DE
+
+6
+
+ET25MTAI202P
+
+DC
+
+7
+
+To be Offered **
+
+DE
+
+8
+
+To be Offered **
+
+DSEEC
+Total:
+
+Course Title
+
+Computational
+Perception
+Deep Learning
+Departmental
+Elective - III
+Departmental
+Elective - IV
+Departmental
+Elective - V
+Deep Learning
+Lab
+Departmental
+Elective - III Lab
+Departmental
+Skill
+Enhancement
+Elective Course
+- II
+
+Theory (100 Marks)
+Continuous Internal
+Evaluation (CIE)
+End
+Attendanc
+Sem.
+Mid
+e/
+Exam
+Sem.
+Quiz/
+(ESE)
+Test
+Assignmen
+(MST)
+t
+
+Maximum Marks Allotted
+Studio/Practical (50 marks)
+Continuous Internal
+End Sem.
+Evaluation (CIE)
+Exam
+Attendance
+(ESE)
+Lab
+/
+For
+Work
+Assignment
+Practical
+/
+/ Viva/Lab
+and Viva
+WPR
+Manual
+
+Total
+
+Hours / Week
+
+Total
+Mark
+s
+
+L
+
+T
+
+P
+
+Credits
+
+Credits
+Hours
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+3
+
+0
+
+0
+
+3
+
+3
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+3
+
+0
+
+0
+
+3
+
+3
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+-
+
+-
+
+-
+
+30
+
+10
+
+10
+
+50
+
+0
+
+0
+
+2
+
+1
+
+2
+
+-
+
+-
+
+-
+
+30
+
+10
+
+10
+
+50
+
+0
+
+0
+
+2
+
+1
+
+2
+
+-
+
+-
+
+-
+
+30
+
+10
+
+10
+
+50
+
+0
+
+0
+
+4
+
+2
+
+4
+
+300
+
+100
+
+100
+
+90
+
+30
+
+30
+
+650
+
+18
+
+0
+
+8
+
+22
+
+26
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL UNIVERSITY, BHOPAL
+SCHOOL OF ENGINEERING & TECHNOLOGY
+SEMESTER- III
+
+S.
+No.
+
+Course Code
+
+1
+
+ET25MTAI301T
+
+DC
+
+2
+
+ET25MTRM302
+T
+
+DC
+
+3
+
+To be Offered **
+
+DE
+
+4
+
+ET25MTAI303P
+
+PR
+
+5
+
+ET25MTAI304P
+
+DS
+
+Category
+
+Total:
+
+Course Title
+
+Data Mining &
+Predictive
+Modelling
+Research
+Methodology
+Departmental
+Elective - VI
+Dissertation
+Phase - I
+Industrial
+Internship
+
+Theory (100 Marks)
+Continuous Internal
+Evaluation (CIE)
+End
+Attendanc
+Sem.
+Mid
+e/
+Exam
+Sem.
+Quiz/
+(ESE)
+Test
+Assignmen
+(MST)
+t
+
+Maximum Marks Allotted
+Studio/Practical (50 marks)
+Continuous Internal
+End Sem.
+Evaluation (CIE)
+Exam
+Attendance
+(ESE)
+Lab
+/
+For
+Work
+Assignment
+Practical
+/
+/ Viva/Lab
+and Viva
+WPR
+Manual
+
+Total
+
+Hours / Week
+
+Total
+Mark
+s
+
+L
+
+T
+
+P
+
+Credits
+
+Credits
+Hours
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+60
+
+20
+
+20
+
+-
+
+-
+
+-
+
+100
+
+4
+
+0
+
+0
+
+4
+
+4
+
+-
+
+-
+
+-
+
+100
+
+40
+
+60
+
+100
+
+0
+
+0
+
+12
+
+6
+
+-
+
+-
+
+-
+
+50
+
+20
+
+30
+
+100
+
+0
+
+0
+
+4
+
+2
+
+180
+
+60
+
+60
+
+150
+
+60
+
+90
+
+500
+
+12
+
+0
+
+16
+
+20
+
+12
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL UNIVERSITY, BHOPAL
+SCHOOL OF ENGINEERING & TECHNOLOGY
+SEMESTER- IV
+
+S.
+No.
+
+Course Code
+
+1
+
+ET25MTAI401P
+
+Category
+
+PR
+Total:
+
+Course Title
+
+Dissertation
+Phase II
+
+Theory (100 Marks)
+Continuous Internal
+Evaluation (CIE)
+End
+Attendanc
+Sem.
+Mid
+e/
+Exam
+Sem.
+Quiz/
+(ESE)
+Test
+Assignmen
+(MST)
+t
+
+Maximum Marks Allotted
+Studio/Practical (50 marks)
+Continuous Internal
+End Sem.
+Evaluation (CIE)
+Exam
+Attendance
+(ESE)
+Lab
+/
+For
+Work
+Assignment
+Practical
+/
+/ Viva/Lab
+and Viva
+WPR
+Manual
+
+Total
+
+Hours / Week
+
+Total
+Mark
+s
+
+L
+
+T
+
+P
+
+Credits
+
+Credits
+Hours
+
+-
+
+-
+
+-
+
+200
+
+100
+
+100
+
+400
+
+0
+
+0
+
+30
+
+15
+
+0
+
+-
+
+-
+
+-
+
+200
+
+100
+
+100
+
+400
+
+0
+
+0
+
+30
+
+15
+
+0
+
+Curriculum Components
+
+Components
+
+Credits
+
+Program Core (10Courses)
+
+28
+
+Departmental Elective (08Courses)
+
+24
+
+Departmental Skill Enhancement Elective Course (05Courses)
+
+27
+
+Total
+
+79
+
+Distribution of credits across all components
+
+SEM
+
+Departmental Core
+
+Departmental Elective
+
+Departmental Skill Enhancement Elective Course
+
+Total Credit
+
+I.
+
+5
+
+3
+
+1
+
+22
+
+II.
+
+3
+
+4
+
+1
+
+22
+
+III.
+
+2
+
+1
+
+2
+
+20
+
+IV.
+
+0
+
+0
+
+1
+
+15
+
+Total
+
+10
+
+8
+
+5
+
+79
+
+Table-1
+List of Departmental Skill Enhancement Elective Course (DSEEC)
+SN
+1.
+2.
+3.
+
+Course Code
+ET25MTAI115P
+ET25MTAI116P
+ET25MTAI117P
+
+SN
+1.
+2.
+
+ET25MTAI217P
+ET25MTAI218P
+
+DSEEC -I
+Programming in PYTHON
+Programming in Java
+LISP Programming
+
+Course Code
+
+DSEEC -II
+Advance DBMS
+Java Scripting with AJAX
+
+Table-2
+List of Departmental Elective (DE)
+SN
+1.
+2.
+
+ET25MTAI111T/P
+ET25MTAI112T/P
+
+SN
+1.
+2.
+
+ET25MTAI113T
+ET25MTAI114T
+
+SN
+1.
+2.
+
+ET25MTAI211T/P
+ET25MTAI212T/P
+
+SN
+1.
+2.
+SN
+1.
+2.
+SN
+1.
+2.
+
+Course Code
+
+DE-I
+Artificial Neural Networks
+Introduction to Problem Solving & Reasoning
+
+Course Code
+
+DE-II
+Information Security & Cyber Law
+Evolutionary Computing
+
+Course Code
+
+DE-III
+Artificial Intelligence for Robotics
+Digital Image Processing
+
+Course Code
+
+DE-IV
+
+ET25MTAI213T
+
+Deductive Systems
+
+ET25MTAI214T
+
+Decision Making Under Uncertainty
+
+Course Code
+
+DE-V
+
+ET25MTAI215T
+
+Data privacy and user protection
+
+ET25MTAI216T
+
+Information Retrieval
+
+Course Code
+ET25MTCS113T
+ET25MTAI312T
+
+DE-VI
+Natural Language Processing
+Computer Vision
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+Proposed Scheme & Syllabus
+for
+
+Master of Technology (Artificial Intelligence)
+I Semester
+
+School of Engineering and Technology
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+
+Department Name: Advance Computing
+Semester: I
+
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course
+Content
+
+Mathematics for Computing
+L
+4
+
+T
+0
+
+Course Code
+P
+0
+
+ET25MTAI101T
+N
+0
+
+Total
+Credits
+
+4
+
+Mathematics of Class 11th & 12th
+1.To be able to understand advanced multivariate statistical techniques
+Techniques.
+2.To understand the factor analysis and estimation.
+3.To understand the production systems and their grammar.
+4.Discussion of Finite-state Automata and Nondeterministic FSA.
+5.To learn the construction of Turing Machines.
+Unit 1:
+Advanced Multivariate Statistical Techniques
+Multiple linear regression, multicollinearity, outliers, heteroscedasticity,
+autocorrelation and model validation, polynomial regression, and the method
+of orthogonal polynomials, nonlinear regression, multivariate regression
+model, testing and estimation, Ridge regression.
+Unit 2:
+Multivariate analysis of variance and covariance, Test of linear hypothesis,
+likelihood ratio criteria, a test of equality of means of several normal
+distributions, testing independence of a set of variates, factor analysis,
+extracting common factors, factor scores and estimation.
+Unit 3:
+Cluster analysis, correlations, and distances, methods of clustering: hierarchical
+clustering, non-hierarchical clustering, partitioning methods, overlapping
+clustering
+Grammars - Production systems –Chomskian Hierarchy - Right linear
+grammar and Finite state automata - Context free grammars - Normal forms uvwxy theorem – Parikh mapping - Self-embedding property - Subfamilies of
+CFL - Derivation trees and ambiguity.
+Unit 4:
+Finite-state Automata - Nondeterministic and deterministic FSA, NFSA with εmoves, Regular Expressions - Equivalence of regular expression and FSA
+Pumping lemma, closure properties, and decidability. Myhill - Nerode theorem
+and minimization - Finite automata with output.
+Unit 5:
+Pushdown automata - Acceptance by empty store and final state - Equivalence
+between pushdown automata and context-free grammars - Closure properties
+of CFL - Deterministic pushdown automata.
+Turing Machines - Techniques for Turing machine construction - Generalized
+and restricted versions equivalent to the basic model - Godel numbering Universal Turing Machine - Recursively enumerable sets and recursive sets Computable functions - time-space complexity measures - context-sensitive
+languages and linear bound automata.
+
+and Automaton
+
+12 Hours
+
+12 Hours
+
+12 Hours
+
+12 Hours
+
+12 Hours
+
+T1: J.E.Hopcroft,R.Motwani and J.D.Ullman , "Introduction to Automata Theory Languages and
+computation", Pearson Education Asia , 2001.
+T2: Peter Linz, "An Introduction to Formal Language and Automata", 4th Edition,Narosa
+Publishing house , 2006
+R1: Kohavi, Z. Switching & Finite Automata Theory - Tata Mcgraw- Hill.
+R2: J.E.Hopcroft,R.Motwani and J.D.Ullman , "Introduction to Automata Theory Languages and
+computation", Pearson Education Asia , 2001.
+After completing this course, students will be able to:
+
+Textbooks
+
+References
+
+CO 1: To be able to understand advanced multivariate statistical techniques and Automaton
+Techniques.
+CO 2: To understand the factor analysis and estimation.
+CO 3: To understand the production systems and their grammar.
+CO 4: Discussion of Finite state Automata and Nondeterministic FSA.
+CO 5: To learn the construction of Turing Machines.
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+P
+O
+2
+2
+
+P
+O
+3
+2
+
+P
+O
+4
+
+CO1
+
+P
+O
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+3
+
+CO4
+
+3
+
+3
+
+2
+
+1
+
+CO5
+
+3
+
+3
+
+3
+
+1
+
+CO/P
+O
+
+High-3
+
+Medium-2
+
+P
+O
+5
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+1
+
+1
+
+1
+
+Knowledge
+Levels (K1, K2, …,
+K6)
+K1, K2, K3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+2
+
+3
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+PO
+10
+
+PO
+11
+2
+
+Low-1
+
+K1 =>Remember K2 =>Understand K3 =>Apply
+K6 =>Create
+
+P
+O
+9
+
+K4 =>Analyze K5 =>Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: I
+Recommended Programs: M. Tech. in Artificial Intelligence
+Computability, Algorithms and
+Course
+Course Name
+ET25MTAI102T
+Complexity
+Code
+L
+T
+P
+N
+Total
+Credit Hours
+3
+Credits
+3
+0
+0
+0
+● Fundamentals of computing
+Prerequisites
+● Fundamentals of programming
+● Data structure & complexity
+
+Course
+Objectives
+
+Course Content
+
+Text Books
+References
+
+1. To identify and implement an appropriate algorithm for solving a novel problem.
+2. To Analyze an algorithm’s asymptotic running time and memory consumption.
+3. To Evaluate a set of proposed algorithmic solutions to a problem according to given
+
+constraints
+
+4. To demonstrate the correctness of an algorithm.
+5. To develop an appreciation and understanding of the theoretical framework for
+
+computer science and some of the consequences of this theory.
+Unit- I
+Computability- algorithm, Turing machines, Turing machines
+importance’s, Church’s thesis, Turing machines and examples , Input and
+output of a Turing machine, Representing Turing , Examples of Turing
+machines , Variants of Turing machines, Computational power , Twoway-tape Turing machines , Multi-tape Turing machines , Codes for
+standard Turing machines, The universal Turing machine
+Unit-2
+Unsolvable problems – Introduction, The halting problem, Reduction,
+Godel’s incompleteness theorem, Part I in a nutshell
+Unit-3
+Algorithms - Use of algorithms, Run time function of an algorithm, Choice
+of algorithm, Implementation
+Unit-4
+Graph algorithms - Graphs: the basics, Representing graphs, Algorithm
+for searching a graph, Paths and connectedness , Trees, spanning trees ,
+Complete graphs, Hamiltonian circuit problem (HCP), Weighted graphs,
+Minimal spanning trees , Prim’s algorithm to find a MST, Shortest path ,
+Travelling salesman problem (TSP),polynomial time , NP-completeness.
+Unit-5
+Complexity - Basic complexity theory, Yes/no problems, Polynomialtime Turing machines, Tractable problems, the class P, Intractable
+problems? An exhaustive search in algorithms, deterministic Turing
+machines, Definition of non-deterministic TM, examples of NDTMs,
+speed of NDTMs, and The class NP.
+NP-completeness - Introduction, Proving NP-completeness by reduction,
+Cook’s theorem
+T1: Introduction to the Theory of Computation, Sipser
+T2: Computational Complexity, Papadimitriou
+R1: Algorithm Design, Kleinberg &Tardos
+R2: Introduction to Algorithms, Cormen, Leiserson, Rivest, and Stein
+
+10 Hours
+
+09 Hours
+08 Hours
+
+08 Hours
+
+10 Hours
+
+After completing this course, students will be able to:
+CO1.The student will be able to identify and implement an appropriate algorithm for
+solving a novel problem;
+CO2.Student Will learn and analyze an algorithm’s asymptotic running time and memory
+consumption.
+CO3.Students can able to Evaluate a set of proposed algorithmic solutions to a problem
+according to given constraints
+CO4.Students can demonstrate the correctness of an algorithm.
+CO5.To develop an appreciation and understanding of the theoretical framework for
+computer science and some of the consequences of this theory
+
+Course
+Outcomes
+
+Mapping of Course outcomes with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+P
+O
+2
+2
+
+P
+O
+3
+2
+
+P
+O
+4
+
+CO1
+
+P
+O
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO4
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO5
+
+3
+
+3
+
+3
+
+1
+
+3
+
+2
+
+CO/P
+O
+
+High-3
+
+P
+O
+5
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+PO
+10
+
+PO
+11
+2
+
+Medium-2
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+1
+
+1
+
+1
+
+Knowledge
+Levels (K1, K2, …,
+K6)
+K1, K2, K3
+
+3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+3
+
+Low-1
+
+K1 =>Remember K2 =>Understand K3 =>Apply
+K6 =>Create
+
+P
+O
+9
+
+K4 =>Analyze K5 =>Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Technology
+
+Department Name: Institute of Advance Computing
+
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+(if any)
+
+Course
+Objectives
+
+Course Content
+
+Textbooks
+
+Semester: I
+
+Artificial Intelligence &
+Course Code
+ET25MTAI103T
+Foundation of ML
+L
+T
+P
+N
+Total Credits
+3
+3
+0
+0
+● Fundamentals of computing
+● Fundamentals of programming
+1. To understand basic principles of Artificial Intelligence
+2. To learn and design intelligent agents
+3. To understand the concepts of artificial intelligence including problem-solving, knowledge
+representation, reasoning, decision making, planning, perception, and action.
+4. To master the fundamentals of machine learning, mathematical framework, and learning
+algorithm.
+5. Understand concepts of Spark, Zookeeper, and HBase
+Unit I
+Automated Reasoning - foundations of knowledge representation and
+reasoning, representing and reasoning about objects, relations, events,
+10 Hours
+actions, time, and space; predicate logic, situation calculus, description
+logics, - Logic - Propositional and predicate logic - Syntax - Informal and
+formal semantics - Equivalence - De Morgans laws
+Unit II
+Decidable problems - Many-sorted logic -first-order, higher-order logic
+10 Hours
+Reasoning methods - Formal program techniques - pre-and post
+conditions, derivation and verification of programs- SPIN Tool.
+Unit III
+Uncertain Knowledge-yesian networks; Basics of decision theory,
+sequential decision problems, Elementary game theory; Problem-solving
+09 Hours
+through Search-forward and backward, state-space, blind, heuristic,
+problem-reduction, A, A*, AO*, minimax, constraint propagation, neural
+and stochastic.
+UNIT-IV
+Introduction to intelligent agents; Machine Learning - Foundations of
+08 Hours
+supervised learning – Decision trees and inductive bias, Regression Vs
+Classification, Supervised-Linear Regression, Logistic
+Unit V
+Generalization, Training, Validation and Testing, Problem of Overfitting,
+Bias vs Variance, Confusion Matrix, Precision, Recall, F Measure, Support
+Vector Machine, Decision Tree, Random Forest, Perceptron, Beyond
+binary classification, Boosting and bagging, bootstrapping – Advanced
+08 Hours
+supervised learning - K-Nearest Neighbour, Markov model, Hidden
+Markov Model - Nearest Neighbor Classification- Gaussianprocesses
+UnsupervisedLearning-DimensionalityReductionTechniques, Linear
+Discriminant Analysis - Clustering: K-means, Hierarchical, Spectral,
+subspace clustering, association rule mining.
+T1: Hadoop: The Definitive Guide, 4th Edition by Tom White - Shroff Publishers & Distributers
+Private Limited - Mumbai; Fourth edition (2015)
+
+T2: Basics of Artificial Intelligence & Machine Learning, Dr. Dheeraj Mehrotra
+R1: Big Data: Principles and Best Practices of Scalable Realtime Data Systems by James Warren
+and Nathan Marz, Manning Publications (2015)
+R2: Kenneth A. Lambert, “Fundamentals of Python – First Programs”, CENGAGE Publication
+After completing this course, students will be able to:
+
+References
+
+CO1. Understand the concepts of Hadoop and HDFS
+CO2. Understand the concepts of MapReduce
+CO3. Analyze big data tools Pig and Hive.
+CO4. Understand concepts of Spark, Zookeeper and HBase
+CO5. Perform load balancing and serialization in Hadoop.
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+P
+O
+2
+2
+
+P
+O
+3
+2
+
+P
+O
+4
+
+CO1
+
+P
+O
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+CO4
+
+3
+
+3
+
+2
+
+CO5
+
+3
+
+3
+
+3
+
+CO/P
+O
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+5
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+PO
+11
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge
+Levels (K1, K2, …,
+K6)
+
+1
+
+1
+
+1
+
+1
+
+1
+
+K1, K2, K3
+
+1
+
+2
+
+3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+3
+
+1
+
+2
+
+3
+
+2
+
+K1, K2, K3, K4
+
+1
+
+3
+
+2
+
+2
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+1
+
+3
+
+2
+
+2
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+Medium-2
+
+3
+
+Low-1
+
+K2 => Understand
+
+K3 => Apply
+
+K4 => Analyze K5 => Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Department Name: Advance Computing
+Technology
+Semester: I
+Recommended Programs: M. Tech. in Artificial Intelligence
+Artificial Neural
+Course Name
+Course Code
+ET25MTAI111T/P
+Networks
+L
+T
+P
+N
+Credit Hours
+Total Credits
+3
+0
+0
+0
+● Fundamentals of computing
+Prerequisites
+● Fundamentals of programming
+
+3
+
+● Introduction to AI & ML
+
+Course
+Objectives
+
+Course Content
+
+Textbooks
+References
+
+1. Survey of attractive applications of Artificial Neural Networks.
+2. Practical approach for using Artificial Neural Networks in various technical,
+organizational, and economic applications
+3. Supervised learning of various knowledge representation methods
+4. Unsupervised learning Probabilistic reasoning and uncertainty
+5. Learn auto memory networks
+UNIT I:
+INTRODUCTION: History of Neural Networks, Structure and
+Functions Of Biological And Artificial Neuron, Neural Network
+10 Hours
+Architectures, Characteristics Of ANN, Basic Learning Laws and
+Methods.
+UNIT II:
+SUPERVISED LEARNING: Single Layer Neural Network and
+architecture, McCulloch-Pitts Neuron Model, Learning Rules,
+10 Hours
+Perceptron Model, Perceptron Convergence Theorem, Delta learning
+rule, ADALINE, Multi-Layer Neural Network and architecture,
+MADALINE, Back Propagation learning, Back Propagation Algorithm.
+UNIT III:
+UNSUPERVISED LEARNING-1: Outstar Learning, Kohenen Self
+08 Hours
+Organization Networks, Hamming Network And MAXNET, Learning
+Vector Quantization, Mexican hat.
+UNIT IV:
+UNSUPERVISED LEARNING-2: Counter Propagation Network -Full
+Counter Propagation network, Forward Only Counter Propagation
+08 Hours
+Network, Adaptive Resonance Theory (ART) -Architecture,
+Algorithms.
+UNIT V:
+ASSOCIATIVE MEMORY NETWORKS: Introduction, Auto Associative
+Memory, Hetero Associative Memory, Bidirectional Associative
+09 Hours
+Memory (BAM) -Theory and Architecture, BAM Training Algorithm,
+Hopfield Network: Introduction, Architecture Of Hopfield Network.
+T1: S.Rajasekaran and G.A.Vijayalakshmi pai “Neural Networks. Fuzzy Logic and Genetic
+Algorithms”.
+T2: Introduction to Artificial Neural Systems by Jacek M. Zurada
+R1: James A Freeman and Davis Skapura” Neural Networks Algorithm, applications, and
+programming Techniques”, Pearson Education, 2002.
+R2. Simon Hakins “Neural Networks “Pearson Education.
+
+After completing this course, students will be able to:
+CO1 Students will learn about AI and Neural Networks
+CO2 Students will learn about supervised learning various knowledge representation
+
+methods
+CO3 Students will learn about unsupervised learning Probabilistic reasoning and
+uncertainty
+CO4 Students will learn about auto memory networks
+CO5 Learn practical approach for using Artificial Neural Networks in various technical,
+organizational, and economic applications
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+P
+O
+2
+2
+
+P
+O
+3
+2
+
+P
+O
+4
+
+CO1
+
+P
+O
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+3
+
+1
+
+CO4
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO5
+
+3
+
+3
+
+3
+
+1
+
+3
+
+2
+
+CO/
+PO
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+5
+
+Medium-2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+PO
+11
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+1
+
+1
+
+1
+
+1
+
+Knowledge
+Levels (K1, K2, …,
+K6)
+K1, K2, K3
+
+1
+
+3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+3
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Department Name: Advance Computing
+Technology
+Semester: I
+Recommended Programs: M. Tech. in Artificial Intelligence
+
+Introduction to
+Problem Solving and
+Reasoning
+
+Course Name
+
+L
+3
+
+Credit Hours
+Prerequisites
+
+Course Content
+
+P
+0
+
+N
+0
+
+Total Credits
+
+3
+
+Fundamentals of computing
+● Fundamentals of programming
+●
+
+Develop reasoning curiosity and use inductive and deductive reasoning when solving
+problems
+2. Become confident in using reasoning to analyze and solve problems both in school and in
+real-life situations
+3. Develop the knowledge, skills, and attitudes necessary to pursue further studies in
+reasoning
+4. Develop abstract, logical, and critical thinking and the ability to reflect critically upon
+their work and the work of others
+5. Develop a critical appreciation of the use of information and communication technology
+in reasoning
+Unit I: Python Basic:
+Basic syntax, running a script on jupyter, the concept of data types,
+variables, assignments, immutable variables, numerical types, arithmetic
+operators and expressions, comments in the program, understanding
+error messages, Conditions, boolean logic, logical operators, ranges,
+10 Hours
+Control statements: if-else, loops (for, while), short-circuit (lazy)
+evaluation, Strings and text files, Lists, tuples, and dictionaries; basic list
+operators, replacing, inserting, removing an element, searching and
+sorting lists, dictionary literals, adding and removing keys, accessing and
+replacing values, traversing dictionaries. Pandas, numpy, matplotlib.
+Unit II: Introduction to Artificial Intelligence:
+Artificial Intelligence, Programming with and without AI, Application of
+AI, Turing Test, Environments Constraints, agents and Environments,
+Environments properties, PEAS Description of task Environments, PAGE
+Descriptions, Example: VacBot with PEAS Description, Agent, Reflex 10 Hours
+Agent Diagram, Reflex Agent Program, Model-Based Reflex, Agent
+Diagram, Model-Based Reflex, Agent Program, Goal-Based Agent
+Diagram, Utility-Based Agent Diagram, Breadth-First Search, Learning
+Agents, Learning Agent Diagram.
+Unit III: Problem Solving Techniques.
+Artificial Intelligence, Programing with and without AI, Application of AI,
+Turing Test, Environments Constraints, agents and Environments,
+Environments properties, PEAS Description of task Environments, PAGE
+Descriptions, Example: VacBot with PEAS Description, Agent, Reflex 09 Hours
+Agent Diagram, Reflex Agent Program, Model-Based Reflex, Agent
+Diagram, Model-Based Reflex, Agent Program, Goal-Based Agent
+Diagram, Utility-Based Agent Diagram, Breadth-First Search, Learning
+Agents, Learning Agent Diagram.
+1.
+
+Course
+Objectives
+
+T
+0
+
+ET25MTAI112T/P
+
+Course Code
+
+Unit IV: Knowledge and Reasoning:
+Objectives, Knowledge Representation & Reasoning, Knowledge
+Representation, Reasoning, Types of Methods, Knowledge Vs Belief,
+Types of Knowledge, Logical Agents, Knowledge-Based Agents,
+Propositional Logic, Propositional Logic Table, Pros and Cons of
+Propositional Logic, Forward Chaining, Backward Chaining, Forward
+Chaining Vs Backward Chaining, First-Order Logic, Pros of First-Order
+Logic, Pros of First-Order Logic, Logics in General, Syntax of First-Order
+Logic, Components of First-Order Logic, Truth in First-Order Logic, FirstOrder Logic Example, Classical Planning, Introduction of Classical
+Planning, Search Vs Planning, The Language of Planning Problems.
+Unit V: Uncertain Knowledge and Reasoning.
+Objectives, Uncertainty, Sources of Uncertain knowledge, Probabilistic
+Reasoning, Basic Probability Theory, Conditional Probability, Bayesian
+Rule, The Joint Probability, Bayesian Reasoning, Ranking Potentially True
+Hypotheses, The Prior and Conditional Probabilities.
+
+08 Hours
+
+08 Hours
+
+T1: Bratko, Programming for Artificial Intelligence.
+T2: Russell, S.J. Artificial Intelligence a Modern Approach
+- Pearson Education.
+R1: Rich, E. Artificial Intelligence a Modern Approach - Tata Mcgraw- Hill
+R2: Bratko, Programming for Artificial Intelligence.
+After completion of this course, students can:
+CO 1. Comprehend the basics of python and python library.
+CO 2. Comprehend the basics of Artificial Intelligence terminologies,
+CO 3. Apply skills needed to deal with problem solving and reasoning.
+CO 4. Demonstrate propositional logic and first-order logic.
+CO 5. Apply probability and reasoning in problem-solving.
+
+Text Books
+References
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+2
+2
+3
+
+P
+O
+2
+1
+1
+2
+2
+
+3
+
+3
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+4
+1
+1
+1
+1
+1
+
+P
+O
+5
+2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+1
+
+1
+
+1
+
+1
+
+1
+
+2
+2
+
+Medium-2
+
+PO
+11
+
+1
+1
+
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels (K , K , …,
+K)
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+6
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+1
+
+1
+
+2,
+
+2,
+
+2,
+
+3
+
+3,
+
+3
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+4
+
+4
+
+2
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Department Name: Advance Computing
+Technology
+Semester: I
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course
+Content
+
+Information Security
+& Cyber Law
+
+Course Code
+
+ET25MTAI113T
+
+L
+T
+P
+SM
+Total Credits
+4
+4
+0
+0
+4
+1.Fundamentals of computing
+2.Fundamentals of cyber security
+Objective of this course is to:
+1.Provide information to the students regarding emerging web application vulnerabilities.
+2.Deliver the information regarding tools that are utilized for the exploitation of cyber security
+vulnerabilities.
+3.Secure both clean and corrupted systems, protect personal data, secure simple computer
+networks, and safe Internet usage.
+4.Understand key terms and concepts in cyber law, intellectual property and cybercrimes,
+trademarks, and domain theft.
+5.Determine computer technologies, digital evidence collection, and evidentiary reporting in
+forensic acquisition.
+UNIT 1. Information Security & IT Cyber Laws
+Need of Information Security, Attributes of Information Security,
+Authentication, Confidentiality, Integrity, Availability, Non-Repudiation, IT
+acts and Cyber Laws: IT Act: Salient Feature of IT Act 2000, Legal
+09 Hours
+Provisions under the Information Technology Act, Recent amendments by
+the IT (Amendment Act) 2008, ActSection66(A, B, C, D, E, F),
+ITActSection67(A, B, C)
+UNIT 2. Security Services, mechanism, and attacks
+Access Control, Threats and Vulnerabilities, Security Attacks, Unauthorized
+Access, Impersonation, Denial of Service, Malicious Software, Viruses,
+Worms, Trojan Horses. Definitions, Types of authentication, Password
+09 Hours
+Authentication, Password Vulnerabilities &Attacks: Brute Force &
+Dictionary Attacks. Password Policy & Discipline, Single Sign‐on – Kerberos,
+Alternate Approaches, Biometrics: Types of Biometric Techniques: False
+Rejection, False Acceptance, Crossover Error Rates.
+UNIT 3. Physical and System Security
+Function of Operating system, Types of OS ( Real-time OS, Single User Single
+task OS, Single User‐Multi tasking System, Multiuser System), Task of OS,
+Process, Memory Management, Device Management, Storage Management,
+Application Interface, User Interface, Security Weakness, Operating System,
+09 Hours
+Windows Weakness,
+Hardening OS during Installation, Secure User
+Account Policy, Strong User Password Policy, Creating a list of Services and
+Programs running on Server, Patching Software, Hardening Windows,
+Selecting File System, Active Directory / Kerberos, General Installation
+Rules.
+UNIT 4. Internet and Web security
+Web Servers and Browsers, HTTP, Cookies, Caching, Plug‐in, ActiveX, Java,
+09 Hours
+JavaScript, Secure Socket Layer (SSL), Secure Electronic Transaction (SET).
+E‐mail Risks, Spam, E‐mail Protocols, Simple Mail Transfer Protocol (SMTP),
+
+Post office Protocol (POP), Internet Access Message Protocol (ICMP).
+Secured Mail: Pretty Good Privacy (PGP), S/MIME(Secure/Multipurpose
+Internet Mail Extensions)
+UNIT 5. Network Security Fundamentals
+Network Devices: Switches, Routers, Firewalls, VPN Concentrators, Load
+Balancers, Proxies. Network Protocol: Overview of IPV4 and IPV6, OSI
+Model, Maximum Transfer Unit, Internet Protocol (IP), Transport Control
+Protocol (TCP), User Datagram Protocol (UDP), Internet Control Message
+Protocol (ICMP), Address Resolution Protocol (ARP), Reverse Address
+09 Hours
+Resolution Protocol (RARP), Domain Name System (DNS). Network
+Design: Network Address Translation (NAT), Demilitarized Zone (DMZ),
+Subnetting, Switching, Virtual Local Area Network (VLAN). Network
+Attack: Buffer Overflow, TCP Session, Hijacking, Sequence Guessing,
+Network Scanning. IP Security overview and architecture.
+T1: Gunter Ollmann 2007. The Phishing Guide Understanding & Preventing Phishing Attacks.
+IBM Internet Security Systems.
+T2: Thomas Erl, Ricardo Puttini, ZaighamMahmood, Cloud Computing: Concepts, Technology &
+Architecture, Prentice-Hall, 2013.
+T3: Rosenblatt B., Tripp B., Mooney S., "Digital Rights Management: Business and Technology",
+John Wiley & Sons, 2001.
+R1: RajkumarBuyya, Christian Vecchiola, S. ThamaraiSelvi, Mastering Cloud Computing, Tata
+McGraw-Hill Education, 2013.
+R2: M. N. Omar et al, “Hybrid Stepping Stone Detection Method,” in the proceeding of 1st IEEE
+Conference on Distributed Framework and Applications (DFmA – 2008), pp. 134–138, 2008
+R3: J. Yang, Shou-Hsuan Stephen Huang, “Matching TCP packets and its application to the
+detection of long connection chains on the Internet,” in the proceeding of 19th IEEE
+International Conference on Advanced Information Networking and Applications (AINA), pp.
+1005-1010,2005
+After completing this course, students will be able to:
+
+Text Books
+
+References
+
+CO1 - Describe and analyze the hardware, software, components of a network and the
+interrelations & evaluate and compare systems software and emerging technologies.
+CO2
+- Explain networking protocols and their hierarchical relationship with hardware and
+Course
+software.
+Outcomes
+CO3 - Compare protocol models and select appropriate protocols for a particular design.
+CO4 - Manage multiple operating systems, systems software, network services, and security.
+CO5 - Determine computer technologies, digital evidence collection, and evidentiary reporting in
+forensic acquisition.
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/P
+O
+CO1
+
+PO
+1
+1
+
+PO
+2
+1
+
+PO
+3
+1
+
+PO
+4
+1
+
+PO
+5
+2
+
+CO2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+CO3
+
+2
+
+2
+
+1
+
+1
+
+1
+
+CO4
+
+3
+
+2
+
+2
+
+1
+
+2
+
+3
+3
+CO5
+High-3
+K1 => Remember
+
+2
+
+1
+
+2
+
+PO
+6
+
+PO
+7
+
+PO
+8
+
+PO
+9
+
+PO1
+0
+
+PO1
+1
+1
+
+Knowledge Levels (K , K , …, K )
+1
+
+1
+
+Medium-2
+Low-1
+K2 => Understand K3 => Apply
+
+1
+
+2
+2
+
+K,K
+
+2
+
+1
+
+1
+
+1
+
+2
+
+1
+
+1
+1
+
+K,K
+
+K,K K
+1
+
+2,
+
+3
+
+K,K K K
+1
+
+2,
+
+3,
+
+4
+
+K,K K,K
+1
+
+2,
+
+3
+
+4
+
+K4 => Analyze K5 => Evaluate K6 => Create
+
+2
+
+6
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Department Name: Advance Computing
+Technology
+Semester: I
+Recommended Programs: M. Tech. in Artificial Intelligence
+
+Evolutionary
+Computing
+
+Course Name
+
+L
+4
+
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course Content
+
+T
+0
+
+ET25MTAI114T
+
+Course Code
+P
+0
+
+N
+0
+
+Total Credits
+
+4
+
+Fundamentals of computing
+● Fundamentals of programming
+●
+
+1. Understand the relations between the most important evolutionary algorithms.
+2. New algorithms to be found in the literature now or in the future, and other search and
+optimization techniques.
+3. Understand the implementation issues of evolutionary algorithms.
+4. Design new evolutionary operators, representations, and fitness
+5. Functions for specific practical and scientific applications.
+Unit- I
+Introduction to Evolutionary Computation
+◦ Biological and artificial evolution
+◦ Evolutionary computation and AI
+◦ Different historical branches of EC, e.g., GAs, EP, ES, GP, etc.
+◦ A simple evolutionary algorithm
+Unit –II Search Operators
+◦ Recombination/Crossover for strings (e.g., binary strings), e.g., one-point, multi-point, and
+uniform crossover operators
+◦ Mutation for strings, e.g., bit-flipping
+◦ Recombination/Crossover and mutation rates
+◦ Recombination for real-valued representations, e.g., discrete and intermediate
+recombination
+◦ Mutation for real-valued representations, e.g., Gaussian and Cauchy mutations, self-adaptive
+mutations, etc.
+◦ Why and how a recombination or mutation operator works
+Mixing different search operators
+◦ An anomaly of self-adaptive mutations
+◦ The importance of representation, e.g., binary vs. Gray coding
+◦ Adaptive representations
+Unit- III Selection Schemes
+◦ Fitness proportional selection and fitness scaling
+◦ Ranking, including linear, power, exponential and other ranking methods
+◦ Tournament selection
+◦ Selection pressure and its impact on evolutionary search
+Evolutionary Combinatorial Optimization
+◦ Evolutionary algorithms for TSPs
+◦ Evolutionary algorithms for lecture room assignment
+◦ Hybrid evolutionary and local search algorithms
+Coévolution
+
+◦ Coopérative coévolution
+◦ Compétitive coévolution
+Niching and Speciation
+◦ Fitness sharing (explicit and implicit)
+◦ Crowding and mating restriction
+Unit-IV Constraint Handling
+◦ Common techniques, e.g., penalty methods, repair methods, etc.
+◦ Analysis
+◦ Some examples
+Genetic Programming
+◦ Trees as individuals
+◦ Major steps of genetic programming, e.g., functional and terminal sets, initialization,
+crossover, mutation, fitness evaluation, etc.
+◦ Search operators on trees
+◦ Automatically defined functions
+◦ Issues in genetic programming, e.g., bloat, scalability, etc.
+◦ Examples
+Multi-objective Evolutionary Optimization
+◦ Pareto optimality
+◦ Multiobjective evolutionary algorithms
+
+Textbooks
+
+References
+
+Course
+Outcomes
+
+Unit-V Learning Classifier Systems
+◦ Basic ideas and motivations
+◦ Main components and the main cycle
+◦ Credit assignment and two approaches
+Theoretical Analysis of Evolutionary Algorithms
+◦ Schema theorems
+◦ Convergence of EAs
+◦ Computational time complexity of EAs
+◦ No free lunch theorem
+T1: Title: Handbook on Evolutionary Computation Author: T. Baeck, D. B. Fogel, and Z.
+Michalewicz (eds.) Publisher: IOP Press, 1997.
+T2: Title: Evolutionary Computation: Theory and Applications Author: X. Yao (ed) Publisher:
+World Scientific Publ. Co., Singapore, 1999. (ISBN 3-540-65907-2)
+R1: Title: Genetic Algorithms + Data Structures = Evolution Programs (3rd edition) Author: Z
+Michalewicz Publisher: Springer-Verlag, Berlin, 1996
+R2: Title: Evolutionary Computation: Theory and Applications
+Author: X. Yao (ed) Publisher: World Scientific Publ. Co. Singapore, 1999. (ISBN 3-540-659072)
+After completing this course, students will be able to:
+CO1. Understand the relations between the most important evolutionary algorithms
+presented in the course, new algorithms to be found in the literature now or in the future, and
+other search and optimization techniques.
+CO2. Understand the implementation issues of evolutionary algorithms.
+CO3. Determine the appropriate parameter settings to make different evolutionary algorithms
+work well.
+CO4. Design new evolutionary operators, representations, and fitness
+CO5. Functions for specific practical and scientific applications.
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+P
+O
+2
+2
+
+P
+O
+3
+2
+
+P
+O
+4
+
+CO1
+
+P
+O
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+3
+
+1
+
+CO4
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO5
+
+3
+
+3
+
+3
+
+1
+
+3
+
+2
+
+CO/
+PO
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+5
+
+Medium-2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+PO
+11
+
+PSO
+1
+
+PSO
+2
+
+PSO
+3
+
+Knowledge Levels
+(K1, K2, …, K6)
+
+1
+
+1
+
+1
+
+1
+
+K1, K2, K3
+
+1
+
+3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+3
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Department Name: Advance Computing
+Technology
+Semester: I
+Recommended Programs: M. Tech. in Artificial Intelligence
+Computability,
+Course Name
+Algorithms and
+Course Code
+ET25MTAI102P
+Complexity Lab
+L
+T
+P
+N
+Total
+Credit Hours
+1
+Credits
+0
+0
+2
+0
+● Fundamentals of computing
+Prerequisites
+● Fundamentals of programming
+● Data structure & complexity
+
+Course
+Objectives
+
+Course Content
+
+Textbooks
+References
+Course
+Outcomes
+
+1. To identify and implement an appropriate algorithm for solving a novel problem.
+2. To Analyze an algorithm’s asymptotic running time and memory consumption.
+3. To Evaluate a set of proposed algorithmic solutions to a problem according to given
+
+constraints
+
+4. To demonstrate the correctness of an algorithm.
+5. To develop an appreciation and understanding of the theoretical framework for
+
+computer science and some of the consequences of this theory.
+List of Experiments:
+1. Implement Recursive Binary search and Linear search and determine the time taken to
+search an element
+2. Sort a given set of elements using the Heap sort method and determine the time taken to
+sort the elements.
+3. Sort a given set of elements using the Merge sort method and determine the time taken
+to sort the elements. Repeat the experiment for different values of n, the number of
+elements in the list to be sorted, and plot a graph of the time taken versus n.
+4. Sort a given set of elements using Selection sort and hence find the time required to sort
+elements. Repeat the experiment for different values of n, the number of elements in the
+list to be sorted, and plot a graph of the time taken versus n.
+5. Obtain the Topological ordering of vertices in a given digraph.
+6. Implement All Pair Shortest paths problem using Floyd'sAlgorithm
+7. Implement the 0/1 Knapsack problem using dynamic programming.
+8. From a given vertex in a weighted connected graph, find the shortest paths to other
+vertices using Dijkstra's algorithm.
+9. Sort a given set of elements using the Quick sort method and determine the time taken
+to sort the elements. Repeat the experiment for different values of n, the number of
+elements in the list to be sorted, and plot a graph of the time taken versus n.
+10. Find the Minimum Cost Spanning Tree of a given undirected graph using Kruskal's
+algorithm
+T1: Introduction to the Theory of Computation, Sipser
+T2: Computational Complexity, Papadimitriou
+R1: Algorithm Design, Kleinberg &Tardos
+R2: Introduction to Algorithms, Cormen, Leiserson, Rivest, and Stein
+After completing this course, students will be able to:
+CO1.The student will be able to identify and implement an appropriate algorithm for solving
+a novel problem.
+
+CO2.Student Will learn and analyze an algorithm’s asymptotic running time and memory
+consumption.
+CO3.Students can be able to Evaluate a set of proposed algorithmic solutions to a problem
+according to given constraints
+CO4.Students can demonstrate the correctness of an algorithm.
+CO5.To develop an appreciation and understanding of the theoretical framework for
+computer science and some of the consequences of this theory
+Mapping of Course outcomes with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+P
+O
+2
+2
+
+P
+O
+3
+2
+
+P
+O
+4
+
+CO1
+
+P
+O
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO4
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO5
+
+3
+
+3
+
+3
+
+1
+
+3
+
+2
+
+CO/P
+O
+
+High-3
+
+P
+O
+5
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+PO
+10
+
+PO
+11
+2
+
+Medium-2
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge
+Levels (K1, K2, …,
+K6)
+
+1
+
+1
+
+1
+
+K1, K2, K3
+
+3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+3
+
+Low-1
+
+K1 =>Remember K2 =>Understand K3 =>Apply
+K6 =>Create
+
+P
+O
+9
+
+K4 =>Analyze K5 =>Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Technology
+
+Department Name: Institute of Advance Computing
+Semester: I
+
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+(if any)
+
+Course
+Objectives
+
+Course
+Content
+
+Textbooks
+References
+
+Course
+Outcomes
+
+Artificial Intelligence
+& Foundation of ML
+Lab
+L
+T
+0
+0
+
+Course Code
+P
+2
+
+ET25MTAI103P
+N
+-
+
+Total
+Credits
+
+1
+
+● Fundamentals of computing
+● Fundamentals of programming
+1. To understand basic principles of Artificial Intelligence
+2. To learn and design intelligent agents
+3. To understand the concepts of artificial intelligence including problem-solving, knowledge
+representation, reasoning, decision making, planning, perception, and action.
+4. To master the fundamentals of machine learning, mathematical framework, and learning
+algorithm.
+5. Understand concepts of Spark, Zookeeper, and HBase
+List of Experiments:
+1. Study of Prolog.
+2. Write simple facts for the statements using PROLOG.
+3. Write predicates One converts centigrade temperatures to Fahrenheit, and the other
+checks if a temperature is below freezing.
+4. Write a program to solve the Monkey Banana problem.
+5. WAP in turbo prolog for medical diagnosis and show the advantages and disadvantages of
+green and red cuts.
+6. WAP to implement factorial, fibonacci of a given number.
+7. Write a program to solve the 4-Queen problem.
+8. Write a program to solve the traveling salesman's problems.
+9. Write a program to solve the water jug problem using LISP
+10. Case Study and Project work.
+T1: Hadoop: The Definitive Guide, 4th Edition by Tom White - Shroff Publishers & Distributers
+Private Limited - Mumbai; Fourth edition (2015)
+T2: Basics of Artificial Intelligence & Machine Learning, Dr. Dheeraj Mehrotra
+R1: Big Data: Principles and Best Practices of Scalable Realtime Data Systems by James Warren
+and Nathan Marz, Manning Publications (2015)
+R2: Kenneth A. Lambert, “Fundamentals of Python – First Programs”, CENGAGE Publication
+After completing this course, students will be able to:
+CO1. Understand the concepts of Hadoop and HDFS
+CO2. Understand the concepts of MapReduce
+CO3. Analyze big data tools Pig and Hive.
+CO4. Understand concepts of Spark, Zookeeper and HBase
+CO5. Perform load balancing and serialization in Hadoop.
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per
+Blooms Taxonomy)
+
+PO
+2
+2
+
+PO
+3
+2
+
+PO
+4
+
+CO1
+
+PO
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO4
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO5
+
+3
+
+3
+
+3
+
+1
+
+3
+
+2
+
+CO/PO
+
+PO
+5
+
+PO
+6
+
+PO
+7
+
+High-3
+
+Medium-2
+
+K1 => Remember
+
+K2 => Understand
+
+K6 => Create
+
+PO
+8
+
+PO
+9
+
+PO
+10
+
+PO
+11
+1
+
+PSO
+1
+
+PSO
+2
+
+PSO
+3
+
+Knowledge Levels
+(K1, K2, …, K6)
+
+1
+
+1
+
+1
+
+K1, K2, K3
+
+1
+
+3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+3
+
+Low-1
+K3 => Apply K4 => Analyze
+
+K5 => Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Technology
+
+Department Name: Advance Computing
+Semester: I
+
+Recommended Programs: MTech. in Artificial Intelligence
+
+Programming in
+PYTHON
+
+Course Name
+
+L
+0
+
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+T
+0
+
+ET25MTAI115P
+
+Course Code
+P
+4
+
+N
+0
+
+Total Credits
+
+2
+
+Fundamentals of computing
+● Fundamentals of programming
+●
+
+In this course student will learn:
+1. How to write simple programs using Python, a dynamic object-oriented programming
+language that can be used for many kinds of software development projects.
+2. To apply data structures and programming constructs in the Python language.
+3. To apply the object-oriented programming concepts.
+4. To demonstrate the use of exception handling and file handling.
+5. To apply the concept of multithreading and multiprocessing in Python.
+Program List
+1. Personal Information
+Write a program that displays the following information:
+• Your name
+• Your address, with the city, state, and ZIP
+• Your telephone number
+• Your college major
+2. Loan Qualifier
+Program to determine whether a bank customer qualifies for a loan.
+3. Day of the Week
+
+Course Content
+
+Write a program that asks the user for a number in the range of 1 through 7. The program
+should display the corresponding day of the week, where 1 = Monday, 2 = Tuesday,
+3 = Wednesday, 4 = Thursday, 5 = Friday, 6 = Saturday, and 7 = Sunday. The program
+should display an error message if the user enters a number that is outside the range of 1
+through 7.
+4. Areas of Rectangles
+The area of a rectangle is the rectangle’s length times its width. Write a program that asks
+for the length and width of two rectangles. The program should tell the user which
+rectangle has the greater area, or if the areas are the same.
+5. Age Classifier
+Write a program that asks the user to enter a person’s age. The program should display a
+message indicating whether the person is an infant, a child, a teenager, or an adult.
+Following are the guidelines:
+• If the person is 1 year old or less, he or she is an infant.
+
+• If the person is older than 1 year but younger than 13 years, he or she is a child.
+• If the person is at least 13 years old, but less than 20 years old, he or she is a teenager.
+• If the person is at least 20 years old, he or she is an adult.
+6. The program demonstrates creating a list, appending, inserting, removing, sorting,
+copying, and how to get the index of an item in a list and then replace that item with a new
+item.
+7. Program to demonstrate the use of tuples
+8. The program demonstrates creating a list, appending, inserting, removing, sorting, copying
+elements, access elements in the dictionary.
+9. Program to demonstrate the use of strings
+10. Sales Commission-Program calculates sales commissions.
+11. The program demonstrates how the range function can be used with a for a loop.
+12. Print asterisks in a pattern that looks like a triangle.
+13. Program to navigate in different data structures
+14. The program writes three lines of data to a file.
+15. Program to create car and employee class
+16. Program to create a class with initializer
+17. Program to create an object of the class and use it
+18. Program to inherit one class from parent
+19. the program demonstrates polymorphism
+20. Write a program to open a file and ask the user to input the filename. If the file
+exists, displays the content of the file, else create a file and write the line “File is opened in
+write mode”.
+21. program for the above exercise so it handles the following exceptions:
+• It should handle any IOError exceptions that are raised when the file is opened and data is
+read from it.
+22. It should handle any ValueError exceptions that are raised when the items that are read
+from the file are converted to a number.
+23. Write a statement that uses a math module function to convert 45 degrees to radians and
+assigns the value to a variable
+24. write a program that calculates the following:
+• The area of a circle
+• The circumference of a circle
+• The area of a rectangle
+• The perimeter of a rectangle
+25. The program demonstrates the sqrt function.
+26. Program to import own packages
+27. Ten Library functions of NumPy and pandas
+
+T1: Starting Out with Python, Toney Gaddis, Third Edition Pearson.
+T2: Python Data Science Handbook, Jake Vanderplas,
+R1: Python Data Science Handbook, Jake Vanderplas,
+R2: Starting Out with Python, Toney Gaddis, Third Edition Pearson.
+After completion of this course, students are able to:
+CO1Comprehend the basics of Python variables, data types, I/O functions, selection, and
+iteration.
+CO2.Apply data structures and programming constructs in the Python language.
+CO3.Apply the object-oriented programming concepts.
+CO4.Demonstrate the use of exception handling and file handling.
+CO5.Apply the concept of multithreading and multiprocessing in Python.
+
+Text Books
+References
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P P
+O O
+1 2
+1 1
+2
+2
+3
+3
+
+1
+2
+2
+3
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+P
+O
+4
+1
+1
+1
+1
+1
+
+P
+O
+5
+2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+1
+
+1
+
+1
+
+1
+
+1
+
+2
+2
+
+Medium-2
+
+PO
+11
+
+1
+1
+
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels (K , K ,
+…, K )
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+6
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+1
+
+1
+
+2,
+
+2,
+
+2,
+
+3,
+
+3
+
+4
+
+3
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+4
+
+2
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Department Name: Advance Computing
+Technology
+Semester: I
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course Name
+
+Programming in Java
+L
+0
+
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course Content
+
+Text Books
+
+References
+
+Course
+Outcomes
+
+T
+0
+
+Course Code
+P
+4
+
+ET25MTAI116P
+N
+0
+
+Total
+Credits
+
+2
+
+Fundamentals of computing
+● Fundamentals of programming
+●
+
+Objective of this course is to:
+1. Improve the analytical skills of object-oriented programming.
+2. Overall development of problem-solving and critical analysis.
+3. Formal introduction to Java programming language.
+4. Demonstrate the concepts of polymorphism and inheritance.
+5. Implement error handling techniques using exception handling.
+List of experiments:
+1. Program to define a structure of a basic JAVA program
+2. Program to define the data types, variables, operators, arrays, and control structures.
+3. Program to define class and constructors. Demonstrate constructors.
+4. Program to define class, methods, and objects. Demonstrate method overloading.
+5. Program to define inheritance and show method overriding.
+6. Program to demonstrate Packages.
+7. Program to demonstrate Exception Handling.
+8. Program to demonstrate Multithreading.
+9. Program to demonstrate I/O operations
+10. Program to demonstrate Applet structure and event handling
+T1: Timothy Budd, “An Introduction to Object-Oriented Programming”, Addison-Wesley
+Publication, 3rd Edition
+T2: Cay S. Horstmann and Gary Cornell, “Core Java: Volume I, Fundamentals”, Prentice-Hall
+publication.
+R1: G. Booch, “Object-Oriented Analysis& Design”, Addison Wesley.
+R2: James Martin, “Principles of Object-Oriented Analysis and Design”, Prentice-Hall/PTR
+R3: Peter Coad and Edward Yourdon, “Object-Oriented Design”, Prentice-Hall/PTR.
+After completion of this course, students are able to:
+CO 1. Comprehend the basics of Java programming language.
+CO 2. Identify classes, objects, members of a class and relationships.
+CO 3. Write Java application programs using OOP principles.
+CO 4. Demonstrate the concepts of polymorphism and inheritance.
+CO 5.Implement error handling techniques using exception handling.
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+
+P
+O
+2
+2
+
+P
+O
+3
+2
+
+P
+O
+4
+
+CO1
+
+P
+O
+1
+2
+
+CO2
+
+2
+
+2
+
+2
+
+1
+
+CO3
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO4
+
+3
+
+3
+
+2
+
+1
+
+3
+
+2
+
+CO5
+
+3
+
+3
+
+3
+
+1
+
+3
+
+2
+
+CO/
+PO
+
+High-3
+K1 =>Remember
+K6 =>Create
+
+P
+O
+5
+
+Medium-2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+PO
+11
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+2
+
+1
+
+1
+
+1
+
+Knowledge
+Levels (K1, K2, …,
+K6)
+K1, K2, K3
+
+2
+
+3
+
+2
+
+2
+
+K1, K2, K3, K4
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4
+
+3
+
+3
+
+2
+
+K1, K2, K3, K4, K5
+
+3
+
+Low-1
+
+K2 =>Understand K3 =>Apply
+
+K4 =>Analyze
+
+K5 =>Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Technology
+
+Department Name: Advance Computing
+Semester: I
+
+Recommended Program: MTech. in Artificial Intelligence
+Course Name
+
+LISP Programming
+L
+0
+
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course Content
+
+Text Books
+References
+
+Course
+Outcomes
+
+T
+0
+
+Course Code
+P
+4
+
+ET25MTAI117P
+N
+0
+
+Total Credits
+
+2
+
+Fundamentals of computing
+● Fundamentals of programming
+●
+
+1. Improve the analytical skills of object-oriented programming.
+2. Implement an expert system using LISP.
+3. Implement NLP using Lex
+4. Overall development of problem-solving and critical analysis.
+5. Formal introduction to Java programming language.
+List of experiments:
+1. Implement these practicals in LISP in which you feel comfortable.
+a) Depth –bounded depth-first search.
+b) Iterative Deepening Search.
+c) Best first search.
+d) A * Search.
+e) AO* Search.
+f) Minmax Search.
+g) Alpha Beta Pruning.
+2. Solve the water jug problem using the AI technique.
+3. Solve the Missionaries problem using AI technique.
+4. Design the following expert system using LISP in which you feel comfortable.
+a) Weather Forecasting System.
+b) Legal Expert System.
+5. Design parser for NLP using Lex and Yacc utilities
+T1: David S. Touretzky, “Common LISP: A Gentle Introduction to Symbolic Computation”
+T2: Paul Graham, “On Lisp Advance Technology for common Lisp”,
+R1: Christian Queinnec, “Lisp in Small Pieces.”
+R2: Peter Seibel, “Practical Common Lisp”, Prentice Hall/PTR
+After completion of this course, students are able to:
+CO 1. Comprehend the basics of the Lisp programming language.
+CO 2. The student will be able to handle applications in Tree and Graph.
+CO 3. Comprehend the basics of AI technique.
+CO 4. Implement an expert system using LISP.
+CO 5. Implement NLP using Lex
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+2
+2
+3
+3
+
+P
+O
+2
+1
+1
+2
+2
+3
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+P
+O
+4
+1
+1
+1
+1
+1
+
+P
+O
+5
+2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+1
+
+1
+
+1
+
+1
+
+1
+
+2
+2
+
+Medium-2
+
+PO
+11
+
+1
+1
+
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels (K , K , …,
+K)
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+6
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+1
+
+1
+
+2,
+
+2,
+
+2,
+
+3
+
+3,
+
+3
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+4
+
+4
+
+2
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+Proposed Scheme & Syllabus
+for
+
+Master of Technology (Artificial Intelligence)
+II Semester
+
+School of Engineering and Technology
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering &
+Technology
+
+Department Name: Advance Computing
+
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course Content
+
+Text Books
+
+Computational
+Perception
+
+Course Code
+
+Semester: II
+
+ET25MTAI201T
+
+L
+T
+P
+N
+Total Credits
+4
+4
+0
+0
+0
+1.Artificial Intelligence & Foundation of ML
+2.Mathematics for Computing
+3.Computability, Algorithms, and Complexity
+1.To learn advanced aspects of perception and scene analysis in both the visual and auditory
+modalities.
+2.Learn the experimental approaches of scientiﬁc disciplines and the computational
+approaches of engineering disciplines.
+3.To understand the set of fundamental computational problems that must be solved in
+robust perceptual systems.
+4.To learn the sensory coding, perceptual invariance, spatial vision, sound localization, and
+visual and auditory scene segmentation.
+5.To study many aspects of attention, and the basics of recognition in natural visual and
+auditory scenes.
+Unit 1:
+Sound localization, linear systems theory, Bayesian Inference, Auditory
+12 Hours
+sensory coding, information, Visual sensory coding, and information
+theory.
+Unit 2:
+Computation and representation of visual motion, Perceptual inference,
+12 Hours
+Bayesian modeling, Visual structure, representation of shape and surfaces
+Unit 3:
+Perceptual constancy, Auditory structure, Auditory scene analysis, Eye
+12 Hours
+movements, Visual search, Visual scene analysis, Perceptual organization,
+Object recognition, and class retrospective
+Unit 4:
+Perception (uni- and multi-modal) Vision, Hearing, taste, touch, olfaction,
+12 Hours
+Higher-order perception like object and pattern recognition (Biological and
+computational perspective) Visual Perception of 3D space & scene
+Perceptual processes for object recognition & memorization
+Unit 5:
+Attentional mechanism in multimedia perception, modeling perception,
+cognition & behavior in real-time applications, Executive function like
+12 Hours
+planning & monitoring of complex behavior, learning, memory and
+knowledge representations, Real-world Applications (In Technology
+development, Health care, Defense, Industries, etc.)
+T1: Nakayama, K. (1998). Vision ﬁn-de-Siecle - a reductionistic explanation of perception for
+the 21st century? In Hochberg, J., editor, Perception, and Cognition at Century’s End: History,
+Philosophy, Theory, pages 307–331. Academic Press.
+T2: Von B´ek´esy, G. (1960). Experiments in Hearing, chapter 1: The Problems of Auditory
+Research, pages 3–10. McGraw-Hill.
+
+R1: Barlow, H. B. (1994). What is the computational goal of neocortex? In Koch, C. and Davis, J.
+L., editors, Large-scale neuronal theories of the brain, pages 1–22. MIT Press.
+R2: Churchland, P.S., Ramachandran,V.S.,and Sejnowski,T.J.(1994). A critique of pure vision. In
+Koch,C.and Davis,J.L.,editors, Large-scale neuronal theories of the brain, pages 23–60. MIT
+Press.
+R3: Marr,D.(1982). Vision, chapter1: The Phiosophy and the Approach, pages8–38. Freeman.
+Richards,W.(1988). The approach. InRichards,W.,editor, Natural Computation, pages 3–13. MIT
+Press.
+After completing this course, students will be able to:
+
+References
+
+Course Outcomes
+
+CO1. omprehend the advanced aspects of perception and scene analysis in both the visual and
+auditory modalities, concentrating on those aspects that allow us and animals to behave in
+natural, complex environments.
+CO2. Able to identify experimental approaches of scientiﬁc disciplines and the computational
+approaches of engineering disciplines.
+CO3. Understand set of fundamental computational problems that must be solved in robust
+perceptual systems.
+CO4. Scientiﬁc reasoning and key experimental results that lead to our current understanding
+of the important computational problems in perception and scene analysis.
+CO5. Understanding of the sensory coding, perceptual invariance, spatial vision and sound
+localization, visual and auditory scene segmentation.
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+2
+2
+3
+3
+
+P
+O
+2
+1
+1
+2
+2
+3
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+P
+O
+4
+1
+1
+1
+1
+1
+
+P
+O
+5
+2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+1
+
+1
+
+1
+
+2
+
+Medium-2
+
+1
+
+1
+
+1
+
+2
+
+PO
+11
+
+1
+1
+
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels (K , K , …,
+K)
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+6
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+1
+
+1
+
+2,
+
+2,
+
+2,
+
+3,
+
+3
+
+3
+
+4
+
+4
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+2
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: II
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course Content
+
+Text Books
+
+References
+
+Course
+Outcomes
+
+Deep learning
+
+Course Code
+
+ET25MTAI202T
+
+L
+T
+P
+N
+Total Credits
+3
+3
+0
+0
+0
+1.Artificial Intelligence & Foundation of ML
+2.Programming in PYTHON
+3.Artificial Neural Networks
+1.Become an expert in neural networks
+2.Learn to implement NNs in Keras and TensorFlow.
+3.Build convolutional networks for image recognition.
+4.Build recurrent networks for sequence generation.
+5.Build generative adversarial networks for image generation.
+Unit- I
+Introduction To Neural Networks, Implementing Gradient Descents
+10 Hours
+Training Neural Networks, Sentiment Analysis, Keras, TensorFlow
+Unit- II
+Convolutional Neural Network, CNNs in TensorFlow, Weight Initialization, 10 Hours
+Autoencoders, Transfer Learning in TensorFlow, Deep Learning for Cancer
+Detection
+Unit- III
+Recurrent Neural Networks, Long Short-Term Memory Network
+09 Hours
+Implementation Of RNN And LSTM, Hyperparameters, Embeddings and
+Word2vec, Sentiment Prediction RNN
+Unit- IV
+Generative Adversarial Network, Deep Convolutional GANs, Generate Faces, 08 Hours
+Semi-Supervised Learning, The RL Framework: The Problem, The RL
+Framework: The Solution, Dynamic Programming
+Unit- V
+Monte Carlo Methods, Temporal-Difference Methods, RL In Continuous 08 Hours
+Spaces, Deep Q-Learning, Policy Gradients, Actor-Critic Methods
+T1: Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach, 2nd Edition,
+Pearson Education.
+T2: Elaine Rich, Kevin Knight, Shivshankar B Nair, Artificial Intelligence, McGraw Hill, 3rd
+Edition.
+T3: Elaine Rich, Kevin Knight, Artificial Intelligence, Tata McGraw Hill, 2nd Edition.
+R1: Lugar, .AI-Structures and Strategies for Complex Problem Solving., 4/e, 2002, Pearson
+Education.
+R2: Nils J. Nilsson, Principles of Artificial Intelligence, Narosa Publication.
+R3: Patrick H. Winston, Artificial Intelligence, 3rd edition, Pearson Education.
+R4: Deepak Khemani, A First Course in Artificial Intelligence, McGraw Hill Publication
+After completing this course, students will be able to:
+CO1.Students will develop a basic understanding of the building blocks of AI as presented in
+terms of intelligent agents.
+CO2.Students will be able to choose an appropriate problem-solving method and knowledgerepresentation scheme.
+
+CO3.Students will develop an ability to analyze and formalize the problem (as a state space,
+graph, etc.) and select the appropriate search method.
+CO4.Students will be able to develop/demonstrate/ build simple intelligent systems
+CO5.Students will be able to develop/demonstrate/ build various classical toy problems using
+different AI techniques.
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+
+P
+O
+2
+1
+
+P
+O
+3
+1
+
+P
+O
+4
+1
+
+P
+O
+5
+2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+2
+
+2
+
+1
+
+1
+
+1
+
+3
+
+2
+
+2
+
+1
+
+2
+
+3
+
+3
+
+2
+
+1
+
+2
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+6
+
+Medium-2
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+PO
+11
+1
+
+1
+
+1
+1
+
+1
+1
+
+2
+1
+
+2
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels (K1, K2, …,
+K6)
+
+1
+
+1
+
+1
+
+K1, K2
+
+1
+
+K1, K2
+
+2
+2
+
+1
+
+K1, K2, K3
+
+2
+
+1
+
+2
+
+K1, K2, K3,K4
+
+2
+
+2
+
+2
+
+K1, K2, K3, K4
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: II
+Recommended Programs: M.Tech. in Artificial Intelligence
+Artificial Intelligence
+Course
+Course Name
+ET25MTAI211T/P
+for Robotics
+Code
+L
+T
+P
+N
+Credit Hours
+Total Credits
+3
+3
+0
+0
+0
+1.Artificial Intelligence & Foundation of ML
+Prerequisites
+2.Programming in PYTHON
+3.Artificial Neural Networks
+1.Leverage fundamentals of Al and robotics
+2.Work through use cases to implement various machine learning algorithms
+Course
+3.Explore Natural Language Processing (NLP) concepts for efficient decision-making in robots
+Objectives
+4.Design your robot to listen using NLP via an expert system
+5.Use machine learning and computer vision to teach your robot how to avoid obstacles
+Unit-I:
+Introduction to Robotics, types of Robots, Robot Anatomy-Definition, law of
+robotics, History and Terminology of Robotics-Accuracy and repeatability of
+10 Hours
+Robotics-Simple problems Specifications of Robot, Robot classifications
+Architecture of robotic systems
+Unit-II
+Foundation for Advanced Robotics and AI, Basic principles of robotics and
+AI, Setting Up Your Robot-technical requirements, Software Setup,
+10 Hours
+Hardware, , A Concept for a Practical Robot Design Process, Object
+Course Content Recognition Using Neural Networks and Supervised Learning
+Unit-III
+Picking up the Toys, Technical Requirement, Teaching the robot arm, Pick
+09 Hours
+up objects using genetic algorithms
+Course Content
+Unit-IV
+Robot to Listen-Technical specifications, Robot speech recognition, Avoiding
+08 Hours
+the Stairs- Technical specifications, Task Analysis
+Unit- V
+08 Hours
+Putting Things Away, Giving the Robot an Artificial Personality
+T1: Artificial Intelligence for Robotics: Build intelligent robots that
+perform human tasks using AI techniques, 2018 by Francis X.
+Govers, Packt
+Text Books
+T2: Robotics, Vision and Control: Fundamental Algorithms In
+MATLAB, Second Edition (Springer Tracts in Advanced Robotics) 2nd ed. 2017 Edition by
+Peter Corke, Springer
+R1: https://ocw.mit.edu/courses/mechanical-engineering/2-12-introduction-to
+robotics-fall-2005/lecture-notes/
+References
+R2: Robotics, Vision and Control: Fundamental Algorithms In MATLAB, Second Edition
+(Springer Tracts in Advanced Robotics) 2nd ed. 2017 Edition by Peter Corke, Springer
+After completing this course, students will be able to:
+Course
+Outcomes
+
+CO 1. Understand path planning, decision trees, and search algorithms in order to
+enhance your robot, and apply simulation techniques to give your robot an artificial
+personality
+CO 2. Understand object recognition using neural networks and supervised learning
+
+techniques
+CO 3. Pick up objects using genetic algorithms for manipulation
+CO 4. Teach your robot to listen using NLP via an expert system
+CO 5. Use machine learning and computer vision to teach your robot how to avoid obstacles
+Mapping of Course outcomes with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+2
+2
+3
+3
+
+P
+O
+2
+1
+1
+2
+2
+3
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+P
+O
+4
+1
+1
+1
+1
+1
+
+P
+O
+5
+2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+1
+
+1
+
+1
+1
+
+1
+
+2
+2
+
+Medium-2
+
+PO
+11
+
+1
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels (K , K , …,
+K)
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+6
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+1
+
+1
+
+2,
+
+2,
+
+2,
+
+3,
+
+3
+
+3
+
+4
+
+4
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+2
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: II
+Recommended Programs: M.Tech. in Artificial Intelligence
+Course
+Course Name
+ET25MTAI212T/P
+Digital Image Processing
+Code
+L
+T
+P
+N
+Credit Hours
+Total Credits
+3
+3
+0
+0
+0
+1.Mathematics for Computing
+Prerequisites
+2.Artificial Intelligence & Foundation of ML
+3.Programming in PYTHON
+1.To study the fundamentals of digital image processing
+2.To study the image transforms and enhancement techniques.
+Course
+3.To study image restoration and construction techniques.
+Objectives
+4.To study image compression and segmentation
+5.To study color and multispectral image processing.
+Unit – I
+Digital image fundamentals Introduction: Digital Image- Steps of Digital
+Image Processing Systems-Elements of Visual Perception - Connectivity and
+10 Hours
+Relations between Pixels. Simple Operations- Arithmetic, Logical, Geometric
+Operations. Mathematical Preliminaries - 2D Linear Space Invariant Systems
+- 2D Convolution - Correlation 2D Random Sequence - 2D Spectrum.
+Unit – II
+Image transforms and enhancement Image Transforms: 2D Orthogonal and
+Unitary Transforms-Properties and Examples. 2D DFT- FFT – DCT Hadamard Transform - Haar Transform - Slant Transform - KL Transform 10 Hours
+Properties And Examples.Image Enhancement: - Histogram Equalization
+Technique- Point Processing-Spatial Filtering-In Space And Frequency Nonlinear Filtering-Use Of Different Masks.
+Module – III
+Image restoration and construction Image Restoration: Image Observation
+and Degradation Model, Circulant And Block Circulant Matrices and Its
+09 Hours
+Course Content Application In Degradation Model - Algebraic Approach to RestorationInverse By Wiener Filtering - Generalized Inverse-SVD And Interactive
+Methods - Blind Deconvolution-Image Reconstruction From Projections.
+Module – IV
+Image compression & segmentation Image Compression: Redundancy and
+Compression Models -Loss Less and Lossy. Loss Less- Variable-Length,
+Huffman, Arithmetic Coding - Bit-Plane Coding, Loss Less Predictive Coding,
+08 Hours
+Lossy Transform (DCT) Based Coding, JPEG Standard - Sub Band Coding.
+Image Segmentation: Edge Detection - Line Detection - Curve Detection - Edge
+Linking and Boundary Extraction, Boundary Representation, Region
+Representation and Segmentation
+Module – V
+Color and multispectral image processing Color Image-Processing
+Fundamentals, RGB Models, HSI Models, Relationship Between Different
+08 Hours
+Models. Multispectral Image Analysis - Color Image Processing ThreeDimensional Image Processing-Computerized Axial TomographyStereometry-Stereoscopic Image Display-Shaded Surface Display
+
+T1: Digital Image Processing, Gonzalez.R.C & Woods. R.E., 3/e, Pearson Education, 2008.
+T2: Digital Image Processing, Kenneth R Castleman, Pearson Education,1995.
+T3: Digital Image Procesing, S. Jayaraman, S. Esakkirajan, T. Veerakumar, McGraw Hill
+Education ,2009. Pvt Ltd, NewDelhi
+
+Text Books
+
+R1: mentals of Digital image Processing, Anil Jain.K, Prentice Hall of India, 1989.
+R2: Image Processing, Sid Ahmed, McGraw Hill, New York, 1995.
+After completing this course, students will be able to:
+
+References
+
+CO1.Students will develop a basic understanding and connectivity of Digital Image
+Processing Systems
+CO2.Students will be able to different Image transforms system having different frequency
+images
+CO3.Students will develop Image restoration and construction Image Restoration by using
+several methods.
+CO4.Students will be able to develop/demonstrate/ build Image compression & segmentation
+of Image Compression
+CO5.Students will be able to develop/demonstrate/ build various Color Image-Processing
+using different techniques.
+
+Course
+Outcomes
+
+Mapping of Course outcomes with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+2
+2
+3
+3
+
+P
+O
+2
+1
+1
+2
+2
+3
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+P
+O
+4
+1
+1
+1
+1
+1
+
+P
+O
+5
+2
+
+P
+O
+6
+
+P
+O
+7
+
+P
+O
+8
+
+P
+O
+9
+
+PO
+10
+
+1
+
+1
+
+1
+
+2
+
+Medium-2
+
+1
+1
+
+1
+
+2
+
+PO
+11
+
+1
+1
+
+1
+1
+
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels (K , K , …,
+K)
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+6
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+1
+
+1
+
+2,
+
+2,
+
+2,
+
+3,
+
+3
+
+3
+
+4
+
+4
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+2
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: II
+Recommended Programs: MTech. In Artificial Intelligence
+Course
+Course Name
+Deductive Systems
+ET25MTAI213T
+Code
+L
+T
+P
+N
+Credit Hours
+Total Credits
+4
+4
+0
+0
+0
+1.Intro. To Problem Solving & Reasoning
+Prerequisites
+2.Mathematics for Computing
+1.To learn the principles of deductive and inductive reasoning.
+2.To learn the formal language concepts
+Course
+3.To study the fallacies and their applications.
+Objectives
+4.To study the concepts of Heuristics
+5.To study inductive inference methods.
+UNIT I – FORMAL LANGUAGE CONCEPTS
+Some definitions of formal logical concepts- Classical symbolic logic – a
+symbolic representation of language statements – formal logical rules of 12 Hours
+inference – semantics in formal logic – provability relation – does formal
+logic model
+UNIT II – HUMAN REASONING
+Human reasoning – mental model theory – revised model theory of 12 Hours
+conditionals - nonmonotonic logic - categorization and default reasoning
+– minimal model semantics-default entailment relation – some
+characteristic of belief - biases in human reasoning.
+UNIT III – HEURISTICS
+The representativeness heuristics and the availability heuristics –
+Atmosphere effect – effects of negation - Introduction – Affirming the 12 Hours
+Course Content consequent and denying the antecedent – errors in the interpretation of
+standard form categorical propositions – fallacies due to ambiguity of
+language - language nuances associated with conditional statements –
+conditional inferences made of ‘only if-statements - ordinary languages Vs
+formal language definitions of quantifiers.
+UNIT IV – INDUCTIVE INFERENCE
+Nature of Inductive inference – method of agreement – method of 12 Hours
+difference – method of residues – method of concomitant variations – the
+argument from analogy – Imperfect applications of Inductive methods –
+relation of induction to deduction and verification.
+UNIT V - FALLACIES OF INDUCTIVE REASONING
+Fallacies of generalization – Fallacies of non-observation – False analogy – 12 Hours
+interpreting asymmetries of projection in Children’s inductive reasoning use of single or multiple categories in category-based induction –
+abductive inference from philosophical analysis to neural mechanisms.
+T1: Thomas Fowler “Logic: Deductive and Inductive”, Adamant Media Corporation 2004
+Text Books
+T2: Aidan Feeney and Evan Heit, “Inductive Reasoning: Experimental, developmental and
+computational approaches”, Cambridge University Press, 2007.
+R1: Thomas Fowler “Logic: Deductive and Inductive”, Adamant Media Corporation 2004.
+References
+R2: Aidan Feeney and Evan Heit, “Inductive Reasoning: Experimental, developmental and
+computational approaches”, Cambridge University Press, 2007.
+
+After completing this course, students will be able to:
+CO1.Understand the definitions and approaches to deductive reasoning.
+CO2.Comprehend the inductive methods and fallacies.
+CO3.Learn the fallacies and their applications.
+CO4.Understand the concepts of Heuristics
+CO5.Learn the inductive inference methods.
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+2
+2
+3
+3
+
+P
+O
+2
+1
+1
+2
+2
+3
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+PO
+4
+
+PO
+5
+
+1
+
+2
+
+1
+1
+1
+1
+
+PO
+6
+
+PO
+7
+
+PO
+8
+
+PO
+9
+
+PO
+10
+
+1
+
+1
+
+1
+1
+
+1
+
+2
+
+1
+
+2
+
+Medium-2
+
+PO
+11
+
+1
+
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels
+(K , K , …, K )
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+2
+
+6
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+1
+
+1
+
+2,
+
+2,
+
+2,
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+3,
+
+3
+
+3
+
+4
+
+4
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: II
+Recommended Programs: MTech. In Artificial Intelligence
+Decision Making Under
+Course
+Course Name
+ET25MTAI214T
+Code
+Uncertainty
+L
+T
+P
+N
+Credit Hours
+Total Credits
+4
+0
+0
+0
+● Mathematics for Computing
+Prerequisites
+● Computability, Algorithms, and Complexity
+● Introduction to Problem Solving & Reasoning
+
+Course
+Objectives
+
+Course Content
+
+Text Books
+
+References
+
+4
+
+1. Examine some of the techniques for modeling decision problems of various types
+2. Study computational methods used to solve various decision problems.
+3. To study the probabilistic models: probabilistic inference, decision making under
+uncertainty.
+4. To study the game-theoretic models of multiagent interaction.
+5. To learn Multiagent decision-making
+Unit 1:
+Probabilistic semantics for belief, Representation of probabilities,
+12 Hours
+Bayesian networks, Inference in Bayesian networks, Preferences
+and utilities, Rational decision-making, Foundations of utility
+theory, multi-attribute utility theory.
+Unit 2:
+12 Hours
+Preference elicitation, Optimal planning, and multi-stage decision
+making, Markov decision processes, Structured computational
+techniques for MDPs., Function approximation and simulation,
+Partially observable Markov decision processes
+Unit 3:
+Intro to Reinforcement Learning (time-permitting), Multiagent
+12 Hours
+decision making: Game theory, Basics of game theory, Refinements
+of Nash equilibria, Stochastic and Markov games, Cooperation.
+Unit 4:
+12 Hours
+Games of incomplete information (Bayesian games), Mechanism
+design (and computational approaches to MD), Auction theory (as
+an illustration of mechanism design), Multiagent decision making:
+Social choice
+Unit 5:
+12 Hours
+Elements of social choice and voting, Voting rules, Computational
+considerations, Manipulation, and control, Voting with partial
+information, Matching problems, Other forms of "mechanism
+design without money".
+T1: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations by
+Yoav Shoham and Kevin Leyton-Brown (Cambridge University Press, 2009).
+T2: rwiche. Bayesian Networks. Handbook of Knowledge Representation. Volume 3,
+2008, Pages 467-509, Elsevier. Read from 11.1 to 11.3.2
+R1: R. Dechter, Bucket Elimination: A Unifying Framework for Probabilistic Inference.
+UAI-96. Read up to 3.3 (5 pages).
+
+R2: Multiagent Systems: Algorithmic, Game-Theoretic, and Logical Foundations by Yoav
+Shoham and Kevin Leyton-Brown (Cambridge University Press, 2009).
+After completing this course, students will be able to:
+
+CO1.Examine some of the techniques for modeling decision problems of various types
+CO2.Understand computational methods used to solve various decision problems.
+CO3.Understand the probabilistic models: probabilistic inference, decision making
+under uncertainty.
+CO4.Understand the game-theoretic models of multiagent interaction.
+CO5.Learn Multiagent decision making
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/
+PO
+CO
+1
+CO
+2
+CO
+3
+CO
+4
+CO
+5
+
+P
+O
+1
+1
+2
+2
+3
+3
+
+P
+O
+2
+1
+1
+2
+2
+3
+
+High-3
+K1 => Remember
+K6 => Create
+
+P
+O
+3
+1
+1
+1
+2
+2
+
+PO
+4
+
+PO
+5
+
+1
+
+2
+
+1
+1
+1
+1
+
+PO
+6
+
+PO
+7
+
+PO
+8
+
+PO
+9
+
+PO
+10
+
+1
+
+1
+
+1
+1
+
+1
+
+2
+
+1
+
+2
+
+Medium-2
+
+PO
+11
+
+1
+
+1
+
+PS
+O1
+
+PS
+O2
+
+PS
+O3
+
+Knowledge Levels
+(K , K , …, K )
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+2
+
+1
+
+2
+
+1
+
+1
+
+2
+
+1
+
+K,K K
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+2,
+
+1
+
+1
+
+2,
+
+2,
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+6
+
+K4 => Analyze
+
+K5 => Evaluate
+
+3,
+
+3
+
+3
+
+4
+
+4
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: II
+Recommended Programs: M. Tech. in Artificial Intelligence
+Data Privacy & User
+Course
+Course Name
+ET25MTAI215T
+Code
+Protection
+L
+T
+P
+N
+Credit Hours
+Total Credits
+4
+4
+0
+0
+0
+1.Fundamentals of cyber security
+Prerequisites
+2.Fundamentals of information security
+1.To study security and privacy with a set of techniques.
+2.To address the security & privacy challenges.
+Course
+3.Demonstrate various measurement, privacy, and enforcement policies
+Objectives
+4.Use privacy tools during internet surfing
+5.Implement privacy tools web service
+Unit I: Introduction Data Privacy:
+Introduction Data Privacy, The increasing vulnerabilities of networks,
+Privacy issues, Privacy cost assessments in cyber-attack, privacy-enhancing
+12 Hours
+technologies, VPN, Privacy in RFID, Privacy in cyber-physical systems and
+Internet of Things (IoT).
+Unit II: Privacy policies and Enforcement:
+Privacy measurement, Privacy policies and Enforcement, P3PPolicy, Policy
+12 Hours
+Enforcement Techniques, Issues, Models of Privacy, Machine Readable
+Policy.
+Unit III: Internet Privacy:
+Internet Privacy, Importance of good password, minimizing your Online
+12 Hours
+Digital Fingerprints, Preventing Identity Theft and Fraud, Risk.
+Unit IV: Web Privacy:
+Dangers of Wireless Networks and “Hotspots”, Securing Devices, Using
+Course Content Encryption to Hide and Keep Safe your Personal Digital Items, Information,
+12 Hours
+and Data, Torrent File Sharing and Anonymous on the web, Secure, Private
+and Anonymous Usenet.
+Unit V: Social Networks Privacy and security:
+Social Networks Privacy and security on social media. Threats to privacy in
+12 Hours
+OSNs Threats regarding awareness, control, trustworthiness. Children’s
+Privacy, Online Advertising, Digital Afterlife, Health, and Genetic Privacy.
+T1: Complete guide to Internet Privacy, Anonymity and Security (Matthew Bailey).
+Text Books
+T2: Internet Privacy: Options for adequate realization edited (Johannes Buchman).
+References
+
+Course
+Outcomes
+
+R1: Complete guide to Internet Privacy, Anonymity and Security (Matthew Bailey).
+R2: Internet Privacy: Options for adequate realization edited (Johannes Buchman).
+After completing this course, students will be able to:
+CO1: Understand the concept of data privacy
+CO2: Demonstrate various measurement, privacy, and enforcement policies
+CO3: Use privacy tools during internet surfing
+CO4: Implement privacy tools web service
+CO5: Analyze privacy in Social Networks
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+
+CO/P
+O
+
+PO
+1
+
+PO
+2
+
+PO
+3
+
+PO
+4
+
+PO
+5
+
+PO
+6
+
+PO
+7
+
+PO
+8
+
+PO
+9
+
+PO1
+0
+
+PO1
+1
+
+PSO
+1
+
+PSO
+2
+
+PSO
+3
+
+Knowled
+ge Levels
+(K , K , …,
+K)
+1
+
+2
+
+6
+
+CO1
+
+1
+
+1
+
+1
+
+1
+
+2
+
+CO2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+CO3
+
+2
+
+2
+
+1
+
+1
+
+1
+
+CO4
+
+3
+
+2
+
+2
+
+1
+
+2
+
+1
+
+1
+
+1
+
+1
+
+2
+
+1
+
+1
+
+2
+
+1
+
+2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+1
+
+1
+
+K,K K
+1
+
+2
+
+3
+
+3
+
+2
+
+1
+
+2
+
+1
+
+1
+
+2
+
+2
+
+2
+
+2
+
+1
+
+1
+4
+
+High-3
+K1 => Remember
+K6 => Create
+
+Medium-2
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+3
+
+K,K
+KK
+K,K K,
+K
+3,
+
+CO5
+
+2,
+
+K5 => Evaluate
+
+2,
+
+4
+
+2,
+
+3
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Department Name: Advance Computing
+Semester: II
+Recommended Programs: M. Tech. in Artificial Intelligence
+Course
+Course Name
+Information Retrieval
+ET25MTAI216T
+Code
+L
+T
+P
+N
+Credit Hours
+Total Credits
+4
+0
+0
+0
+Prerequisites
+Course
+Objectives
+
+Course Content
+
+Text Books
+
+References
+
+4
+
+PIG Programming
+1. To study the various information retrieval models.
+2. To study the web search engine and perform Link analysis.
+3. To understand Hadoop and Map Reduce.
+4. To learn document text mining techniques
+UNIT I: INTRODUCTION
+Introduction -History of IR- Components of IR - Issues –Open source
+Search engine Frameworks - The impact of the web on IR - The role of
+10 Hours
+artificial intelligence (AI) in IR – IR Versus Web Search - Components of a
+Search engine-Characterizing the web.
+UNIT II: INFORMATION RETRIEVAL
+Boolean and vector-space retrieval models- Term weighting - TF-IDF
+weighting- cosine similarity – Preprocessing - Inverted indices - efficient
+08 Hours
+processing with sparse vectors – Language Model-based IR - Probabilistic
+IR –Latent Semantic Indexing - Relevance feedback and query expansion.
+UNIT III: WEB SEARCH ENGINE – INTRODUCTION AND CRAWLING
+Web search overview, web structure, the user, paid placement, search
+engine optimization/ spam. Web size measurement - search engine
+10 Hours
+optimization/spam – Web Search Architectures - crawling - meta-crawlersFocused Crawling - web indexes –- Near-duplicate detection - Index
+Compression - XML retrieval.
+UNIT IV: WEB SEARCH – LINK ANALYSIS AND SPECIALIZED SEARCH
+Link Analysis –hubs and authorities – Page Rank and HITS algorithms Searching and Ranking – Relevance Scoring and ranking for Web –
+Similarity - Hadoop & Map Reduce - Evaluation - Personalized search 08 Hours
+Collaborative filtering and content-based recommendation of documents
+and products – handling “invisible” Web - Snippet generation,
+Summarization, Question Answering, Cross-Lingual Retrieval.
+UNIT V: DOCUMENT TEXT MINING
+Information filtering; organization and relevance feedback – Text Mining Text classification and clustering - Categorization algorithms: naive Bayes;
+09 Hours
+decision trees; and nearest neighbor - Clustering algorithms: agglomerative
+clustering; k-means; expectation maximization (EM)
+T1. C. Manning, P. Raghavan, and H. Schütze, Introduction to Information Retrieval,
+Cambridge University Press, 2008.
+T2. Ricardo Baeza -Yates and Berthier Ribeiro - Neto, Modern Information Retrieval: The
+Concepts and Technology behind Search 2 nd Edition, ACM Press Books 2011.
+T3. Bruce Croft, Donald Metzler, and Trevor Strohman, Search Engines: Information Retrieval
+in Practice, 1 st Edition Addison Wesley, 2009.
+T4. Mark Levene, An Introduction to Serach Engines and Web Navigation, 2nd Edition Wiley,
+2010
+R1: Stefan Boettcher, Charles L. A. Clarke, Gordon V. Cormack, Information
+Retrieval: Implementing and Evaluating Search Engines, The MIT Press, 2010.
+R2: Ophir Frieder “Information Retrieval: Algorithms and Heuristics: The Information Retrieval
+
+Series “, 2 nd Edition, Springer, 2004
+R3: Manu Konchady, “Building Search Applications: Lucene, Ling Pipe”, and First Edition, Gate
+Mustru Publishing, 2008.
+After completing this course, students will be able to:
+CO1: To understand the components of Information retrieval and IR vs web search.
+CO2: To understand the statistical models of text that can be used for IR applications
+CO3: To understand web search engines and crawling.
+CO4: To understand the link analysis and specialized search.
+CO5: To Apply and analyze IR techniques for text classification and clustering.
+
+Course
+Outcomes
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+PO
+2
+
+PO
+3
+
+PO
+4
+
+PO
+5
+
+CO1
+
+2
+
+2
+
+1
+
+3
+
+2
+
+Knowled
+ge Levels
+(K , K , …,
+K)
+2
+
+CO2
+
+2
+
+3
+
+1
+
+2
+
+2
+
+2
+
+CO3
+
+2
+
+2
+
+2
+
+3
+
+2
+
+3
+
+CO4
+
+1
+
+2
+
+2
+
+3
+
+2
+
+3
+
+2
+
+CO5
+
+3
+
+2
+
+2
+
+3
+
+2
+
+3
+
+3
+
+CO/P
+O
+
+PO
+1
+
+PO
+6
+
+PO
+7
+
+PO
+8
+
+PO
+9
+
+PO1
+0
+
+PO1
+1
+
+PSO
+1
+
+PSO
+2
+
+PSO
+3
+
+1
+
+2
+
+6
+
+High-3
+K1 => Remember
+K6 => Create
+
+Medium-2
+
+2
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Recommended Programs: MTech. In Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Department Name: Advance Computing
+Semester: II
+
+Course
+ET25MTAI202P
+Code
+L
+T
+P
+N
+Total Credits
+0
+0
+2
+0
+1.Artificial Intelligence & Foundation of ML (ACTDCAIM003T/P)
+2.Programming in PYTHON (ACTDSPPY001P)
+3.Artificial Neural Networks (ACTDEANN001T/P)
+1.Become an expert in neural networks
+2.Learn to implement NNs in Keras and TensorFlow.
+3.Build convolutional networks for image recognition.
+4.Build recurrent networks for sequence generation.
+5.Build generative adversarial networks for image generation.
+List of Practical:
+
+Deep learning Lab
+
+1
+
+Module 1: TensorFlow
+1.Installing TensorFlow on System (Windows/Mac/Linux)
+2.Using Constants, Variables, and Placeholders of TensorFlow calculate the area of a circle
+3.Use Run and Fetches Command of TensorFlow to find the Sum, Product, Absolute Difference,
+and Common Factors of Two Numbers
+Course Content
+
+Text Books
+
+References
+
+Course
+Outcomes
+
+Module 2: Deep learning
+1.Construct a Simple Neural Network (Perceptron) using Keras
+2.Implement Various Activation Functions (ReLU, Tanh, Sigmoid)
+on a perceptron using Randomly Generated Data
+3. Write a program to calculate Shanon Entropy, Cross-Entropy, and KL Divergence
+Module 3: Training Network
+1.Write a program implementing Gradient Descent on a Perceptron
+2.Change the values of the Learning Rate Delta and observe the trend in Error
+T1: Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach, 2nd Edition,
+Pearson Education.
+T2: Elaine Rich, Kevin Knight, Shivshankar B Nair, Artificial Intelligence, McGraw Hill, 3rd
+Edition.
+T3: Elaine Rich, Kevin Knight, Artificial Intelligence, Tata McGraw Hill, 2nd Edition.
+R1: Lugar, .AI-Structures and Strategies for Complex Problem Solving., 4/e, 2002, Pearson
+Education.
+R2: Nils J. Nilsson, Principles of Artificial Intelligence, Narosa Publication.
+R3: Patrick H. Winston, Artificial Intelligence, 3rd edition, Pearson Education.
+R4: Deepak Khemani, A First Course in Artificial Intelligence, McGraw Hill Publication
+After completing this course, students will be able to:
+CO1. Students will develop a basic understanding of the building blocks of AI as presented in
+terms of intelligent agents.
+CO2.Students will be able to choose an appropriate problem-solving method and knowledgerepresentation scheme.
+CO3.Students will develop an ability to analyze and formalize the problem (as a state space,
+graph, etc.) and select the appropriate search method.
+CO4.Students will be able to develop/demonstrate/ build simple intelligent systems
+
+CO5.Students will be able to develop/demonstrate/ build various classical to y problems using
+different AI techniques.
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+
+CO/PO
+
+PO1
+
+PO2
+
+PO3
+
+PO4
+
+PO5
+
+PO6
+
+PO7
+
+PO8
+
+PO9
+
+PO10
+
+PO11
+
+PSO1
+
+PSO2
+
+PSO3
+
+Knowledge
+Levels (K ,
+K , …, K )
+1
+
+2
+
+CO1
+
+1
+
+1
+
+1
+
+1
+
+2
+
+1
+
+1
+
+CO2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+1
+
+2
+
+CO3
+
+2
+
+2
+
+1
+
+1
+
+1
+
+1
+
+CO4
+
+3
+
+2
+
+2
+
+1
+
+2
+
+CO5
+
+3
+
+3
+
+2
+
+1
+
+2
+
+High-3
+K1 => Remember
+K6 => Create
+
+Medium-2
+
+1
+1
+
+1
+
+2
+
+1
+
+1
+
+K,K
+
+2
+
+1
+
+K,K
+
+2
+
+1
+
+1
+
+1
+
+K,K K
+1
+
+2,
+
+3
+
+2
+
+2
+
+1
+
+2
+
+K,K K K
+
+2
+
+2
+
+2
+
+2
+
+K,K K,K
+
+1
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+6
+
+K4 => Analyze
+
+K5 => Evaluate
+
+1
+
+2,
+
+2,
+
+3,
+
+3
+
+4
+
+4
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+Recommended Programs: MTech. In Artificial Intelligence
+Course Name
+Credit Hours
+Prerequisites
+
+Course
+Objectives
+
+Course Content
+
+Text Books
+References
+
+Course
+Outcomes
+
+Department Name: Advance Computing
+Semester: II
+
+Advance Database Management
+Course
+ET25MTAI217P
+Systems
+Code
+L
+T
+P
+N
+Total Credits
+1
+0
+0
+2
+0
+● Computability, Algorithms, and Complexity
+● Mathematics for Computing
+● Data structures and complexity
+1. Understand the importance of DBMS
+2. Learn how DBMS is better than traditional File Processing Systems.
+3. Analyze the basic structure of the Database and recognize the different views of the
+database.
+4. Understand and explain the terms like Transaction Processing and Concurrency Control.
+5. Understand types of database failure and recovery
+List of Practical
+1. Advanced SQL: Perform queries for DCL Commands and Locks
+2. Implement authorization, authentication, and privileges on database
+3. Perform queries to Create synonyms, sequences, and indexes
+4. Perform queries to Create, Alter and update views.
+5. PL / SQL and Triggers: Implement PL/SQL programs using control structures
+6. Implement PL/SQL programs using Cursors
+7. Implement PL/SQL programs using exception handling
+8. Implement user-defined procedures and functions using PL/SQL blocks
+9. Perform various operations on packages
+10. Implement various triggers.
+11. Functional Dependency and Decomposition: Practice on functional dependencies
+12. Normalization: Practice on Normalization- using any database to perform various normal
+forms.
+13. Transaction Processing: Practice transaction processing Cloud Databases:
+MongoDB/Cassandra etc.
+T1: Henry F. Korth and Silberschatz Abraham, “Database System Concepts”, Mc.Graw Hill.
+T2: Elmasri Ramez and Novathe Shamkant, “Fundamentals of
+Database Systems”,
+Benjamin Cummings
+R1: James Martin, “Principles of Database Management Systems”, 1985, Prentice Hall of India,
+New Delhi
+R2: “Fundamentals of Database Systems”, Ramez Elmasri, Shamkant B.Navathe, Addison Wesley
+After completing this course, students will be able to:
+CO1: The students will be able to define, explain and illustrate the fundamental concepts of
+databases.
+CO2: The students will be able to model and design a relational database following the design
+principles
+CO3: The students will be able to define, explain and illustrate fundamental principles of data
+organization, query optimization, and concurrent transaction processing.
+CO4: The students will be able to appreciate the latest trends in databases.
+CO5: Understand types of database failure and recovery
+
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+CO/P
+O
+
+PO
+1
+
+PO
+2
+
+PO
+3
+
+PO
+4
+
+PO
+5
+
+CO1
+CO2
+CO3
+
+1
+2
+2
+3
+
+1
+1
+2
+2
+
+1
+1
+1
+2
+
+1
+1
+1
+1
+
+2
+1
+1
+2
+
+3
+
+3
+
+2
+
+1
+
+2
+
+CO4
+CO5
+
+High-3
+K1 => Remember
+K6 => Create
+
+Medium-2
+
+PO
+6
+
+PO
+7
+
+PO
+8
+
+PO
+9
+
+PO1
+0
+
+1
+1
+1
+
+1
+
+PO1
+1
+
+PSO
+1
+
+PSO
+2
+
+PSO
+3
+
+1
+1
+1
+2
+
+1
+2
+2
+
+1
+
+1
+1
+
+2
+
+1
+
+2
+
+2
+
+2
+
+2
+
+2
+
+1
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+Knowled
+ge Levels
+(K1, K2,
+…, K6)
+K1, K2
+K1, K2
+K1, K2, K3
+K1, K2,
+K3,K4
+K1, K2, K3,
+K4
+
+SANJEEV AGRAWAL GLOBAL EDUCATIONAL (SAGE) UNIVERSITY, BHOPAL
+School Name: School of Engineering & Technology
+
+Department Name: Advance Computing
+Semester: II
+
+Recommended Programs: MTech. In Artificial Intelligence
+
+Java Scripting with AJAX
+
+Course Name
+
+L
+0
+
+Credit Hours
+Prerequisites
+
+●
+
+Course
+Objectives
+
+1.
+2.
+3.
+4.
+5.
+
+T
+0
+
+Course
+Code
+P
+4
+
+ET25MTAI218P
+N
+0
+
+Total Credits
+
+2
+
+Programming in Java
+To learn basic concepts of html5 and style sheets.
+To develop java scripting programs in Java.
+To develop web-based applications using AJAX.
+To develop web-based applications using jQuery.
+Develop web-based applications using AJAX.
+
+List of Practical
+
+Course Content
+
+Text Books
+
+References
+Course
+Outcomes
+
+1.Write, test and debug small applications Using HTML tags, input tags, input types.
+2.Write, test and debug small applications with HTML5 Semantic Page Elements, inline
+semantic elements, media semantic elements.
+3.Design a Page execute all three types of CSS
+Internal CSS,
+External CSS
+Inline CSS
+Multiple CSS
+4.Write, test and debug small applications with Basic CSS.
+5.Write, test and debug a form and implement javascript showing all the major form
+validations.
+6.Write test and debug a JavaScript program illustrating the importance of Window
+Object Model.
+7.Write test and debug a JavaScript program illustrating the Date and math Objects.
+8.Write test and debug a jQuery program representing the use of hide (), show () and
+toggle () functions.
+9.Write test and debug a program implementing jQuery fading methods.
+10.Write test and debug a program implementing mouse and keyboard events.
+T1: JavaScript: Definitive Guide, By: David Flanagan Publisher:O'Reilly Media, May
+2011 Pages:1096 Print ISBN: 978-0-596-80552-4 ISBN 10: 0-596-80552-7 Ebook ISBN: 9781-4493-0212--2 ISBN 10: 1-4493-0212-2. Multiple inexpensive options: Amazon.com,
+and Valor Books. - Google Play
+T2: JavaScript Sixth Edition by Sasha Vodnik and Don Gosselin, Course Technology
+Incorporated, 2014, ISBN 1305078446 - online options
+T3: JavaScript, Fifth Edition by Don Gosselin; Course Technology Incorporated, 2011, ISBN 0538-74887-7, 180 Day E-Book
+R1: jQuery and JQuery UI, Visual Quickstart Guide by Jay Blanchard, Publisher: Peachpit
+Press; 1 edition (December 13, 2012), ISBN-10: 0321885147 PDF first 59 Pages.
+R2: Developing Web Pages with jQuery, Gosselin Copyright 2013 ISBN 13: 978-1-4354-6079-9
+After completing this course, students will be able to:
+
+CO1: Students who complete this course will be able compose basic JavaScript programs
+including data types,
+
+CO2: Demonstrate representation of control structures, functions operators events.
+CO3 Identify Debugging Students who complete course will be able to explain browser
+specific debugging tools.
+CO4: Demonstrate general fundamental debugging techniques to fix JavaScript errors.
+CO5: Demonstrate basic knowledge AJAX and Web Application.
+Mapping of Course outcome with Program Outcomes, PSO’s, and Knowledge Levels (As per Blooms
+Taxonomy)
+PO1
+1
+
+PSO
+1
+
+PSO
+2
+
+PSO
+3
+
+Knowled
+ge Levels
+(K1, K2,
+…, K6)
+
+1
+
+1
+
+1
+
+1
+
+K3
+
+3
+
+1
+
+2
+
+1
+
+1
+
+K3
+
+1
+
+3
+
+1
+
+2
+
+2
+
+K3
+
+1
+
+2
+
+2
+
+2
+
+3
+
+2
+
+CO/P
+O
+
+PO
+1
+
+PO
+2
+
+PO
+3
+
+CO1
+CO2
+CO3
+CO4
+
+3
+
+1
+
+2
+
+3
+
+2
+
+3
+
+1
+
+2
+
+3
+
+3
+
+2
+
+2
+
+3
+
+2
+
+CO5
+
+High-3
+K1 => Remember
+K6 => Create
+
+PO
+4
+
+Medium-2
+
+PO
+5
+
+PO
+6
+
+PO
+7
+
+PO
+8
+
+1
+
+PO
+9
+
+1
+
+PO1
+0
+
+1
+
+2
+
+2
+
+2
+
+3
+
+1
+
+K3
+
+2
+
+2
+
+3
+
+2
+
+K3
+
+Low-1
+
+K2 => Understand K3 => Apply
+
+K4 => Analyze
+
+K5 => Evaluate
+
+

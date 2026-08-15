@@ -14,8 +14,12 @@
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
+    "react-tsparticles": "^2.12.2",
     "remark": "^15.0.1",
-    "remark-html": "^16.0.1"
+    "remark-html": "^16.0.1",
+    "remark-slug": "^7.0.1",
+    "remark-toc": "^9.0.0",
+    "tsparticles": "^3.9.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
