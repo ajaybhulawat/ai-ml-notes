@@ -19,6 +19,13 @@ export type NoteMeta = {
   title: string
   description: string
   unit: string
+  subject?: string
+  semester?: string
+  keywords?: string[]
+  relatedSlugs?: string[]
+  previousSlug?: string
+  nextSlug?: string
+  order?: number
 }
 
 export type NoteDetail = NoteMeta & {
@@ -44,6 +51,20 @@ export function getBranches(course: string): string[] {
   })
 }
 
+// Helper to parse keywords from array or string
+function parseKeywords(raw: unknown): string[] | undefined {
+  if (Array.isArray(raw)) return raw.map(String).filter(Boolean)
+  if (typeof raw === "string") return raw.split(",").map((k) => k.trim()).filter(Boolean)
+  return undefined
+}
+
+// Helper to parse array of strings
+function parseStringArray(raw: unknown): string[] | undefined {
+  if (Array.isArray(raw)) return raw.map(String).filter(Boolean)
+  if (typeof raw === "string") return raw.split(",").map((k) => k.trim()).filter(Boolean)
+  return undefined
+}
+
 // Get all note metadata for a specific course + branch
 export function getNotesForBranch(course: string, branch: string): NoteMeta[] {
   const branchPath = path.join(notesDirectory, course, branch)
@@ -64,6 +85,13 @@ export function getNotesForBranch(course: string, branch: string): NoteMeta[] {
       title: data.title || slug,
       description: data.description || "",
       unit: data.unit || "General",
+      subject: data.subject || undefined,
+      semester: data.semester || undefined,
+      keywords: parseKeywords(data.keywords),
+      relatedSlugs: parseStringArray(data.relatedSlugs),
+      previousSlug: data.previousSlug || undefined,
+      nextSlug: data.nextSlug || undefined,
+      order: typeof data.order === "number" ? data.order : undefined,
     }
   })
 }
@@ -170,6 +198,13 @@ export async function getNoteBySlug(
     title: data.title || slug,
     description: data.description || "",
     unit: data.unit || "General",
+    subject: data.subject || undefined,
+    semester: data.semester || undefined,
+    keywords: parseKeywords(data.keywords),
+    relatedSlugs: parseStringArray(data.relatedSlugs),
+    previousSlug: data.previousSlug || undefined,
+    nextSlug: data.nextSlug || undefined,
+    order: typeof data.order === "number" ? data.order : undefined,
     content: htmlWithIds,
     headings,
   }
@@ -189,7 +224,9 @@ export function searchNotes(query: string): NoteMeta[] {
       note.unit.toLowerCase().includes(q) ||
       note.course.toLowerCase().includes(q) ||
       note.branch.toLowerCase().includes(q) ||
-      note.slug.toLowerCase().includes(q)
+      note.slug.toLowerCase().includes(q) ||
+      (note.subject && note.subject.toLowerCase().includes(q)) ||
+      (note.keywords && note.keywords.some((k) => k.toLowerCase().includes(q)))
     )
   })
 }

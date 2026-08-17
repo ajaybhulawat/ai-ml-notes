@@ -2,6 +2,10 @@
 title: "Support Vector Machines (SVM)"
 description: "Comprehensive study note on linear and non-linear Support Vector Machines, margin maximization, support vectors, soft-margin C parameter, and the Kernel Trick."
 unit: "Unit 2: Supervised Learning"
+subject: "Machine Learning"
+semester: "Semester 5"
+keywords: ["SVM", "support vector machines", "hyperplane", "kernel trick", "RBF kernel"]
+relatedSlugs: ["decision-trees", "linear-regression"]
 ---
 
 ## 1. Introduction to Support Vector Machines

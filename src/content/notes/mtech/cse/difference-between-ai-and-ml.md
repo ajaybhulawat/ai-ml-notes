@@ -2,6 +2,10 @@
 title: "Difference Between AI and ML"
 description: "Learn key differences between Artificial Intelligence and Machine Learning for exams."
 unit: "Unit 1 – AI Basics"
+subject: "Artificial Intelligence Foundations"
+semester: "Semester 1"
+keywords: ["AI vs ML", "artificial intelligence", "machine learning", "NLP", "expert systems"]
+relatedSlugs: ["introduction-to-neural-networks", "bayesian-networks"]
 ---
 
 ## Introduction
