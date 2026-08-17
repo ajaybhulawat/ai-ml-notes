@@ -1,0 +1,479 @@
+Read docs/AI_ML_NOTES_PRODUCT_PLAN.md before starting.
+
+PHASE 6 — TOPIC PAGE V2
+
+The Course → Branch → Subject → Topic hierarchy has now been implemented on the development server.
+
+Now improve ONLY the topic/note page experience.
+
+IMPORTANT:
+- Do NOT redesign the homepage.
+- Do NOT redesign /notes.
+- Do NOT implement MCQs yet.
+- Do NOT implement authentication.
+- Do NOT implement payments.
+- Do NOT implement AI chatbot.
+- Do NOT add unnecessary dependencies.
+- Do NOT rewrite existing Markdown content unnecessarily.
+- Preserve existing public URLs.
+- Reuse the existing design system/components where possible.
+
+==================================================
+GOAL
+==================================================
+
+Create one excellent, reusable exam-focused topic page template.
+
+Use an existing topic such as:
+
+Decision Tree
+
+as the reference implementation.
+
+After the template is complete, apply it to existing notes only if the existing content supports the sections.
+
+==================================================
+TOPIC PAGE STRUCTURE
+==================================================
+
+The page should follow this structure:
+
+1. Breadcrumbs
+
+Example:
+
+Home
+→ Notes
+→ BTech
+→ CSE
+→ Machine Learning
+→ Decision Tree
+
+Every breadcrumb item should be a real internal link.
+
+--------------------------------------------------
+
+2. Topic Header
+
+Show:
+
+Topic title
+
+Example:
+Decision Tree in Machine Learning
+
+Academic context:
+
+BTech
+CSE
+Machine Learning
+Unit 2 — Supervised Learning
+
+Short topic description.
+
+Do not invent academic metadata.
+
+Only display metadata that exists in the content model.
+
+--------------------------------------------------
+
+3. Exam Navigation
+
+Add a compact navigation area:
+
+[ 2 MARKS ]
+[ 5 MARKS ]
+[ 10 MARKS ]
+[ QUICK REVISION ]
+
+These should anchor-link to sections on the same page.
+
+On mobile, this should remain easy to use.
+
+--------------------------------------------------
+
+4. Quick Definition
+
+Create:
+
+## Definition
+
+A concise exam-friendly definition.
+
+Do not generate fake content.
+
+If the existing Markdown contains a suitable definition, use it.
+
+--------------------------------------------------
+
+5. 2-Mark Answer
+
+Create:
+
+## 2-Mark Answer
+
+This should be short and directly usable in an exam.
+
+Add a "Copy Answer" button if technically simple.
+
+The copy button should:
+- copy only the answer
+- show a small success state
+- work on desktop and mobile
+- not require authentication
+
+--------------------------------------------------
+
+6. 5-Mark Answer
+
+Create:
+
+## 5-Mark Answer
+
+Use the existing note content where possible.
+
+Structure with:
+- definition
+- key points
+- working/steps
+- small example where available
+
+Keep it exam-oriented.
+
+--------------------------------------------------
+
+7. 10-Mark Answer
+
+Create:
+
+## 10-Mark Answer
+
+This is the primary section.
+
+Make it visually prominent.
+
+Where appropriate include:
+
+- Introduction
+- Definition
+- Working
+- Algorithm/steps
+- Formula
+- Example
+- Diagram
+- Advantages
+- Disadvantages
+- Applications
+- Conclusion
+
+Do NOT force sections that are not relevant to the topic.
+
+--------------------------------------------------
+
+8. Diagrams
+
+Where a diagram exists in the Markdown/content:
+
+- render it correctly
+- provide useful alt text
+- make it responsive
+- prevent overflow on mobile
+
+Do not create fake diagrams.
+
+If no diagram exists, do not create a placeholder.
+
+--------------------------------------------------
+
+9. Important Concepts
+
+Show the important concepts already present in the note.
+
+For example:
+
+- Entropy
+- Information Gain
+- Gini Index
+- Pruning
+
+Do not invent concepts.
+
+--------------------------------------------------
+
+10. Example
+
+If the note has an example, display it clearly.
+
+Use:
+
+## Example
+
+Make numerical examples easy to read.
+
+Tables should be responsive.
+
+--------------------------------------------------
+
+11. Advantages and Disadvantages
+
+Where supported by the content:
+
+## Advantages
+
+## Disadvantages
+
+Do not create empty headings.
+
+--------------------------------------------------
+
+12. Applications
+
+Where supported:
+
+## Applications
+
+Again, do not invent content.
+
+--------------------------------------------------
+
+13. Important Exam Questions
+
+Add:
+
+## Important Exam Questions
+
+Use questions that already exist in the note/content model.
+
+Do not claim that questions are "frequently asked" unless there is actual evidence.
+
+Use neutral wording such as:
+
+"Important questions to prepare"
+
+--------------------------------------------------
+
+14. Quick Revision
+
+Add:
+
+## Quick Revision
+
+Create a concise revision summary based ONLY on the actual note.
+
+Example format:
+
+- Definition
+- Key concept
+- Formula
+- Main steps
+- Advantages
+- Limitations
+
+Do not generate meaningless filler.
+
+--------------------------------------------------
+
+15. Related Topics
+
+Add:
+
+## Related Topics
+
+Only link to notes that actually exist.
+
+Use the existing relatedSlugs/metadata if available.
+
+Do not generate broken links.
+
+--------------------------------------------------
+
+16. Previous / Next
+
+At the bottom:
+
+[← Previous Topic]    [Next Topic →]
+
+Navigation should follow the existing academic/topic order.
+
+Do not use alphabetical order unless that is already the intended order.
+
+If there is no previous or next topic, hide that button.
+
+--------------------------------------------------
+
+17. Parent Subject CTA
+
+At the bottom provide:
+
+"Back to Machine Learning Notes"
+
+or equivalent based on actual metadata.
+
+This must link to the actual subject page.
+
+==================================================
+DESIGN REQUIREMENTS
+==================================================
+
+The topic page should feel like an EXAM PREPARATION PAGE, not a blog article.
+
+Prioritize:
+
+- readability
+- whitespace
+- clear headings
+- exam-focused sections
+- mobile usability
+- fast loading
+
+Use the existing visual design.
+
+Do not introduce a completely new design language.
+
+--------------------------------------------------
+
+MOBILE
+--------------------------------------------------
+
+Test the topic page at mobile width.
+
+Check:
+
+- breadcrumbs
+- title
+- exam navigation
+- tables
+- diagrams
+- long answers
+- copy button
+- previous/next navigation
+
+No accidental horizontal overflow.
+
+--------------------------------------------------
+
+SEO
+--------------------------------------------------
+
+For each topic page verify:
+
+- one H1
+- logical H2/H3 hierarchy
+- unique title
+- unique meta description
+- canonical URL
+- Open Graph metadata where already supported
+- breadcrumb structured data if appropriate
+
+Example title:
+
+Decision Tree in Machine Learning | 10-Mark Exam Answer
+
+Do not blindly use this exact title for every topic.
+
+Generate metadata from the actual topic.
+
+--------------------------------------------------
+
+ACCESSIBILITY
+--------------------------------------------------
+
+Check:
+
+- button labels
+- keyboard navigation
+- focus states
+- image alt text
+- heading hierarchy
+- color contrast
+
+Do not rely only on color to communicate state.
+
+==================================================
+IMPLEMENTATION
+==================================================
+
+First inspect the current topic-page implementation.
+
+Identify:
+
+- current route
+- note renderer
+- Markdown parser
+- metadata model
+- existing components
+- existing CSS/Tailwind styles
+
+Reuse existing components where possible.
+
+Create reusable components only where they provide clear value.
+
+Do not duplicate topic-page markup across individual pages.
+
+==================================================
+IMPORTANT
+==================================================
+
+Do NOT modify all notes blindly.
+
+First make the Decision Tree page the reference implementation.
+
+If the existing content structure makes a section impossible, adapt the template gracefully.
+
+Empty sections should not be rendered.
+
+==================================================
+VERIFICATION
+==================================================
+
+After implementation:
+
+1. Run npm run build.
+
+2. Check TypeScript errors.
+
+3. Check lint errors if configured.
+
+4. Test the Decision Tree route.
+
+5. Test at least two other existing topic routes.
+
+6. Check:
+   - breadcrumbs
+   - anchors
+   - copy button
+   - related topics
+   - previous/next
+   - mobile layout
+   - metadata
+
+7. Check that existing note URLs still work.
+
+8. Check that no existing notes were deleted.
+
+==================================================
+STOP CONDITION
+==================================================
+
+STOP after this phase.
+
+Do NOT start search.
+
+Do NOT start MCQs.
+
+Do NOT start PDF improvements.
+
+Do NOT start authentication.
+
+Report:
+
+1. Files changed
+2. Components created/modified
+3. Decision Tree route tested
+4. Other routes tested
+5. SEO changes
+6. Mobile verification
+7. Build result
+8. Remaining issues
+
+Wait for further instructions.

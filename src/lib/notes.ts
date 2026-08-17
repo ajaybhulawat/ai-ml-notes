@@ -138,6 +138,90 @@ export function getAllNotesMeta(): NoteMeta[] {
   return allNotes
 }
 
+// Helper to convert subject name into a URL slug
+export function slugifySubject(subjectName: string): string {
+  return subjectName
+    .toLowerCase()
+    .replace(/[^\w\s-]/g, "")
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-")
+    .trim()
+}
+
+// Get all subjects for a branch
+export function getSubjectsForBranch(course: string, branch: string) {
+  const notes = getNotesForBranch(course, branch)
+  const map: Record<string, { subject: string; slug: string; notes: NoteMeta[] }> = {}
+
+  notes.forEach((note) => {
+    const subjectName = note.subject || "General Machine Learning"
+    const slug = slugifySubject(subjectName)
+
+    if (!map[slug]) {
+      map[slug] = {
+        subject: subjectName,
+        slug,
+        notes: [],
+      }
+    }
+    map[slug].notes.push(note)
+  })
+
+  return Object.values(map)
+}
+
+// Get single subject details by course, branch, subjectSlug
+export function getSubjectBySlug(course: string, branch: string, subjectSlug: string) {
+  const subjects = getSubjectsForBranch(course, branch)
+  return subjects.find((s) => s.slug === subjectSlug.toLowerCase()) ?? null
+}
+
+// Get notes for a specific subject
+export function getNotesForSubject(course: string, branch: string, subjectSlug: string): NoteMeta[] {
+  const subjectObj = getSubjectBySlug(course, branch, subjectSlug)
+  return subjectObj ? subjectObj.notes : []
+}
+
+// Get all subject params for static generation
+export function getAllSubjectParams(): { course: string; branch: string; subject: string }[] {
+  const courses = getAllCourses()
+  const params: { course: string; branch: string; subject: string }[] = []
+
+  courses.forEach((course) => {
+    getBranches(course).forEach((branch) => {
+      const subjects = getSubjectsForBranch(course, branch)
+      subjects.forEach((s) => {
+        params.push({ course, branch, subject: s.slug })
+      })
+    })
+  })
+
+  return params
+}
+
+// Get all 5-level topic params for static generation
+export function getAllSubjectTopicParams(): { course: string; branch: string; subject: string; slug: string }[] {
+  const courses = getAllCourses()
+  const params: { course: string; branch: string; subject: string; slug: string }[] = []
+
+  courses.forEach((course) => {
+    getBranches(course).forEach((branch) => {
+      const notes = getNotesForBranch(course, branch)
+      notes.forEach((note) => {
+        const subjectSlug = slugifySubject(note.subject || "General Machine Learning")
+        params.push({
+          course,
+          branch,
+          subject: subjectSlug,
+          slug: note.slug,
+        })
+      })
+    })
+  })
+
+  return params
+}
+
 // Helper to convert heading text into a URL slug id
 function slugify(text: string): string {
   return text

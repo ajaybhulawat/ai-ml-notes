@@ -1,6 +1,7 @@
 import Link from "next/link"
-import { getNotesForBranch, getBranches, getAllCourses, getAllNotesMeta } from "@/lib/notes"
+import { getNotesForBranch, getBranches, getAllCourses, getAllNotesMeta, slugifySubject } from "@/lib/notes"
 import { notFound } from "next/navigation"
+import type { Metadata } from "next"
 import Navbar from "@/components/Navbar"
 
 type Props = {
@@ -25,6 +26,30 @@ export async function generateStaticParams() {
     })
   })
   return params
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { course, branch } = await params
+  const notes = getNotesForBranch(course, branch)
+
+  if (notes.length === 0) return { title: "Branch Not Found" }
+
+  const branchFullName = branchLabels[branch.toLowerCase()] ?? branch.toUpperCase()
+
+  return {
+    title: `${branchFullName} (${branch.toUpperCase()}) Notes | ${course.toUpperCase()}`,
+    description: `Complete exam notes, subject guides, unit breakdowns, and formulas for ${branchFullName} (${course.toUpperCase()}).`,
+    openGraph: {
+      title: `${branchFullName} Notes — ${course.toUpperCase()}`,
+      description: `Complete syllabus notes, subject units, and exam revision guides for ${branchFullName}.`,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${branchFullName} Notes`,
+      description: `Exam notes for ${branchFullName}.`,
+    },
+  }
 }
 
 export default async function BranchPage({ params }: Props) {
@@ -122,6 +147,58 @@ export default async function BranchPage({ params }: Props) {
       </section>
 
       <main className="max-w-5xl mx-auto px-6 py-10 space-y-12">
+        {/* Subject Navigation Grid */}
+        <section className="space-y-4">
+          <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3">
+            <h2 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white flex items-center gap-2">
+              <span>📘</span> Available Subjects in {branch.toUpperCase()}
+            </h2>
+            <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">
+              {uniqueSubjects.length} Subjects Available
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {uniqueSubjects.map((subjectName) => {
+              const subjectSlug = slugifySubject(subjectName)
+              const subjectNotesCount = Object.values(subjectsMap[subjectName]).flat().length
+              const subjectUnitsCount = Object.keys(subjectsMap[subjectName]).length
+
+              return (
+                <Link
+                  key={subjectName}
+                  href={`/notes/${course}/${branch}/${subjectSlug}`}
+                  className="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-5 shadow-xs hover:shadow-md dark:hover:border-indigo-600 transition duration-200"
+                >
+                  <div className="space-y-3">
+                    <div className="flex items-center justify-between">
+                      <span className="text-[11px] font-bold px-2.5 py-0.5 rounded-md bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">
+                        {course.toUpperCase()} / {branch.toUpperCase()}
+                      </span>
+                      <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">
+                        {subjectNotesCount} {subjectNotesCount === 1 ? "Note" : "Notes"}
+                      </span>
+                    </div>
+
+                    <h3 className="font-bold text-lg text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition leading-snug">
+                      {subjectName}
+                    </h3>
+
+                    <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2">
+                      Complete unit notes, formula sheets, and exam revision guides for {subjectName}.
+                    </p>
+                  </div>
+
+                  <div className="pt-4 mt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-0.5 transition">
+                    <span>Explore Subject Hub ({subjectUnitsCount} Units)</span>
+                    <span>→</span>
+                  </div>
+                </Link>
+              )
+            })}
+          </div>
+        </section>
+
         {/* Quick Exam Revision Toolbar */}
         <section className="flex flex-wrap items-center justify-between gap-4 p-4 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-xs">
           <div className="flex items-center gap-2 text-xs font-semibold text-gray-700 dark:text-gray-300">
@@ -157,109 +234,125 @@ export default async function BranchPage({ params }: Props) {
 
         {/* Subjects & Units Grouped Notes List */}
         <section className="space-y-12">
-          {Object.entries(subjectsMap).map(([subjectName, unitsMap]) => (
-            <div key={subjectName} className="space-y-6">
-              {/* Subject Header */}
-              <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3">
-                <div className="flex items-center gap-3">
-                  <span className="w-3 h-3 rounded-full bg-indigo-600" />
-                  <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                    {subjectName}
-                  </h2>
-                </div>
-                <span className="text-xs font-semibold px-2.5 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
-                  {Object.values(unitsMap).flat().length} Notes
-                </span>
-              </div>
+          {Object.entries(subjectsMap).map(([subjectName, unitsMap]) => {
+            const subjectSlug = slugifySubject(subjectName)
 
-              {/* Units & Note Cards */}
-              <div className="space-y-8 pl-2 md:pl-4 border-l-2 border-indigo-100 dark:border-indigo-900/50">
-                {Object.entries(unitsMap).map(([unitName, unitNotes]) => (
-                  <div key={unitName} className="space-y-4">
-                    <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 flex items-center gap-2">
-                      <span>📖</span> {unitName}
-                    </h3>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                      {unitNotes.map((note) => (
-                        <div
-                          key={note.slug}
-                          className="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg dark:hover:border-indigo-700 transition duration-200"
-                        >
-                          <div>
-                            {/* Card Badges */}
-                            <div className="flex items-center justify-between gap-2 mb-3">
-                              <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">
-                                {note.subject || subjectName}
-                              </span>
-                              {note.semester && (
-                                <span className="text-[11px] font-semibold text-gray-500 dark:text-gray-400">
-                                  {note.semester}
-                                </span>
-                              )}
-                            </div>
-
-                            <Link href={`/notes/${course}/${branch}/${note.slug}`}>
-                              <h4 className="font-bold text-lg text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition leading-snug">
-                                {note.title}
-                              </h4>
-                            </Link>
-
-                            <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-3 leading-relaxed mb-4">
-                              {note.description}
-                            </p>
-
-                            {/* Keywords */}
-                            {note.keywords && note.keywords.length > 0 && (
-                              <div className="flex flex-wrap gap-1.5 mb-5">
-                                {note.keywords.slice(0, 4).map((kw) => (
-                                  <span
-                                    key={kw}
-                                    className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
-                                  >
-                                    #{kw}
-                                  </span>
-                                ))}
-                              </div>
-                            )}
-                          </div>
-
-                          {/* Quick Action Footer */}
-                          <div className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-semibold">
-                            <Link
-                              href={`/notes/${course}/${branch}/${note.slug}`}
-                              className="text-indigo-600 dark:text-indigo-400 group-hover:translate-x-0.5 transition flex items-center gap-1"
-                            >
-                              <span>Read Note</span>
-                              <span>→</span>
-                            </Link>
-
-                            <div className="flex items-center gap-2 text-gray-400">
-                              <Link
-                                href="/mcqs"
-                                title="Practice MCQs for this topic"
-                                className="hover:text-indigo-600 dark:hover:text-indigo-400 transition px-1.5 py-0.5 rounded hover:bg-gray-100 dark:hover:bg-gray-800"
-                              >
-                                MCQs 📝
-                              </Link>
-                              <span>•</span>
-                              <Link
-                                href="/formulas"
-                                title="Open Live Formula Calculators"
-                                className="hover:text-purple-600 dark:hover:text-purple-400 transition px-1.5 py-0.5 rounded hover:bg-gray-100 dark:hover:bg-gray-800"
-                              >
-                                Formulas 🧮
-                              </Link>
-                            </div>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+            return (
+              <div key={subjectName} className="space-y-6">
+                {/* Subject Header */}
+                <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-3">
+                  <div className="flex items-center gap-3">
+                    <span className="w-3 h-3 rounded-full bg-indigo-600" />
+                    <Link href={`/notes/${course}/${branch}/${subjectSlug}`}>
+                      <h2 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-indigo-600 dark:hover:text-indigo-400 transition">
+                        {subjectName}
+                      </h2>
+                    </Link>
                   </div>
-                ))}
+                  <Link
+                    href={`/notes/${course}/${branch}/${subjectSlug}`}
+                    className="text-xs font-semibold px-3 py-1.5 rounded-xl bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 hover:underline"
+                  >
+                    View Subject Hub →
+                  </Link>
+                </div>
+
+                {/* Units & Note Cards */}
+                <div className="space-y-8 pl-2 md:pl-4 border-l-2 border-indigo-100 dark:border-indigo-900/50">
+                  {Object.entries(unitsMap).map(([unitName, unitNotes]) => (
+                    <div key={unitName} className="space-y-4">
+                      <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 flex items-center gap-2">
+                        <span>📖</span> {unitName}
+                      </h3>
+
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        {unitNotes.map((note) => {
+                          const noteSubjectSlug = slugifySubject(note.subject || subjectName)
+
+                          return (
+                            <div
+                              key={note.slug}
+                              className="group relative flex flex-col justify-between rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-6 shadow-sm hover:shadow-lg dark:hover:border-indigo-700 transition duration-200"
+                            >
+                              <div>
+                                {/* Card Badges */}
+                                <div className="flex items-center justify-between gap-2 mb-3">
+                                  <Link
+                                    href={`/notes/${course}/${branch}/${noteSubjectSlug}`}
+                                    className="text-[11px] font-semibold px-2.5 py-0.5 rounded-md bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900 hover:underline"
+                                  >
+                                    {note.subject || subjectName}
+                                  </Link>
+                                  {note.semester && (
+                                    <span className="text-[11px] font-semibold text-gray-500 dark:text-gray-400">
+                                      {note.semester}
+                                    </span>
+                                  )}
+                                </div>
+
+                                <Link href={`/notes/${course}/${branch}/${noteSubjectSlug}/${note.slug}`}>
+                                  <h4 className="font-bold text-lg text-gray-900 dark:text-white mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition leading-snug">
+                                    {note.title}
+                                  </h4>
+                                </Link>
+
+                                <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-3 leading-relaxed mb-4">
+                                  {note.description}
+                                </p>
+
+                                {/* Keywords */}
+                                {note.keywords && note.keywords.length > 0 && (
+                                  <div className="flex flex-wrap gap-1.5 mb-5">
+                                    {note.keywords.slice(0, 4).map((kw) => (
+                                      <span
+                                        key={kw}
+                                        className="text-[10px] font-medium px-2 py-0.5 rounded-md bg-gray-100 dark:bg-gray-800 text-gray-500 dark:text-gray-400"
+                                      >
+                                        #{kw}
+                                      </span>
+                                    ))}
+                                  </div>
+                                )}
+                              </div>
+
+                              {/* Quick Action Footer */}
+                              <div className="pt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-semibold">
+                                <Link
+                                  href={`/notes/${course}/${branch}/${noteSubjectSlug}/${note.slug}`}
+                                  className="text-indigo-600 dark:text-indigo-400 group-hover:translate-x-0.5 transition flex items-center gap-1"
+                                >
+                                  <span>Read Note</span>
+                                  <span>→</span>
+                                </Link>
+
+                                <div className="flex items-center gap-2 text-gray-400">
+                                  <Link
+                                    href="/mcqs"
+                                    title="Practice MCQs for this topic"
+                                    className="hover:text-indigo-600 dark:hover:text-indigo-400 transition px-1.5 py-0.5 rounded hover:bg-gray-100 dark:hover:bg-gray-800"
+                                  >
+                                    MCQs 📝
+                                  </Link>
+                                  <span>•</span>
+                                  <Link
+                                    href="/formulas"
+                                    title="Open Live Formula Calculators"
+                                    className="hover:text-purple-600 dark:hover:text-purple-400 transition px-1.5 py-0.5 rounded hover:bg-gray-100 dark:hover:bg-gray-800"
+                                  >
+                                    Formulas 🧮
+                                  </Link>
+                                </div>
+                              </div>
+                            </div>
+                          )
+                        })}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          })}
         </section>
       </main>
     </div>
