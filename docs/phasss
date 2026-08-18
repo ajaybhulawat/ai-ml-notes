@@ -1,0 +1,234 @@
+PHASE 7 — APPLY APPROVED TOPIC TEMPLATE
+
+Read:
+docs/AI_ML_NOTES_PRODUCT_PLAN.md
+
+The following phases are now completed and deployed:
+
+- Course → Branch → Subject → Topic hierarchy
+- Topic Page V2 reference implementation
+
+The reference topic page has been approved.
+
+Now apply the reusable Topic Page V2 template to ALL existing notes.
+
+==================================================
+RULES
+==================================================
+
+1. Do NOT redesign the homepage.
+
+2. Do NOT redesign /notes.
+
+3. Do NOT implement Search.
+
+4. Do NOT implement MCQs.
+
+5. Do NOT implement authentication.
+
+6. Do NOT implement payments.
+
+7. Do NOT implement AI chatbot.
+
+8. Do NOT modify note content unnecessarily.
+
+9. Do NOT delete any existing Markdown files.
+
+10. Preserve every existing public note URL.
+
+11. Do not create duplicate pages.
+
+12. Reuse the reusable topic-page component created in Phase 6.
+
+==================================================
+APPLY TEMPLATE
+==================================================
+
+Every existing topic page should use the same reusable structure:
+
+Breadcrumbs
+
+Topic Header
+
+Academic Metadata
+
+Exam Navigation
+
+Definition
+
+2-Mark Answer
+
+5-Mark Answer
+
+10-Mark Answer
+
+Diagrams where available
+
+Examples where available
+
+Important Concepts where available
+
+Advantages where available
+
+Disadvantages where available
+
+Applications where available
+
+Important Exam Questions where available
+
+Quick Revision
+
+Related Topics
+
+Previous / Next
+
+Back to Subject
+
+==================================================
+CONTENT RULE
+==================================================
+
+Do NOT invent missing content.
+
+If a note does not contain a section:
+
+- hide the section
+- do not show an empty heading
+- do not generate placeholder text
+
+If the current Markdown structure differs from the new template, adapt the renderer/components rather than manually duplicating content.
+
+==================================================
+DATA MODEL
+==================================================
+
+Verify every note has the metadata required for:
+
+- slug
+- title
+- description
+- course
+- branch where available
+- semester where available
+- subject
+- unit where available
+- order where available
+- related topics where available
+
+Do not invent metadata.
+
+==================================================
+NAVIGATION
+==================================================
+
+Verify:
+
+Topic
+→ Subject
+→ Branch
+→ Course
+
+and:
+
+Previous Topic
+→ Current Topic
+→ Next Topic
+
+Previous/Next must follow the configured academic order.
+
+Do not use random or alphabetical ordering unless that is the existing intended order.
+
+==================================================
+RELATED TOPICS
+==================================================
+
+Only display related topics that actually exist.
+
+Before finishing:
+
+Check for broken internal links.
+
+==================================================
+SEO
+==================================================
+
+Every topic page must have:
+
+- unique title
+- unique meta description
+- canonical URL
+- one H1
+- correct H2/H3 hierarchy
+- breadcrumb navigation
+- appropriate Open Graph metadata if already supported
+
+Do not generate duplicate metadata.
+
+==================================================
+MOBILE
+==================================================
+
+Check representative notes on mobile.
+
+Verify:
+
+- breadcrumbs
+- title
+- exam navigation
+- tables
+- diagrams
+- long answers
+- copy buttons
+- related topics
+- previous/next
+
+No horizontal overflow.
+
+==================================================
+VERIFICATION
+==================================================
+
+Before finishing:
+
+1. Run npm run build.
+
+2. Run TypeScript checks if configured.
+
+3. Run lint if configured.
+
+4. Enumerate all existing note routes.
+
+5. Verify every note route resolves.
+
+6. Check for broken internal links.
+
+7. Check that no Markdown notes were deleted.
+
+8. Check that no existing public URLs changed.
+
+9. Verify at least:
+   - 3 BTech topics
+   - 3 MTech topics
+   - 2 different subjects
+   - 2 different units if available
+
+==================================================
+REPORT
+==================================================
+
+Report:
+
+1. Number of notes migrated
+2. Files changed
+3. Components reused
+4. Components created
+5. Routes verified
+6. Broken links found
+7. SEO changes
+8. Mobile verification
+9. Build result
+10. Any notes that require manual content restructuring
+
+STOP HERE.
+
+Do NOT start Phase 8.

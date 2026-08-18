@@ -11,7 +11,7 @@ export default function Hero() {
         {/* Left Text & CTA */}
         <div className="lg:col-span-7">
           <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-300 text-xs font-semibold uppercase tracking-wider mb-6">
-            <span>✨</span> Verified Academic Curriculum
+            <span>✨</span> Smart Academic Curriculum
           </div>
 
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-slate-900 dark:text-white tracking-tight leading-none mb-6">

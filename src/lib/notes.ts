@@ -65,6 +65,37 @@ function parseStringArray(raw: unknown): string[] | undefined {
   return undefined
 }
 
+// Helper to parse unit number from string e.g. "Unit 1 – Supervised Learning" -> 1
+export function getUnitNumber(unitStr?: string): number {
+  if (!unitStr) return 999
+  const match = unitStr.match(/unit\s*(\d+)/i)
+  if (match) return parseInt(match[1], 10)
+  return 999
+}
+
+// Academic sorting helper:
+// 1. Order field (if present)
+// 2. Unit number (Unit 1, Unit 2, Unit 3, etc.)
+// 3. Fallback to slug
+export function sortNotesAcademically(notes: NoteMeta[]): NoteMeta[] {
+  return [...notes].sort((a, b) => {
+    if (typeof a.order === "number" && typeof b.order === "number") {
+      return a.order - b.order
+    }
+    if (typeof a.order === "number") return -1
+    if (typeof b.order === "number") return 1
+
+    const unitA = getUnitNumber(a.unit)
+    const unitB = getUnitNumber(b.unit)
+
+    if (unitA !== unitB) {
+      return unitA - unitB
+    }
+
+    return a.slug.localeCompare(b.slug)
+  })
+}
+
 // Get all note metadata for a specific course + branch
 export function getNotesForBranch(course: string, branch: string): NoteMeta[] {
   const branchPath = path.join(notesDirectory, course, branch)
@@ -72,7 +103,7 @@ export function getNotesForBranch(course: string, branch: string): NoteMeta[] {
 
   const files = fs.readdirSync(branchPath).filter((f) => f.endsWith(".md"))
 
-  return files.map((file) => {
+  const rawNotes = files.map((file) => {
     const slug = file.replace(".md", "")
     const fullPath = path.join(branchPath, file)
     const fileContents = fs.readFileSync(fullPath, "utf8")
@@ -94,6 +125,8 @@ export function getNotesForBranch(course: string, branch: string): NoteMeta[] {
       order: typeof data.order === "number" ? data.order : undefined,
     }
   })
+
+  return sortNotesAcademically(rawNotes)
 }
 
 // Get all slugs for static generation

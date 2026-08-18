@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { getNotesForBranch, getBranches, getAllCourses, getAllNotesMeta, slugifySubject } from "@/lib/notes"
+import { getNotesForBranch, getBranches, getAllCourses, getAllNotesMeta, slugifySubject, getUnitNumber } from "@/lib/notes"
 import { notFound } from "next/navigation"
 import type { Metadata } from "next"
 import Navbar from "@/components/Navbar"
@@ -122,7 +122,7 @@ export default async function BranchPage({ params }: Props) {
                   {notes.length}
                 </span>
                 <span className="block text-[10px] font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                  Notes
+                  {notes.length === 1 ? "Note" : "Notes"}
                 </span>
               </div>
               <div className="border-l border-gray-200 dark:border-gray-700 pl-4">
@@ -130,7 +130,7 @@ export default async function BranchPage({ params }: Props) {
                   {uniqueSubjects.length}
                 </span>
                 <span className="block text-[10px] font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                  Subjects
+                  {uniqueSubjects.length === 1 ? "Subject" : "Subjects"}
                 </span>
               </div>
               <div className="border-l border-gray-200 dark:border-gray-700 pl-4">
@@ -138,7 +138,7 @@ export default async function BranchPage({ params }: Props) {
                   {uniqueUnits.length}
                 </span>
                 <span className="block text-[10px] font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                  Units
+                  {uniqueUnits.length === 1 ? "Unit" : "Units"}
                 </span>
               </div>
             </div>
@@ -154,7 +154,7 @@ export default async function BranchPage({ params }: Props) {
               <span>📘</span> Available Subjects in {branch.toUpperCase()}
             </h2>
             <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">
-              {uniqueSubjects.length} Subjects Available
+              {uniqueSubjects.length} {uniqueSubjects.length === 1 ? "Subject" : "Subjects"} Available
             </span>
           </div>
 
@@ -190,7 +190,7 @@ export default async function BranchPage({ params }: Props) {
                   </div>
 
                   <div className="pt-4 mt-4 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-0.5 transition">
-                    <span>Explore Subject Hub ({subjectUnitsCount} Units)</span>
+                    <span>Explore Subject Hub ({subjectUnitsCount} {subjectUnitsCount === 1 ? "Unit" : "Units"})</span>
                     <span>→</span>
                   </div>
                 </Link>
@@ -236,6 +236,9 @@ export default async function BranchPage({ params }: Props) {
         <section className="space-y-12">
           {Object.entries(subjectsMap).map(([subjectName, unitsMap]) => {
             const subjectSlug = slugifySubject(subjectName)
+            const sortedUnitEntries = Object.entries(unitsMap).sort(
+              ([unitA], [unitB]) => getUnitNumber(unitA) - getUnitNumber(unitB)
+            )
 
             return (
               <div key={subjectName} className="space-y-6">
@@ -259,7 +262,7 @@ export default async function BranchPage({ params }: Props) {
 
                 {/* Units & Note Cards */}
                 <div className="space-y-8 pl-2 md:pl-4 border-l-2 border-indigo-100 dark:border-indigo-900/50">
-                  {Object.entries(unitsMap).map(([unitName, unitNotes]) => (
+                  {sortedUnitEntries.map(([unitName, unitNotes]) => (
                     <div key={unitName} className="space-y-4">
                       <h3 className="text-sm font-bold uppercase tracking-wider text-indigo-600 dark:text-indigo-400 flex items-center gap-2">
                         <span>📖</span> {unitName}

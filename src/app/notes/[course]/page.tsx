@@ -224,33 +224,37 @@ export default async function CoursePage({ params }: Props) {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {semesterList.map(({ semName, hasNotes, noteCount }) => (
-              <div
-                key={semName}
-                className={`p-4 rounded-xl border transition flex flex-col justify-between ${
-                  hasNotes
-                    ? "bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 shadow-xs"
-                    : "bg-gray-50/50 dark:bg-gray-900/30 border-gray-200/60 dark:border-gray-800/50 opacity-60"
-                }`}
-              >
-                <div>
-                  <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 block mb-1">
-                    {semName}
-                  </span>
-                  <span className="font-bold text-sm text-gray-900 dark:text-gray-100">
-                    {hasNotes ? `${noteCount} ${noteCount === 1 ? "Note" : "Notes"}` : "Upcoming"}
-                  </span>
-                </div>
-                {hasNotes && (
-                  <span className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 mt-3 inline-flex items-center gap-1">
-                    <span>Available</span>
-                    <span>✓</span>
-                  </span>
-                )}
-              </div>
-            ))}
-          </div>
+          {semesterList.filter((s) => s.hasNotes).length > 0 ? (
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+              {semesterList
+                .filter((s) => s.hasNotes)
+                .map(({ semName, noteCount }) => (
+                  <div
+                    key={semName}
+                    className="p-4 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 shadow-xs flex flex-col justify-between"
+                  >
+                    <div>
+                      <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 block mb-1">
+                        {semName}
+                      </span>
+                      <span className="font-bold text-sm text-gray-900 dark:text-gray-100">
+                        {noteCount} {noteCount === 1 ? "Note" : "Notes"}
+                      </span>
+                    </div>
+                    <span className="text-[11px] font-semibold text-indigo-600 dark:text-indigo-400 mt-3 inline-flex items-center gap-1">
+                      <span>Available</span>
+                      <span>✓</span>
+                    </span>
+                  </div>
+                ))}
+            </div>
+          ) : null}
+
+          {semesterList.some((s) => !s.hasNotes) && (
+            <p className="text-xs font-medium text-gray-500 dark:text-gray-400 italic">
+              More semesters coming soon.
+            </p>
+          )}
         </section>
 
         {/* Exam Preparation Guide Overview Banner */}
