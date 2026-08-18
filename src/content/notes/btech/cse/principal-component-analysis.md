@@ -1,7 +1,8 @@
 ---
 title: "Principal Component Analysis (PCA)"
 description: "Exam guide to Principal Component Analysis, covariance matrix, eigenvectors, eigenvalues, variance retention, and dimensionality reduction step-by-step."
-unit: "Unit 3: Dimensionality Reduction"
+unit: "Unit 3 – Dimensionality Reduction"
+order: 1
 subject: "Machine Learning"
 semester: "Semester 5"
 keywords: ["PCA", "dimensionality reduction", "covariance matrix", "eigenvectors", "eigenvalues"]

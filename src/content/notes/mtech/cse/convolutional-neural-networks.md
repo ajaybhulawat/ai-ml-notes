@@ -1,7 +1,8 @@
 ---
 title: "Convolutional Neural Networks (CNNs)"
 description: "Comprehensive guide to CNN architecture, convolution operations, pooling techniques, feature maps, and classic CNN architectures like LeNet and AlexNet."
-unit: "Unit 3: Deep Learning"
+unit: "Unit 3 – Deep Learning"
+order: 2
 subject: "Deep Learning"
 semester: "Semester 2"
 keywords: ["CNN", "convolutional neural networks", "max pooling", "feature maps", "AlexNet", "ResNet"]

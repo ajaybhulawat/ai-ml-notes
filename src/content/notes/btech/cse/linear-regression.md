@@ -2,6 +2,7 @@
 title: "Linear Regression Explained"
 description: "Learn the fundamentals of linear regression including cost function, gradient descent, and evaluation metrics."
 unit: "Unit 1 – Supervised Learning"
+order: 1
 subject: "Machine Learning"
 semester: "Semester 5"
 keywords: ["linear regression", "gradient descent", "cost function", "MSE", "R2 score"]

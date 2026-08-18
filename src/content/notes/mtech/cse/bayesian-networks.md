@@ -2,6 +2,7 @@
 title: "Bayesian Networks Explained"
 description: "Understand Bayesian Networks with examples, diagrams and exam-ready explanations."
 unit: "Unit 2 – Probabilistic Models"
+order: 1
 subject: "Advanced Artificial Intelligence"
 semester: "Semester 1"
 keywords: ["bayesian networks", "DAG", "probabilistic graphical models", "CPT", "conditional probability"]

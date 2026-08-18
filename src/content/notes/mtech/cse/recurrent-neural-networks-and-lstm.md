@@ -1,7 +1,8 @@
 ---
 title: "Recurrent Neural Networks (RNNs) and LSTM"
 description: "Detailed guide to sequence processing, recurrent hidden states, vanishing gradients, Long Short-Term Memory (LSTM) cell architecture, and GRUs."
-unit: "Unit 3: Deep Learning"
+unit: "Unit 3 – Deep Learning"
+order: 3
 subject: "Deep Learning"
 semester: "Semester 2"
 keywords: ["RNN", "LSTM", "BPTT", "vanishing gradient", "GRU", "sequence models"]

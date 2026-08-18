@@ -9,6 +9,8 @@ import {
   getNoteBySlug,
   getAllSlugs,
   slugifySubject,
+  getUnitNumber,
+  pluralize,
 } from "@/lib/notes"
 import Navbar from "@/components/Navbar"
 import TopicExamView from "@/components/TopicExamView"
@@ -431,7 +433,7 @@ export default async function SubjectOrTopicPage({ params }: Props) {
                   {subjectObj.notes.length}
                 </span>
                 <span className="block text-[10px] font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                  Topic Notes
+                  {pluralize(subjectObj.notes.length, "Topic Note", "Topic Notes").replace(/^\d+\s*/, "")}
                 </span>
               </div>
               <div className="border-l border-gray-200 dark:border-gray-700 pl-4">
@@ -439,7 +441,7 @@ export default async function SubjectOrTopicPage({ params }: Props) {
                   {Object.keys(unitsMap).length}
                 </span>
                 <span className="block text-[10px] font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                  Units
+                  {pluralize(Object.keys(unitsMap).length, "Unit", "Units").replace(/^\d+\s*/, "")}
                 </span>
               </div>
             </div>
@@ -473,7 +475,9 @@ export default async function SubjectOrTopicPage({ params }: Props) {
         </section>
 
         <section className="space-y-10">
-          {Object.entries(unitsMap).map(([unitName, unitNotes]) => (
+          {Object.entries(unitsMap)
+            .sort(([unitA], [unitB]) => getUnitNumber(unitA) - getUnitNumber(unitB))
+            .map(([unitName, unitNotes]) => (
             <div key={unitName} className="space-y-4">
               <h2 className="text-lg font-bold text-gray-900 dark:text-white flex items-center gap-2 border-b border-gray-200 dark:border-gray-800 pb-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-indigo-600" />

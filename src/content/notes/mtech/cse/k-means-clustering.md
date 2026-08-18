@@ -2,6 +2,7 @@
 title: "K-Means Clustering"
 description: "Understand the K-Means clustering algorithm with step-by-step explanation and applications."
 unit: "Unit 3 – Unsupervised Learning"
+order: 1
 subject: "Advanced Machine Learning"
 semester: "Semester 1"
 keywords: ["K-means", "clustering", "unsupervised learning", "elbow method", "centroids"]

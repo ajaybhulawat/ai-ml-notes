@@ -2,6 +2,7 @@
 title: "Decision Trees in Machine Learning"
 description: "Master Decision Trees for university exams: complete 2-mark definitions, 5-mark algorithm summaries, 10-mark entropy & Gini derivations, worked numerical example, and pruning methods."
 unit: "Unit 2 – Supervised Learning"
+order: 1
 subject: "Machine Learning"
 semester: "Semester 5"
 keywords: ["decision trees", "gini impurity", "entropy", "information gain", "CART", "pruning", "ID3"]

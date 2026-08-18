@@ -65,6 +65,12 @@ function parseStringArray(raw: unknown): string[] | undefined {
   return undefined
 }
 
+// Helper for dynamic pluralization e.g. pluralize(1, "Subject") -> "1 Subject"
+export function pluralize(count: number, singular: string, plural?: string): string {
+  if (count === 1) return `${count} ${singular}`
+  return `${count} ${plural || singular + "s"}`
+}
+
 // Helper to parse unit number from string e.g. "Unit 1 – Supervised Learning" -> 1
 export function getUnitNumber(unitStr?: string): number {
   if (!unitStr) return 999
@@ -74,22 +80,23 @@ export function getUnitNumber(unitStr?: string): number {
 }
 
 // Academic sorting helper:
-// 1. Order field (if present)
-// 2. Unit number (Unit 1, Unit 2, Unit 3, etc.)
-// 3. Fallback to slug
+// 1. Primary: Unit number (Unit 1, Unit 2, Unit 3, etc.)
+// 2. Secondary: Order within unit (1, 2, 3)
+// 3. Fallback: Slug
 export function sortNotesAcademically(notes: NoteMeta[]): NoteMeta[] {
   return [...notes].sort((a, b) => {
-    if (typeof a.order === "number" && typeof b.order === "number") {
-      return a.order - b.order
-    }
-    if (typeof a.order === "number") return -1
-    if (typeof b.order === "number") return 1
-
     const unitA = getUnitNumber(a.unit)
     const unitB = getUnitNumber(b.unit)
 
     if (unitA !== unitB) {
       return unitA - unitB
+    }
+
+    const orderA = typeof a.order === "number" ? a.order : 999
+    const orderB = typeof b.order === "number" ? b.order : 999
+
+    if (orderA !== orderB) {
+      return orderA - orderB
     }
 
     return a.slug.localeCompare(b.slug)

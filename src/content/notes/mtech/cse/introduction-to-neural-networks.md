@@ -2,6 +2,7 @@
 title: "Introduction to Neural Networks"
 description: "Learn what neural networks are, how they work, and their key components."
 unit: "Unit 3 – Deep Learning"
+order: 1
 subject: "Deep Learning"
 semester: "Semester 2"
 keywords: ["neural networks", "perceptron", "activation functions", "forward propagation", "backpropagation"]
