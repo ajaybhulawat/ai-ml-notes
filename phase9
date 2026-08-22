@@ -1,0 +1,592 @@
+PHASE 9 — SEARCH & CONTENT DISCOVERY
+
+PROJECT:
+AI & ML Notes
+
+LIVE SITE:
+https://ai-ml-notes-wine.vercel.app/
+
+==================================================
+CONTEXT
+==================================================
+
+Completed:
+
+Phase 1 — Data Model
+Phase 2 — Notes Directory
+Phase 3 — Course Pages
+Phase 4 — Branch Pages
+Phase 5 — Subject Pages
+Phase 6 — Topic Page V2
+Phase 7 — Topic Template Rollout
+Phase 8 — SEO + Internal Linking
+
+Now implement:
+
+PHASE 9 — SEARCH & CONTENT DISCOVERY
+
+==================================================
+PRIMARY GOAL
+==================================================
+
+A student should be able to search for a topic quickly.
+
+Examples:
+
+"decision tree"
+
+"linear regression"
+
+"svm"
+
+"pca"
+
+"machine learning"
+
+"deep learning"
+
+"bayesian"
+
+"2 mark decision tree"
+
+"10 mark svm"
+
+Search should work across ALL available notes.
+
+==================================================
+IMPORTANT
+==================================================
+
+Do NOT build an external search service.
+
+Do NOT add Algolia.
+
+Do NOT add Elasticsearch.
+
+Do NOT add a database just for search.
+
+Start with a lightweight application-level search architecture that can scale to the current content size.
+
+The search implementation should be designed so a future search engine can replace the search index without changing the UI.
+
+==================================================
+PART 1 — SEARCH ARCHITECTURE
+==================================================
+
+First inspect the existing note/content model.
+
+Create a normalized searchable document for every topic.
+
+Example:
+
+{
+  slug,
+  title,
+  description,
+  course,
+  branch,
+  semester,
+  subject,
+  unit,
+  tags,
+  content,
+  url
+}
+
+Do not duplicate the entire Markdown unnecessarily if a searchable plain-text representation can be generated.
+
+==================================================
+PART 2 — SEARCH INDEX
+==================================================
+
+Create a centralized search index.
+
+The index should contain every valid topic.
+
+Example:
+
+searchIndex = [
+  {
+    title: "Linear Regression",
+    description: "...",
+    course: "BTech",
+    branch: "CSE",
+    subject: "Machine Learning",
+    unit: 1,
+    tags: [...],
+    url: "/notes/btech/cse/machine-learning/linear-regression"
+  }
+]
+
+The index must be generated from the existing source of truth.
+
+DO NOT manually maintain a second list of notes.
+
+==================================================
+PART 3 — SEARCHABLE FIELDS
+==================================================
+
+Search should consider:
+
+HIGH PRIORITY:
+
+- title
+- subject
+
+MEDIUM PRIORITY:
+
+- unit
+- tags
+- description
+
+LOWER PRIORITY:
+
+- body content
+
+Do not treat every word equally.
+
+Title matches should rank higher than body-content matches.
+
+==================================================
+PART 4 — SEARCH RANKING
+==================================================
+
+Implement simple deterministic relevance scoring.
+
+Suggested priority:
+
+Exact title match
+        ↓
+Title starts with query
+        ↓
+Title contains query
+        ↓
+Subject contains query
+        ↓
+Tags contain query
+        ↓
+Description contains query
+        ↓
+Body content contains query
+
+Example:
+
+Query:
+"decision tree"
+
+Result order:
+
+1. Decision Tree
+2. Decision Tree Algorithm
+3. Random Forest
+4. Machine Learning
+
+Do not return random ordering.
+
+==================================================
+PART 5 — SEARCH UI
+==================================================
+
+Add a prominent search interface to:
+
+/notes
+
+Use the existing design language.
+
+Do NOT redesign the entire page.
+
+Search input should include:
+
+Placeholder:
+
+"Search notes, subjects, or topics..."
+
+Support:
+
+- typing
+- Enter
+- clear button
+- result count
+
+Example:
+
+Search results for "decision tree"
+
+4 notes found
+
+==================================================
+PART 6 — SEARCH RESULTS
+==================================================
+
+Each result should display:
+
+Topic title
+
+Short description
+
+Course
+
+Branch
+
+Subject
+
+Unit
+
+optional tags
+
+Example:
+
+Decision Trees
+
+BTech · CSE · Machine Learning
+Unit 2
+
+Decision trees are supervised learning models...
+
+[Read Note]
+
+The result itself should link to the canonical topic URL.
+
+==================================================
+PART 7 — EMPTY SEARCH
+==================================================
+
+When search input is empty:
+
+Show the normal /notes content.
+
+Do not show an empty search-results screen.
+
+==================================================
+PART 8 — NO RESULTS
+==================================================
+
+For no results:
+
+Show:
+
+"No notes found"
+
+Then suggest alternatives.
+
+Example:
+
+No notes found for:
+
+"decision neural network"
+
+Try:
+
+"decision tree"
+
+"neural network"
+
+"machine learning"
+
+Do NOT invent suggestions.
+
+Suggestions should come from actual indexed titles/subjects/tags where practical.
+
+==================================================
+PART 9 — FILTERS
+==================================================
+
+Add lightweight filters after basic search works.
+
+Filters:
+
+Course:
+- All
+- BTech
+- MTech
+
+Branch:
+- All
+- available branches
+
+Subject:
+- All
+- available subjects
+
+Semester:
+- All
+- available semesters
+
+Do not show filters with zero available values.
+
+==================================================
+FILTER BEHAVIOR
+==================================================
+
+Filters must combine with search.
+
+Example:
+
+Query:
+"machine"
+
+Course:
+BTech
+
+Subject:
+Machine Learning
+
+Results should only contain matching BTech Machine Learning topics.
+
+==================================================
+PART 10 — URL STATE
+==================================================
+
+Search state should be shareable.
+
+Use query parameters where appropriate.
+
+Example:
+
+/notes?q=decision+tree
+
+Filters:
+
+/notes?q=machine&course=btech&subject=machine-learning
+
+Canonical URL MUST NOT include search query parameters.
+
+Search pages should NOT automatically become indexable SEO landing pages.
+
+==================================================
+PART 11 — SEARCH SEO
+==================================================
+
+Do NOT create thousands of indexable search URLs.
+
+Search result pages should normally use:
+
+noindex
+
+when a query parameter is present.
+
+Canonical should point to:
+
+/notes
+
+Do not add search queries to sitemap.xml.
+
+==================================================
+PART 12 — PERFORMANCE
+==================================================
+
+Search must feel instant for the current dataset.
+
+Avoid:
+
+- network request on every keystroke
+- API call on every character
+- loading the full Markdown body into the browser unnecessarily
+
+Use debouncing only if needed.
+
+For the current dataset, client-side search is acceptable.
+
+But structure the code so it can later move to server-side/search-engine search.
+
+==================================================
+PART 13 — MOBILE
+==================================================
+
+Search must work well on mobile.
+
+Check:
+
+- input width
+- filter controls
+- result cards
+- horizontal overflow
+- touch targets
+
+Filters should not make the page difficult to use.
+
+==================================================
+PART 14 — KEYBOARD UX
+==================================================
+
+Support:
+
+- Enter
+- Escape to clear/close suggestions if autocomplete exists
+- keyboard focus
+
+Do not implement complex autocomplete unless it improves the current UX.
+
+==================================================
+PART 15 — SEARCH ANALYTICS PREPARATION
+==================================================
+
+Do not add Google Analytics in this phase.
+
+However, structure search code so future events could capture:
+
+search query
+result count
+selected result
+
+Do not store personal user data.
+
+==================================================
+PART 16 — ACCESSIBILITY
+==================================================
+
+Search input must have:
+
+- accessible label
+- keyboard focus
+- visible focus state
+- appropriate aria attributes
+
+If live result count is dynamically updated:
+
+use an appropriate aria-live region.
+
+Do not use placeholder text as the only accessible label.
+
+==================================================
+PART 17 — RESULT LIMIT
+==================================================
+
+Do not dump hundreds of results immediately.
+
+Use a reasonable initial result limit.
+
+Example:
+
+20 results
+
+If more exist:
+
+Show:
+
+"Load more"
+
+or pagination.
+
+Prefer Load More for this product.
+
+==================================================
+PART 18 — SEARCH INDEX VALIDATION
+==================================================
+
+Before finishing:
+
+Compare the search index against the source note inventory.
+
+Verify:
+
+Every valid topic is searchable.
+
+No nonexistent topic is searchable.
+
+No duplicate topic entries.
+
+No broken topic URLs.
+
+==================================================
+PART 19 — TEST SEARCHES
+==================================================
+
+Test:
+
+decision tree
+
+linear regression
+
+svm
+
+pca
+
+machine learning
+
+deep learning
+
+bayesian
+
+random text that should return no result
+
+Also test:
+
+BTech + Machine Learning
+
+MTech + Deep Learning
+
+==================================================
+PART 20 — REGRESSION TESTING
+==================================================
+
+Verify these still work:
+
+/
+
+/notes
+
+/notes/btech
+
+/notes/btech/cse
+
+/notes/btech/cse/machine-learning
+
+/notes/mtech/cse
+
+at least 5 topic pages.
+
+Do not change existing public URLs.
+
+==================================================
+PART 21 — BUILD
+==================================================
+
+Run:
+
+npm run build
+
+Run TypeScript/lint/tests if configured.
+
+Fix only issues related to Phase 9.
+
+==================================================
+DO NOT BUILD
+==================================================
+
+Do NOT implement:
+
+- AI chatbot
+- MCQs
+- Formula engine
+- Bookmarks
+- authentication
+- payments
+- recommendation engine
+- external search engine
+- analytics platform
+
+==================================================
+FINAL REPORT
+==================================================
+
+Report:
+
+1. Total searchable topics
+2. Search index location
+3. Search ranking algorithm
+4. Search UI location
+5. Filters implemented
+6. URL query-state implementation
+7. noindex behavior
+8. Result limit
+9. Mobile verification
+10. Accessibility verification
+11. Search test results
+12. Broken links
+13. Files changed
+14. Build result
+15. TypeScript result
+16. Lint result
+
+STOP AFTER PHASE 9.
