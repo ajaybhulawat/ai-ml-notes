@@ -1,27 +1,47 @@
 import Link from "next/link"
+import React, { Suspense } from "react"
 import type { Metadata } from "next"
 import { getAllCourses, getNotesForBranch, getAllNotesMeta, getBranches } from "@/lib/notes"
+import { getSearchIndex } from "@/lib/searchIndex"
 import Navbar from "@/components/Navbar"
+import NoteSearch from "@/components/NoteSearch"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes-wine.vercel.app"
 
-export const metadata: Metadata = {
-  title: "Academic Study Notes | AI & ML Exam Notes for BTech & MTech",
-  description: "Browse exam-focused engineering study guides organized by course, branch, semester, and subject for BTech and MTech students.",
-  alternates: {
-    canonical: `${siteUrl}/notes`,
-  },
-  openGraph: {
-    title: "Academic Study Notes | AI & ML Exam Notes",
-    description: "Browse exam-focused engineering study guides organized by course, branch, semester, and subject.",
-    url: `${siteUrl}/notes`,
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Academic Study Notes | AI & ML Exam Notes",
-    description: "Browse exam-focused engineering study guides organized by course, branch, semester, and subject.",
-  },
+type Props = {
+  searchParams?: Promise<{ q?: string; course?: string; branch?: string; subject?: string; semester?: string }>
+}
+
+export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
+  const params = searchParams ? await searchParams : {}
+  const hasSearchParams = Boolean(params.q || params.course || params.branch || params.subject || params.semester)
+
+  const title = params.q
+    ? `Search results for "${params.q}" | AI & ML Exam Notes`
+    : "Academic Study Notes | AI & ML Exam Notes for BTech & MTech"
+
+  const description =
+    "Browse exam-focused engineering study guides organized by course, branch, semester, and subject for BTech and MTech students."
+
+  return {
+    title,
+    description,
+    robots: hasSearchParams ? { index: false, follow: true } : { index: true, follow: true },
+    alternates: {
+      canonical: `${siteUrl}/notes`,
+    },
+    openGraph: {
+      title,
+      description,
+      url: `${siteUrl}/notes`,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  }
 }
 
 const courseConfig: Record<
@@ -61,6 +81,7 @@ const courseConfig: Record<
 export default function NotesHomePage() {
   const courses = getAllCourses()
   const allNotes = getAllNotesMeta()
+  const searchIndex = getSearchIndex()
 
   // Compute course note counts and branch lists
   const courseSummaries = courses.map((course) => {
@@ -165,173 +186,179 @@ export default function NotesHomePage() {
       </section>
 
       <main className="max-w-6xl mx-auto px-6 py-12 space-y-16">
-        {/* Course-First Navigation Section */}
-        <section className="space-y-6">
-          <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight">Select Course</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Choose your degree program to access specialized subject notes.
-              </p>
-            </div>
-          </div>
+        <Suspense fallback={<div className="text-center py-8 text-gray-500">Loading Search...</div>}>
+          <NoteSearch initialIndex={searchIndex}>
+            <div className="space-y-16">
+              {/* Course-First Navigation Section */}
+              <section className="space-y-6">
+                <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
+                  <div>
+                    <h2 className="text-2xl font-bold tracking-tight">Select Course</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Choose your degree program to access specialized subject notes.
+                    </p>
+                  </div>
+                </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {courseSummaries.map(({ course, branches, totalNotes, subjects }) => {
-              const config = courseConfig[course] ?? {
-                label: course.toUpperCase(),
-                fullName: `${course.toUpperCase()} Program`,
-                color: "from-gray-400 to-gray-600",
-                description: `Engineering notes for ${course.toUpperCase()} students.`,
-                emoji: "📄",
-              }
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {courseSummaries.map(({ course, branches, totalNotes, subjects }) => {
+                    const config = courseConfig[course] ?? {
+                      label: course.toUpperCase(),
+                      fullName: `${course.toUpperCase()} Program`,
+                      color: "from-gray-400 to-gray-600",
+                      description: `Engineering notes for ${course.toUpperCase()} students.`,
+                      emoji: "📄",
+                    }
 
-              return (
-                <Link
-                  key={course}
-                  href={`/notes/${course}`}
-                  className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-7 shadow-sm hover:shadow-xl dark:hover:border-indigo-700 transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${config.color}`} />
+                    return (
+                      <Link
+                        key={course}
+                        href={`/notes/${course}`}
+                        className="group relative overflow-hidden rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-7 shadow-sm hover:shadow-xl dark:hover:border-indigo-700 transition-all duration-300 transform hover:-translate-y-1"
+                      >
+                        <div className={`absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r ${config.color}`} />
 
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex items-center gap-3">
-                      <span className="text-3xl">{config.emoji}</span>
+                        <div className="flex items-start justify-between mb-4">
+                          <div className="flex items-center gap-3">
+                            <span className="text-3xl">{config.emoji}</span>
+                            <div>
+                              <h3 className="text-2xl font-bold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                                {config.label}
+                              </h3>
+                              <p className="text-xs font-medium text-gray-500 dark:text-gray-400">
+                                {config.fullName}
+                              </p>
+                            </div>
+                          </div>
+                          <span className="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">
+                            {totalNotes} {totalNotes === 1 ? "Note" : "Notes"}
+                          </span>
+                        </div>
+
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
+                          {config.description}
+                        </p>
+
+                        {/* Branches & Subjects preview */}
+                        <div className="space-y-2 mb-6 pt-3 border-t border-gray-100 dark:border-gray-800 text-xs text-gray-500 dark:text-gray-400">
+                          <div className="flex items-center gap-2">
+                            <span className="font-semibold text-gray-700 dark:text-gray-300">Branches:</span>
+                            <span>{branches.map((b) => b.toUpperCase()).join(", ") || "CSE"}</span>
+                          </div>
+                          {subjects.length > 0 && (
+                            <div className="flex items-center gap-2 truncate">
+                              <span className="font-semibold text-gray-700 dark:text-gray-300">Subjects:</span>
+                              <span className="truncate">{subjects.join(" • ")}</span>
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="flex items-center justify-between text-sm font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition">
+                          <span>Browse {config.label} Branches</span>
+                          <span>→</span>
+                        </div>
+                      </Link>
+                    )
+                  })}
+                </div>
+              </section>
+
+              {/* Popular Subjects Section */}
+              <section className="space-y-6">
+                <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
+                  <div>
+                    <h2 className="text-2xl font-bold tracking-tight">Popular Subjects</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Explore core syllabus subjects organized by academic domain.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  {popularSubjects.map((sub) => (
+                    <Link
+                      key={sub.name}
+                      href={`/notes/${sub.course}/${sub.branch}`}
+                      className="group p-5 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md dark:hover:border-indigo-700 transition flex flex-col justify-between"
+                    >
                       <div>
-                        <h3 className="text-2xl font-bold group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
-                          {config.label}
+                        <div className="flex items-center justify-between mb-3">
+                          <span className="text-2xl">{sub.emoji}</span>
+                          <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
+                            {sub.code}
+                          </span>
+                        </div>
+                        <h3 className="font-bold text-base mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
+                          {sub.name}
                         </h3>
-                        <p className="text-xs font-medium text-gray-500 dark:text-gray-400">
-                          {config.fullName}
+                        <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 leading-relaxed mb-4">
+                          {sub.desc}
                         </p>
                       </div>
-                    </div>
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-indigo-50 dark:bg-indigo-950/70 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">
-                      {totalNotes} {totalNotes === 1 ? "Note" : "Notes"}
-                    </span>
-                  </div>
-
-                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-5 leading-relaxed">
-                    {config.description}
-                  </p>
-
-                  {/* Branches & Subjects preview */}
-                  <div className="space-y-2 mb-6 pt-3 border-t border-gray-100 dark:border-gray-800 text-xs text-gray-500 dark:text-gray-400">
-                    <div className="flex items-center gap-2">
-                      <span className="font-semibold text-gray-700 dark:text-gray-300">Branches:</span>
-                      <span>{branches.map((b) => b.toUpperCase()).join(", ") || "CSE"}</span>
-                    </div>
-                    {subjects.length > 0 && (
-                      <div className="flex items-center gap-2 truncate">
-                        <span className="font-semibold text-gray-700 dark:text-gray-300">Subjects:</span>
-                        <span className="truncate">{subjects.join(" • ")}</span>
+                      <div className="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-gray-800 text-xs text-gray-500 dark:text-gray-400 font-medium">
+                        <span>{sub.course.toUpperCase()} · {sub.branch.toUpperCase()}</span>
+                        <span className="text-indigo-600 dark:text-indigo-400 font-semibold">{sub.noteCount} notes</span>
                       </div>
-                    )}
-                  </div>
-
-                  <div className="flex items-center justify-between text-sm font-semibold text-indigo-600 dark:text-indigo-400 group-hover:translate-x-1 transition">
-                    <span>Browse {config.label} Branches</span>
-                    <span>→</span>
-                  </div>
-                </Link>
-              )
-            })}
-          </div>
-        </section>
-
-        {/* Popular Subjects Section */}
-        <section className="space-y-6">
-          <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight">Popular Subjects</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Explore core syllabus subjects organized by academic domain.
-              </p>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-            {popularSubjects.map((sub) => (
-              <Link
-                key={sub.name}
-                href={`/notes/${sub.course}/${sub.branch}`}
-                className="group p-5 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-md dark:hover:border-indigo-700 transition flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-3">
-                    <span className="text-2xl">{sub.emoji}</span>
-                    <span className="text-[11px] font-bold px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
-                      {sub.code}
-                    </span>
-                  </div>
-                  <h3 className="font-bold text-base mb-1 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition">
-                    {sub.name}
-                  </h3>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 line-clamp-2 leading-relaxed mb-4">
-                    {sub.desc}
-                  </p>
+                    </Link>
+                  ))}
                 </div>
-                <div className="flex items-center justify-between pt-3 border-t border-gray-100 dark:border-gray-800 text-xs text-gray-500 dark:text-gray-400 font-medium">
-                  <span>{sub.course.toUpperCase()} · {sub.branch.toUpperCase()}</span>
-                  <span className="text-indigo-600 dark:text-indigo-400 font-semibold">{sub.noteCount} notes</span>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+              </section>
 
-        {/* Recently Updated Notes Section */}
-        <section className="space-y-6">
-          <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
-            <div>
-              <h2 className="text-2xl font-bold tracking-tight">Recently Added &amp; Updated Notes</h2>
-              <p className="text-sm text-gray-500 dark:text-gray-400">
-                Latest exam study guides, theoretical breakdowns, and algorithm notes.
-              </p>
-            </div>
-            <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">
-              Showing {allNotes.length} notes
-            </span>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {allNotes.map((note) => (
-              <Link
-                key={`${note.course}-${note.branch}-${note.slug}`}
-                href={`/notes/${note.course}/${note.branch}/${note.slug}`}
-                className="group flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg dark:hover:border-indigo-700 transition"
-              >
-                <div>
-                  <div className="flex items-center justify-between gap-2 mb-3">
-                    <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">
-                      {note.course} / {note.branch}
-                    </span>
-                    {note.unit && (
-                      <span className="text-[11px] text-gray-500 dark:text-gray-400 font-medium truncate max-w-[130px]">
-                        {note.unit}
-                      </span>
-                    )}
+              {/* Recently Updated Notes Section */}
+              <section className="space-y-6">
+                <div className="flex items-center justify-between border-b border-gray-200 dark:border-gray-800 pb-4">
+                  <div>
+                    <h2 className="text-2xl font-bold tracking-tight">Recently Added &amp; Updated Notes</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400">
+                      Latest exam study guides, theoretical breakdowns, and algorithm notes.
+                    </p>
                   </div>
-
-                  <h3 className="font-bold text-lg mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition leading-snug">
-                    {note.title}
-                  </h3>
-
-                  <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-3 leading-relaxed mb-4">
-                    {note.description}
-                  </p>
-                </div>
-
-                <div className="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-medium text-gray-500 dark:text-gray-400">
-                  <span>{note.subject || "Machine Learning"}</span>
-                  <span className="text-indigo-600 dark:text-indigo-400 font-semibold group-hover:translate-x-0.5 transition">
-                    Read {note.title} Notes →
+                  <span className="text-xs font-semibold text-gray-500 dark:text-gray-400">
+                    Showing {allNotes.length} notes
                   </span>
                 </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  {allNotes.map((note) => (
+                    <Link
+                      key={`${note.course}-${note.branch}-${note.slug}`}
+                      href={`/notes/${note.course}/${note.branch}/${note.slug}`}
+                      className="group flex flex-col justify-between p-6 rounded-2xl bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 shadow-sm hover:shadow-lg dark:hover:border-indigo-700 transition"
+                    >
+                      <div>
+                        <div className="flex items-center justify-between gap-2 mb-3">
+                          <span className="text-[11px] font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-md bg-indigo-50 dark:bg-indigo-950 text-indigo-600 dark:text-indigo-400 border border-indigo-100 dark:border-indigo-900">
+                            {note.course} / {note.branch}
+                          </span>
+                          {note.unit && (
+                            <span className="text-[11px] text-gray-500 dark:text-gray-400 font-medium truncate max-w-[130px]">
+                              {note.unit}
+                            </span>
+                          )}
+                        </div>
+
+                        <h3 className="font-bold text-lg mb-2 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition leading-snug">
+                          {note.title}
+                        </h3>
+
+                        <p className="text-xs text-gray-600 dark:text-gray-400 line-clamp-3 leading-relaxed mb-4">
+                          {note.description}
+                        </p>
+                      </div>
+
+                      <div className="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-medium text-gray-500 dark:text-gray-400">
+                        <span>{note.subject || "Machine Learning"}</span>
+                        <span className="text-indigo-600 dark:text-indigo-400 font-semibold group-hover:translate-x-0.5 transition">
+                          Read {note.title} Notes →
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
+              </section>
+            </div>
+          </NoteSearch>
+        </Suspense>
       </main>
     </div>
   )
