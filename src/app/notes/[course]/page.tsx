@@ -1,10 +1,42 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import { getBranches, getAllCourses, getNotesForBranch, getAllNotesMeta } from "@/lib/notes"
 import { notFound } from "next/navigation"
 import Navbar from "@/components/Navbar"
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes-wine.vercel.app"
+
 type Props = {
   params: Promise<{ course: string }>
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { course } = await params
+  const courseUpper = course.toUpperCase()
+  const info = courseDetails[course.toLowerCase()]
+
+  const title = info ? `${info.title} | AI & ML Exam Notes` : `${courseUpper} Study Notes | AI & ML Exam Notes`
+  const description = info ? info.description : `Exam study guides, formula breakdowns, and unit notes for ${courseUpper} engineering students.`
+  const canonicalUrl = `${siteUrl}/notes/${course}`
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  }
 }
 
 const branchLabels: Record<string, string> = {

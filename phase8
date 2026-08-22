@@ -1,0 +1,737 @@
+PHASE 8 — SEO + INTERNAL LINKING + INDEXABILITY
+
+PROJECT:
+AI & ML Notes
+
+LIVE SITE:
+https://ai-ml-notes-wine.vercel.app/
+
+==================================================
+CONTEXT
+==================================================
+
+Phase 1–7 are complete enough for SEO implementation.
+
+Current architecture:
+
+Home
+  ↓
+/notes
+  ↓
+Course
+  ↓
+Branch
+  ↓
+Subject
+  ↓
+Topic
+
+Examples:
+
+/notes
+/notes/btech
+/notes/btech/cse
+/notes/btech/cse/machine-learning
+/notes/mtech/cse
+
+Topic pages are already using the shared Topic Page V2 template.
+
+DO NOT redesign the existing UI.
+
+DO NOT rebuild the topic page.
+
+DO NOT start Search.
+
+DO NOT build MCQs.
+
+DO NOT build AI chatbot.
+
+This phase is ONLY:
+
+SEO
++
+Internal Linking
++
+Indexability
++
+Structured Data
++
+Sitemap
++
+Robots
++
+Metadata
+
+==================================================
+PHASE 8 GOALS
+==================================================
+
+Make the website:
+
+1. Easy for Google to crawl
+2. Easy for Google to understand
+3. Easy for users to navigate between related academic pages
+4. Free from accidental duplicate URLs
+5. Properly indexed page-by-page
+6. Structured around the academic hierarchy
+
+==================================================
+PART 1 — AUDIT CURRENT SEO
+==================================================
+
+Before changing anything, inspect the existing implementation.
+
+Identify:
+
+- metadata implementation
+- generateMetadata()
+- sitemap implementation
+- robots implementation
+- canonical implementation
+- Open Graph implementation
+- Twitter metadata
+- JSON-LD / structured data
+- breadcrumb implementation
+- heading structure
+- internal linking
+- noindex/nofollow usage
+
+DO NOT immediately rewrite existing SEO.
+
+First determine what already exists.
+
+==================================================
+PART 2 — URL CANONICALIZATION
+==================================================
+
+Every indexable page must have ONE canonical URL.
+
+Canonical URLs should follow the existing public route structure.
+
+Examples:
+
+https://ai-ml-notes-wine.vercel.app/notes
+
+https://ai-ml-notes-wine.vercel.app/notes/btech
+
+https://ai-ml-notes-wine.vercel.app/notes/btech/cse
+
+https://ai-ml-notes-wine.vercel.app/notes/btech/cse/machine-learning
+
+Do NOT include tracking parameters in canonical URLs.
+
+For example:
+
+?utm_source=chatgpt.com
+
+must NEVER become the canonical URL.
+
+Do not create duplicate canonical variants.
+
+==================================================
+PART 3 — TITLE TAGS
+==================================================
+
+Every indexable page needs a unique SEO title.
+
+Do not use the same title template blindly for every page.
+
+Recommended patterns:
+
+HOME:
+
+AI & ML Notes | Exam-Focused BTech & MTech Study Notes
+
+NOTES:
+
+AI & ML Notes | BTech & MTech Exam Notes
+
+COURSE:
+
+BTech Notes | AI & ML Exam Notes
+
+MTech Notes | AI & ML Exam Notes
+
+BRANCH:
+
+BTech CSE Notes | Computer Science Engineering
+
+MTech CSE Notes | Computer Science Engineering
+
+SUBJECT:
+
+Machine Learning Notes for BTech CSE | Unit-wise Exam Notes
+
+TOPIC:
+
+Decision Tree in Machine Learning | BTech CSE Notes
+
+Use actual metadata.
+
+Do not invent branch/course/subject information.
+
+==================================================
+PART 4 — META DESCRIPTIONS
+==================================================
+
+Every important indexable page needs a unique description.
+
+Descriptions should:
+
+- describe the actual page
+- mention relevant academic context
+- be useful to a student
+- avoid keyword stuffing
+
+Example:
+
+Machine Learning notes for BTech CSE covering unit-wise concepts, 2-mark, 5-mark and 10-mark exam preparation, examples and quick revision.
+
+Do not copy the same description across all pages.
+
+Generate descriptions from real page metadata/content where possible.
+
+==================================================
+PART 5 — H1 / HEADING STRUCTURE
+==================================================
+
+Every indexable page must have exactly ONE primary H1.
+
+Recommended:
+
+Course page:
+
+# BTech Notes
+
+Branch page:
+
+# BTech CSE Notes
+
+Subject page:
+
+# Machine Learning Notes
+
+Topic page:
+
+# Decision Tree in Machine Learning
+
+Use H2 for major sections.
+
+Use H3 for subsections.
+
+Do not use headings purely for visual styling.
+
+==================================================
+PART 6 — BREADCRUMB STRUCTURED DATA
+==================================================
+
+Keep the existing visible breadcrumbs.
+
+Add JSON-LD BreadcrumbList structured data where appropriate.
+
+Example hierarchy:
+
+Home
+→ Notes
+→ BTech
+→ CSE
+→ Machine Learning
+→ Decision Tree
+
+Every breadcrumb item should point to a real canonical internal URL.
+
+Do not create fake breadcrumb URLs.
+
+==================================================
+PART 7 — ARTICLE / EDUCATIONAL STRUCTURED DATA
+==================================================
+
+For topic pages, evaluate whether Article or EducationalContent structured data is appropriate.
+
+Use only schema types that accurately represent the page.
+
+Do NOT add fake:
+
+- ratings
+- reviews
+- author credentials
+- publication dates
+- organization claims
+
+If Article structured data is used, use real values from metadata.
+
+Do not create misleading structured data purely to improve rankings.
+
+==================================================
+PART 8 — ORGANIZATION / WEBSITE SCHEMA
+==================================================
+
+Evaluate adding:
+
+WebSite
+
+and/or appropriate Organization structured data.
+
+Only add information that actually exists.
+
+Do not invent:
+
+- company address
+- phone
+- social accounts
+- organization names
+
+==================================================
+PART 9 — SITEMAP.XML
+==================================================
+
+Implement a dynamic sitemap if not already implemented.
+
+Include indexable public pages such as:
+
+/
+
+ /notes
+
+ /notes/btech
+
+ /notes/mtech
+
+ /notes/btech/cse
+
+ /notes/mtech/cse
+
+ /notes/btech/cse/machine-learning
+
+and every valid topic page.
+
+Do NOT include:
+
+- admin routes
+- API routes
+- internal tools
+- duplicate URLs
+- noindex pages
+- query-string URLs
+- development routes
+
+The sitemap must use canonical URLs.
+
+Verify sitemap is accessible at:
+
+/sitemap.xml
+
+==================================================
+PART 10 — ROBOTS.TXT
+==================================================
+
+Implement/verify:
+
+/robots.txt
+
+Requirements:
+
+Allow normal public content to be crawled.
+
+Do not accidentally block:
+
+/notes
+
+or any public course/branch/subject/topic page.
+
+If appropriate, reference:
+
+Sitemap: https://ai-ml-notes-wine.vercel.app/sitemap.xml
+
+Do not block CSS/JS resources needed for rendering.
+
+==================================================
+PART 11 — INTERNAL LINKING
+==================================================
+
+This is one of the MOST IMPORTANT parts of Phase 8.
+
+Every topic page should have strong internal navigation.
+
+Topic:
+
+Decision Tree
+
+should link to:
+
+Parent Subject
+Machine Learning
+
+Parent Branch
+BTech CSE
+
+Related topics when they exist
+
+Previous topic
+
+Next topic
+
+Back to subject
+
+Do not create links to nonexistent pages.
+
+==================================================
+PART 12 — SUBJECT → TOPIC LINKS
+==================================================
+
+Every subject page should link to every valid topic page.
+
+Example:
+
+Machine Learning
+
+Unit 1
+  → Linear Regression
+
+Unit 2
+  → Decision Trees
+  → SVM
+
+Unit 3
+  → PCA
+
+Each should be a normal HTML internal link.
+
+Do not rely only on JavaScript click handlers.
+
+==================================================
+PART 13 — BRANCH → SUBJECT LINKS
+==================================================
+
+Example:
+
+BTech CSE
+
+→ Machine Learning
+
+Every subject must link to its canonical subject URL.
+
+==================================================
+PART 14 — COURSE → BRANCH LINKS
+==================================================
+
+Example:
+
+BTech
+
+→ CSE
+
+MTech
+
+→ CSE
+
+Use normal internal links.
+
+==================================================
+PART 15 — RELATED TOPICS
+==================================================
+
+Topic pages should show related topics when real relationships exist.
+
+Examples:
+
+Decision Tree
+→ Random Forest
+→ SVM
+→ Logistic Regression
+
+BUT:
+
+Do not invent relationships automatically just because topics belong to the same course.
+
+Prefer:
+
+- explicit relatedTopics metadata
+- same subject
+- same unit
+
+Use sensible fallback logic only if already supported.
+
+Do not create dozens of low-value links.
+
+==================================================
+PART 16 — ORPHAN PAGE DETECTION
+==================================================
+
+Create a development-time check or script if practical.
+
+Identify topic pages that have:
+
+- no parent subject link
+- no incoming internal link
+- invalid related-topic links
+- missing breadcrumb path
+
+Every public topic should be reachable through:
+
+Home
+→ Notes
+→ Course
+→ Branch
+→ Subject
+→ Topic
+
+==================================================
+PART 17 — INTERNAL LINK TEXT
+==================================================
+
+Avoid generic anchor text such as:
+
+"Click here"
+
+"Read more"
+
+"Learn more"
+
+Prefer descriptive anchor text:
+
+"Decision Tree in Machine Learning"
+
+"Machine Learning Notes"
+
+"Linear Regression"
+
+"SVM in Machine Learning"
+
+This helps both users and search engines understand the destination.
+
+==================================================
+PART 18 — IMAGE SEO
+==================================================
+
+Inspect existing images.
+
+Every meaningful educational image should have:
+
+- descriptive alt text
+- appropriate dimensions
+- responsive rendering
+
+Do not keyword stuff alt text.
+
+Decorative images should use appropriate empty alt where applicable.
+
+Do not invent image descriptions when the image meaning is unknown.
+
+==================================================
+PART 19 — INTERNAL SEARCH PARAMETERS
+==================================================
+
+If the website currently has query parameters such as:
+
+?q=
+?search=
+?utm_source=
+
+do not allow tracking parameters to create canonical duplicates.
+
+Do not index search-result pages unless there is a deliberate SEO strategy for them.
+
+Do not implement the Search feature in this phase.
+
+==================================================
+PART 20 — 404 / INVALID ROUTES
+==================================================
+
+Verify invalid topic URLs return an appropriate 404/not-found response.
+
+Do not render a normal topic page for:
+
+undefined
+
+null
+
+missing slug
+
+invalid course
+
+invalid branch
+
+invalid subject
+
+invalid topic
+
+Avoid soft-404 pages.
+
+==================================================
+PART 21 — PERFORMANCE
+==================================================
+
+Do not introduce heavy client-side JavaScript just for SEO.
+
+Prefer:
+
+- server-rendered metadata
+- static generation where appropriate
+- server components where already used
+- lightweight JSON-LD
+
+Do not add unnecessary SEO libraries.
+
+==================================================
+PART 22 — SEO SAFETY
+==================================================
+
+Do NOT:
+
+- keyword stuff
+- generate hundreds of fake pages
+- create doorway pages
+- create duplicate content
+- add fake author information
+- add fake reviews
+- add fake ratings
+- hide text
+- create invisible links
+- generate pages solely for search engines
+
+The content must remain student-first.
+
+==================================================
+PART 23 — VERIFY REAL ROUTES
+==================================================
+
+Enumerate all current public routes.
+
+Check:
+
+Course pages
+
+Branch pages
+
+Subject pages
+
+Topic pages
+
+Make sure sitemap URLs exactly match actual routes.
+
+No sitemap URL may return 404.
+
+==================================================
+PART 24 — TEST REPRESENTATIVE PAGES
+==================================================
+
+Test:
+
+/
+
+ /notes
+
+ /notes/btech
+
+ /notes/mtech
+
+ /notes/btech/cse
+
+ /notes/mtech/cse
+
+ /notes/btech/cse/machine-learning
+
+at least 3 topic pages
+
+at least 3 MTech topic pages if available.
+
+For each verify:
+
+- status 200
+- unique title
+- unique description
+- one H1
+- canonical URL
+- breadcrumbs
+- internal links
+- valid structured data
+- no broken internal links
+
+==================================================
+PART 25 — BUILD
+==================================================
+
+Run:
+
+npm run build
+
+Also run existing:
+
+TypeScript checks
+
+Lint
+
+Tests
+
+if configured.
+
+Fix only errors caused by Phase 8.
+
+Do not perform unrelated refactoring.
+
+==================================================
+PHASE 8 DELIVERABLES
+==================================================
+
+At minimum:
+
+1. SEO metadata improvements
+2. Canonical URLs
+3. sitemap.xml
+4. robots.txt
+5. Breadcrumb structured data
+6. Appropriate page structured data
+7. Internal linking improvements
+8. Orphan/broken-link detection
+9. Image alt improvements where required
+10. 404 verification
+
+==================================================
+IMPORTANT — DO NOT DO
+==================================================
+
+Do NOT:
+
+- redesign homepage
+- redesign /notes
+- redesign course pages
+- redesign branch pages
+- redesign subject pages
+- redesign topic pages
+- implement Search
+- implement MCQs
+- implement Formula system
+- implement bookmarks
+- implement authentication
+- implement AI chatbot
+- implement payments
+- rewrite educational content
+
+==================================================
+FINAL REPORT
+==================================================
+
+After implementation report:
+
+1. Number of indexable pages
+2. Number of sitemap URLs
+3. Sitemap URL
+4. Robots URL
+5. Canonical strategy
+6. Metadata strategy
+7. Structured-data types implemented
+8. Internal-linking strategy
+9. Orphan pages found
+10. Broken links found
+11. 404 handling
+12. Image/alt changes
+13. Files changed
+14. Build result
+15. TypeScript result
+16. Lint result
+17. Any SEO issues intentionally deferred
+
+STOP AFTER PHASE 8.
+
+DO NOT START PHASE 9.

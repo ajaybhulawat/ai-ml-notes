@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next"
 import { getAllCourses, getBranches, getAllNotesMeta, getSubjectsForBranch, slugifySubject } from "@/lib/notes"
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes.vercel.app"
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes-wine.vercel.app"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const routes: MetadataRoute.Sitemap = [
@@ -22,12 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/search`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
     },
   ]
 
@@ -64,20 +58,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
-  // Add all Note detail pages (both 4-level and 5-level canonical URLs)
+  // Add all Note detail pages (Canonical 5-level Subject URLs only)
   const allNotes = getAllNotesMeta()
   allNotes.forEach((note) => {
     const subjectSlug = slugifySubject(note.subject || "General Machine Learning")
 
-    // 4-level URL
-    routes.push({
-      url: `${baseUrl}/notes/${note.course}/${note.branch}/${note.slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
-    })
-
-    // 5-level Subject URL
     routes.push({
       url: `${baseUrl}/notes/${note.course}/${note.branch}/${subjectSlug}/${note.slug}`,
       lastModified: new Date(),

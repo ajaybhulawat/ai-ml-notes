@@ -28,6 +28,8 @@ export async function generateStaticParams() {
   return params
 }
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes-wine.vercel.app"
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { course, branch } = await params
   const notes = getNotesForBranch(course, branch)
@@ -35,13 +37,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (notes.length === 0) return { title: "Branch Not Found" }
 
   const branchFullName = branchLabels[branch.toLowerCase()] ?? branch.toUpperCase()
+  const canonicalUrl = `${siteUrl}/notes/${course}/${branch}`
 
   return {
     title: `${branchFullName} (${branch.toUpperCase()}) Notes | ${course.toUpperCase()}`,
     description: `Complete exam notes, subject guides, unit breakdowns, and formulas for ${branchFullName} (${course.toUpperCase()}).`,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${branchFullName} Notes — ${course.toUpperCase()}`,
       description: `Complete syllabus notes, subject units, and exam revision guides for ${branchFullName}.`,
+      url: canonicalUrl,
       type: "website",
     },
     twitter: {
@@ -324,7 +331,7 @@ export default async function BranchPage({ params }: Props) {
                                   href={`/notes/${course}/${branch}/${noteSubjectSlug}/${note.slug}`}
                                   className="text-indigo-600 dark:text-indigo-400 group-hover:translate-x-0.5 transition flex items-center gap-1"
                                 >
-                                  <span>Read Note</span>
+                                  <span>Read {note.title} Notes</span>
                                   <span>→</span>
                                 </Link>
 

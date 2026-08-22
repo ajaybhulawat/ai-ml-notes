@@ -30,14 +30,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!note) return { title: "Note Not Found" }
 
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes-wine.vercel.app"
   const subjectName = note.subject || subject.replace(/-/g, " ")
+  const subjectSlug = slugifySubject(subjectName)
+  const canonicalUrl = `${baseUrl}/notes/${course}/${branch}/${subjectSlug}/${slug}`
 
   return {
     title: `${note.title} | ${subjectName} 10-Mark Exam Answer & Notes (${course.toUpperCase()} ${branch.toUpperCase()})`,
     description: note.description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
     openGraph: {
       title: `${note.title} — ${subjectName} (${course.toUpperCase()} ${branch.toUpperCase()})`,
       description: note.description,
+      url: canonicalUrl,
       type: "article",
     },
     twitter: {

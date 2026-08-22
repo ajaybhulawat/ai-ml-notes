@@ -1,6 +1,28 @@
 import Link from "next/link"
+import type { Metadata } from "next"
 import { getAllCourses, getNotesForBranch, getAllNotesMeta, getBranches } from "@/lib/notes"
 import Navbar from "@/components/Navbar"
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes-wine.vercel.app"
+
+export const metadata: Metadata = {
+  title: "Academic Study Notes | AI & ML Exam Notes for BTech & MTech",
+  description: "Browse exam-focused engineering study guides organized by course, branch, semester, and subject for BTech and MTech students.",
+  alternates: {
+    canonical: `${siteUrl}/notes`,
+  },
+  openGraph: {
+    title: "Academic Study Notes | AI & ML Exam Notes",
+    description: "Browse exam-focused engineering study guides organized by course, branch, semester, and subject.",
+    url: `${siteUrl}/notes`,
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Academic Study Notes | AI & ML Exam Notes",
+    description: "Browse exam-focused engineering study guides organized by course, branch, semester, and subject.",
+  },
+}
 
 const courseConfig: Record<
   string,
@@ -303,7 +325,7 @@ export default function NotesHomePage() {
                 <div className="pt-3 border-t border-gray-100 dark:border-gray-800 flex items-center justify-between text-xs font-medium text-gray-500 dark:text-gray-400">
                   <span>{note.subject || "Machine Learning"}</span>
                   <span className="text-indigo-600 dark:text-indigo-400 font-semibold group-hover:translate-x-0.5 transition">
-                    Read Note →
+                    Read {note.title} Notes →
                   </span>
                 </div>
               </Link>

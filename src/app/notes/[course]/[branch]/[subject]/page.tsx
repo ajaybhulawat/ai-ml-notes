@@ -41,17 +41,25 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { course, branch, subject: paramSubject } = await params
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://ai-ml-notes-wine.vercel.app"
 
   // 1. Check if paramSubject is a topic note slug
   const note = await getNoteBySlug(course, branch, paramSubject)
   if (note) {
     const subjectName = note.subject || "Machine Learning"
+    const subjectSlug = slugifySubject(subjectName)
+    const canonicalUrl = `${baseUrl}/notes/${course}/${branch}/${subjectSlug}/${note.slug}`
+
     return {
       title: `${note.title} | ${subjectName} 10-Mark Exam Answer & Notes (${course.toUpperCase()} ${branch.toUpperCase()})`,
       description: note.description,
+      alternates: {
+        canonical: canonicalUrl,
+      },
       openGraph: {
         title: `${note.title} (${course.toUpperCase()} ${branch.toUpperCase()})`,
         description: note.description,
+        url: canonicalUrl,
         type: "article",
       },
       twitter: {
@@ -66,12 +74,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const subjectObj = getSubjectBySlug(course, branch, paramSubject)
   if (subjectObj) {
     const branchName = branchLabels[branch.toLowerCase()] ?? branch.toUpperCase()
+    const canonicalUrl = `${baseUrl}/notes/${course}/${branch}/${paramSubject}`
+
     return {
       title: `${subjectObj.subject} Notes | ${course.toUpperCase()} ${branch.toUpperCase()}`,
       description: `Complete exam study guides, unit notes, definitions, formulas, and topic guides for ${subjectObj.subject} (${branchName}).`,
+      alternates: {
+        canonical: canonicalUrl,
+      },
       openGraph: {
         title: `${subjectObj.subject} Study Notes — ${course.toUpperCase()} ${branch.toUpperCase()}`,
         description: `Comprehensive syllabus notes, unit guides, and exam answers for ${subjectObj.subject}.`,
+        url: canonicalUrl,
         type: "website",
       },
       twitter: {
