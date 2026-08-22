@@ -181,36 +181,44 @@ export default function TopicExamView({ note }: Props) {
           <span className="shrink-0 text-gray-400 font-bold uppercase tracking-wider">
             Jump to:
           </span>
-          <a
-            href="#definition"
-            className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
-          >
-            Definition
-          </a>
-          <a
-            href="#2-mark"
-            className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
-          >
-            2-Mark Q&amp;A
-          </a>
-          <a
-            href="#5-mark"
-            className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
-          >
-            5-Mark Notes
-          </a>
-          <a
-            href="#10-mark"
-            className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
-          >
-            10-Mark Derivation
-          </a>
-          <a
-            href="#quick-revision"
-            className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap ml-auto"
-          >
-            ⚡ Quick Revision
-          </a>
+          {note.headings.length > 0 ? (
+            note.headings.slice(0, 5).map((h) => (
+              <a
+                key={h.id}
+                href={`#${h.id}`}
+                className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
+              >
+                {h.text}
+              </a>
+            ))
+          ) : (
+            <>
+              <a
+                href="#definition"
+                className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
+              >
+                Definition
+              </a>
+              <a
+                href="#2-mark"
+                className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
+              >
+                2 Marks
+              </a>
+              <a
+                href="#5-mark"
+                className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
+              >
+                5 Marks
+              </a>
+              <a
+                href="#10-mark"
+                className="hover:text-indigo-600 dark:hover:text-indigo-400 px-2 py-0.5 rounded bg-gray-50 dark:bg-gray-800/80 hover:bg-indigo-50 dark:hover:bg-indigo-950/60 transition whitespace-nowrap"
+              >
+                10 Marks
+              </a>
+            </>
+          )}
         </div>
       </div>
 
@@ -322,6 +330,7 @@ export default function TopicExamView({ note }: Props) {
                 prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
                 prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-p:leading-relaxed
                 prose-li:text-gray-700 dark:prose-li:text-gray-300 
+                prose-img:max-w-full prose-img:h-auto prose-img:rounded-2xl prose-img:my-6 prose-img:shadow-md
                 overflow-x-auto
                 prose-table:w-full prose-table:my-6 prose-table:border-collapse prose-table:text-sm
                 prose-th:bg-indigo-50/80 dark:prose-th:bg-indigo-950/40 prose-th:p-3 prose-th:text-left prose-th:font-bold prose-th:border dark:prose-th:border-gray-800
